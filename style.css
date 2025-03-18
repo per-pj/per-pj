@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 80px; /* ヘッダーの高さ分だけコンテンツを下にずらす */
+}
+
+/* header */
+.header {
+  background-color: #f8f8f8;
+  color: #000;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* logo */
+.logo a {
+  text-decoration: none;
+}
+
+.logo .logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav .nav-menu li {
+  margin-left: 30px;
+}
+
+.nav .nav-menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* トグルメニュー (初期状態では非表示) */
+.toggle-menu {
+  display: none; /* デスクトップ表示では非表示 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px; /* パディングを追加してクリック領域を広げる */
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-menu span {
+  display: block;
+  width: 24px; /* 線の幅を調整 */
+  height: 3px; /* 線の太さを調整 */
+  background-color: #000;
+  transition: all 0.3s ease;
+  border-radius: 1px; /* 少し角を丸くする */
+}
+
+/* レスポンシブ対応 (画面幅が768px以下の場合) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav .nav-menu li {
+    margin: 20px 0;
+  }
+
+  .nav .nav-menu li a {
+    color: #000;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+
+  .toggle-menu {
+    display: flex;
+    position: absolute;
+    top: 50%; /* 縦方向の中央に配置 */
+    right: 20px;
+    z-index: 21;
+    transform: translateY(-50%);
+  }
+
+  .toggle-menu.open span:nth-child(1) {
+    /* メニューオープン時、1本目の線を回転 */
+    transform-origin: top right; /* 回転の中心を右上端に変更 */
+    transform: rotate(-45deg);
+    background-color: #000;
+  }
+
+  .toggle-menu.open span:nth-child(2) {
+    /* メニューオープン時、2本目の線を非表示 */
+    opacity: 0;
+  }
+
+  .toggle-menu.open span:nth-child(3) {
+    /* メニューオープン時、3本目の線を回転 */
+    transform-origin: bottom right; /* 回転の中心を右下端に変更 */
+    transform: rotate(45deg);
+    background-color: #000;
+  }
+}
+
+.main-video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 40px;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: #f8f8f8;
+  color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.footer .copyright {
+  color: #888;
+  font-size: 0.8rem;
+  margin-top: 0;
+}

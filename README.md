@@ -14,3 +14,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## Credits
+
+- **動画素材:**
+  - [Pixabay](https://pixabay.com/ja/)
+    [Jose Besednjak](https://pixabay.com/ja/users/jb-004-31505128/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=159429)
