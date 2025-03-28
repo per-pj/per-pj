@@ -1,10 +1,11 @@
+/* ========== style ========== */
 body {
   margin: 0;
-  padding: 0;
+  padding: 8rem var(--sides-space) 0 var(--sides-space);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   color: #000;
   font-weight: 500;
   letter-spacing: -0.01rem;
@@ -12,18 +13,35 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 80px; /* ヘッダーの高さ分だけコンテンツを下にずらす */
 }
 
-/* header */
+/* root */
+:root {
+  --sides-space: 3.5rem;
+  --sides-space-small: 1rem;
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+/* text */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== header ========== */
 .header {
-  background-color: #fff;
-  color: #000;
-  padding: 0 40px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 1rem var(--sides-space);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,13 +55,22 @@ body {
   text-decoration: none;
 }
 
-.logo .logo-text {
-  font-size: 28px;
-  font-weight: bold;
-  color: #000;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* nav */
+.logo-text {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  font-family: 'DM Serif Display', serif;
+  font-weight: 800;
+  font-style: italic;
+  transform: rotate(-8deg);
+}
+
+/* menu */
 .nav {
   display: flex;
   align-items: center;
@@ -57,15 +84,16 @@ body {
 }
 
 .nav .nav-menu li {
-  margin-left: 30px;
+  margin-left: 2rem;
 }
 
 .nav .nav-menu li a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
+  font-size: 1rem;
 }
 
-/* トグルメニュー (初期状態では非表示) */
+/* toggle (初期状態では非表示) */
 .toggle-menu {
   display: none; /* デスクトップ表示では非表示 */
   background: none;
@@ -85,15 +113,80 @@ body {
   height: 3px; /* 線の太さを調整 */
   background-color: #000;
   transition: all 0.3s ease;
-  border-radius: 1px; /* 少し角を丸くする */
+  border-radius: 1px;
 }
 
-/* レスポンシブ対応 (画面幅が768px以下の場合) */
+/* ========== hero ========== */
+#hero {
+  width: 100%;
+  height: auto;
+}
+
+/* img */
+.profile-img-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+/* text */
+.hero-title {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+/* link */
+.location-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+/* map */
+iframe {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* section */
+.section {
+  padding: 80px 40px;
+  height: 100vh;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* ========== footer ========== */
+.footer {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1.5px solid #000;
+}
+
+.footer .copyright {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* ========== レスポンシブ対応 (画面幅が768px以下の場合) ========== */
 @media (max-width: 768px) {
   body {
-    padding-top: 60px;
+    padding: 4rem var(--sides-space-small) 0 var(--sides-space-small);
   }
 
+  .header {
+    padding: 1rem var(--sides-space-small);
+  }
+
+  /* menu */
   .nav {
     display: none;
     position: fixed;
@@ -132,6 +225,7 @@ body {
     text-decoration: none;
   }
 
+  /* toggle */
   .toggle-menu {
     display: flex;
     position: absolute;
@@ -159,66 +253,8 @@ body {
     transform: rotate(45deg);
     background-color: #000;
   }
-}
 
-.main-video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.main-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover;
-}
-
-.main-content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 0 40px;
-  flex-direction: column;
-}
-
-.hero-title {
-  font-size: 5rem;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-}
-
-/* footer */
-.footer {
-  background-color: #fff;
-  color: #fff;
-  padding: 20px 40px;
-  text-align: center;
-}
-
-.footer .copyright {
-  color: #888;
-  font-size: 0.8rem;
-  margin-top: 0;
-}
-
-/* section */
-.section {
-  padding: 80px 40px;
-  height: 100vh;
-}
-.section-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 40px;
+  .hero-title {
+    font-size: 2.8rem;
+  }
 }

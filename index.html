@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="per-pjのWebサイトです。" />
-    <title>per-pj | Webサイト</title>
+    <title>per-pj | Website</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!---------- header ---------->
     <div id="header-container"></div>
-    <main class="main main-video-container">
-      <video
-        src="hero-video.mp4"
-        autoplay
-        loop
-        muted
-        playsinline
-        class="main-video"
-      ></video>
-      <div class="main-content">
-        <h1 class="hero-title">per-pj</h1>
-      </div>
+    <!---------- main ---------->
+    <main id="hero">
+      <h1 class="hero-title">Product Design</h1>
+      <h1 class="hero-title">BizDev</h1>
+      <a class="location-link" href="#map">Based in Tokyo</a>
+      <!-- map -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662976.2599456254!2d138.4477222004693!3d35.50426567457608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1743143052356!5m2!1sja!2sjp"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        id="map"
+      ></iframe>
     </main>
+    <!---------- footer ---------->
     <div id="footer-container"></div>
+    <!---------- js ---------->
     <script src="script.js"></script>
   </body>
 </html>
