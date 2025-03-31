@@ -47,3 +47,27 @@ async function loadHeaderAndFooter() {
 
 // ページ読み込み時にヘッダーとフッターをロード
 window.addEventListener('load', loadHeaderAndFooter);
+
+document.addEventListener('DOMContentLoaded', function () {
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      // すべてのタブリンクからactiveクラスを削除
+      tabLinks.forEach((item) => item.classList.remove('active'));
+      // すべてのタブコンテンツからactiveクラスを削除
+      tabContents.forEach((content) => content.classList.remove('active'));
+
+      // クリックしたタブリンクにactiveクラスを追加
+      this.classList.add('active');
+
+      // data-tab属性から対象のタブコンテンツのIDを取得し表示
+      const tabId = this.getAttribute('data-tab');
+      const activeTab = document.getElementById(tabId);
+      if (activeTab) {
+        activeTab.classList.add('active');
+      }
+    });
+  });
+});
