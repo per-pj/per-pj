@@ -37,8 +37,8 @@
     margin: 20px 0;
   }
   .nav .nav-menu li a {
-    color: #000;
-    font-size: 3rem;
+    color: #222;
+    font-size: 2rem;
     text-decoration: none;
   }
 
@@ -72,7 +72,7 @@
     font-size: 2.8rem;
   }
 
-  .gap-container {
+  .grid-container {
     grid-template-columns: 1fr;
   }
 }
