@@ -1,0 +1,199 @@
+/* section */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* about */
+.about {
+  background-color: #fff;
+}
+
+/* prof */
+.profile {
+  position: relative;
+  margin-bottom: 40px;
+}
+.profile-bg img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.profile-content {
+  position: relative;
+  margin-top: -60px;
+  padding: 0 20px 0 20px;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  object-fit: cover;
+}
+.profile-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.05rem;
+}
+.profile-text {
+  font-size: 0.95rem;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+.profile-content i.fas {
+  font-size: 0.95rem;
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
+  color: #535353;
+}
+.link-text {
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer !important;
+  display: inline-block;
+  pointer-events: auto;
+  all: unset;
+  color: #11416f;
+  letter-spacing: -0.05rem;
+}
+.link-text:hover {
+  text-decoration: underline;
+}
+
+/* btn */
+.flex-layout {
+  display: flex;
+  margin: 0 0 0 1rem;
+}
+.profile-btn {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #222;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.15s;
+  margin: 1rem 1rem 1rem 0;
+}
+.profile-btn-message {
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #222;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.15s;
+  margin: 1rem 0 1rem 0;
+}
+.btn-text-reset {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-text-reset-message {
+  text-decoration: none;
+  color: #222;
+}
+
+/* tab */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.tab-link {
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #aaa;
+  border: none;
+  border-bottom: 3px solid #fff;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  margin: 0 1rem;
+  transition: background 0.5s;
+}
+.tab-link:hover {
+  background-color: #fff;
+  color: #aaa;
+  border-bottom: 3px solid #aaa;
+}
+.tab-link.active {
+  background-color: #fff;
+  color: #222;
+  border-bottom: 3px solid #222;
+}
+
+/* tab content */
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-content-container {
+  padding: 1rem 2rem 6rem 2rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* message */
+.message-container {
+  background-color: #f7f7f7;
+  padding: 4rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 3rem 0;
+  border: 1px solid #ebebeb;
+}
+.message-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.message-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* btn */
+.message-btn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.15s;
+}
+.message-btn:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+.message-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Spotify */
+.spotify {
+  background-color: #fff;
+}
+.spotify h2 {
+  margin-bottom: 10px;
+}

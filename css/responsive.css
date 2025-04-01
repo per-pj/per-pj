@@ -1,0 +1,78 @@
+/* ========== レスポンシブ対応 (画面幅が768px以下の場合) ========== */
+@media (max-width: 768px) {
+  body {
+    padding: 6rem var(--sides-space-small) 0 var(--sides-space-small);
+  }
+  .header {
+    padding: 1rem var(--sides-space-small);
+  }
+
+  /* menu */
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav .nav-menu li {
+    margin: 20px 0;
+  }
+  .nav .nav-menu li a {
+    color: #000;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+
+  /* toggle */
+  .toggle-menu {
+    display: flex;
+    position: absolute;
+    top: 50%; /* 縦方向の中央に配置 */
+    right: 20px;
+    z-index: 21;
+    transform: translateY(-50%);
+  }
+  .toggle-menu.open span:nth-child(1) {
+    /* メニューオープン時、1本目の線を回転 */
+    transform-origin: top right; /* 回転の中心を右上端に変更 */
+    transform: rotate(-45deg);
+    background-color: #000;
+  }
+  .toggle-menu.open span:nth-child(2) {
+    /* メニューオープン時、2本目の線を非表示 */
+    opacity: 0;
+  }
+  .toggle-menu.open span:nth-child(3) {
+    /* メニューオープン時、3本目の線を回転 */
+    transform-origin: bottom right; /* 回転の中心を右下端に変更 */
+    transform: rotate(45deg);
+    background-color: #000;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .gap-container {
+    grid-template-columns: 1fr;
+  }
+}
