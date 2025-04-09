@@ -1,4 +1,4 @@
-/* ========== レスポンシブ対応 (画面幅が768px以下の場合) ========== */
+/* === 768px以下 === */
 @media (max-width: 768px) {
   body {
     padding: 6rem var(--sides-space-small) 0 var(--sides-space-small);
@@ -46,33 +46,42 @@
   .toggle-menu {
     display: flex;
     position: absolute;
-    top: 50%; /* 縦方向の中央に配置 */
+    top: 50%;
     right: 20px;
     z-index: 21;
     transform: translateY(-50%);
   }
   .toggle-menu.open span:nth-child(1) {
-    /* メニューオープン時、1本目の線を回転 */
-    transform-origin: top right; /* 回転の中心を右上端に変更 */
+    transform-origin: top right;
     transform: rotate(-45deg);
     background-color: #000;
   }
   .toggle-menu.open span:nth-child(2) {
-    /* メニューオープン時、2本目の線を非表示 */
     opacity: 0;
   }
   .toggle-menu.open span:nth-child(3) {
-    /* メニューオープン時、3本目の線を回転 */
-    transform-origin: bottom right; /* 回転の中心を右下端に変更 */
+    transform-origin: bottom right;
     transform: rotate(45deg);
     background-color: #000;
+  }
+
+  .container {
+    padding: 3rem 0;
   }
 
   .hero-title {
     font-size: 2.8rem;
   }
 
-  .grid-container {
+  .hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid-item {
+    padding: 2rem 2rem 2rem 2rem;
   }
 }

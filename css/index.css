@@ -1,57 +1,83 @@
-#hero {
+/* id */
+#top {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* layout */
+.container {
+  width: 100%;
+  padding: 6rem 0;
+}
+
+/* hero */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-grid-item {
+  width: 100%;
+}
+
+.hero-grid-item img {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  padding-top: 6rem;
-}
-
-/* text */
-.hero-title {
-  font-size: 6rem;
-  font-weight: bold;
-  line-height: normal;
-  margin-bottom: 1rem;
-}
-.hero-text {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  letter-spacing: -0.05rem;
-}
-
-/* btn */
-.hero-btn {
-  width: 200px;
-  height: 50px;
-  background-color: #222;
-  color: #fff;
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: transform 0.1s ease, background 0.15s;
-  margin: 2rem 0 6rem 0;
-}
-.hero-btn:hover {
-  transform: scale(1.05);
-  background-color: #333;
-}
-.hero-btn a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-}
-
-/* link */
-.location-link {
-  text-decoration: underline;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  font-weight: 600;
-}
-
-/* map */
-iframe {
+  border-radius: 0.5rem;
   display: block;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+}
+
+/* skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.skills-grid-item {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  padding: 2rem 8rem 2rem 2rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.bg-plan:hover {
+  background: #a156c1;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bg-ux:hover {
+  background: #29b463;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bg-ui:hover {
+  background: #da627d;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bg-mvp:hover {
+  background: #2e4cdf;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bg-marketing:hover {
+  background: rgb(241, 155, 51);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bg-other:hover {
+  background: #64ccc9;
+  transition: background 0.3s ease, transform 0.2s ease;
 }

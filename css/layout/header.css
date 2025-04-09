@@ -1,4 +1,3 @@
-/* header */
 .header {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -12,18 +11,19 @@
   width: 100%;
   z-index: 10;
   box-sizing: border-box;
-  border-bottom: 1px solid #ebebeb;
 }
 
 /* logo */
 .logo a {
   text-decoration: none;
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .logo-text {
   font-size: 1.6rem;
   color: var(--text-color);
@@ -38,20 +38,29 @@
   display: flex;
   align-items: center;
 }
+
 .nav .nav-menu {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
+
 .nav .nav-menu li {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
+
 .nav .nav-menu li a {
   text-decoration: none;
   color: var(--text-color);
   font-size: 0.95rem;
+  font-weight: 500;
 }
+.nav .nav-menu li a:hover {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
 .nav-menu i.fas {
   font-size: 0.85rem;
   width: 1em;
@@ -60,23 +69,24 @@
   color: #222;
 }
 
-/* toggle (初期状態では非表示) */
+/* toggle */
 .toggle-menu {
-  display: none; /* デスクトップ表示では非表示 */
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px; /* パディングを追加してクリック領域を広げる */
+  padding: 10px;
   width: 40px;
   height: 40px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
 .toggle-menu span {
   display: block;
-  width: 24px; /* 線の幅を調整 */
-  height: 3px; /* 線の太さを調整 */
+  width: 24px;
+  height: 3px;
   background-color: #000;
   transition: all 0.3s ease;
   border-radius: 1px;

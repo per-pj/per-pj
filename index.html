@@ -20,12 +20,15 @@
       gtag('config', 'G-910PNS9N5T');
     </script>
     <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/base/base.css" />
+    <link rel="stylesheet" href="css/layout/header.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/base/typography.css" />
+    <link rel="stylesheet" href="css/components/btn.css" />
+    <link rel="stylesheet" href="css/layout/footer.css" />
+    <link rel="stylesheet" href="css/base/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -37,32 +40,81 @@
   <body>
     <!---------- header ---------->
     <div id="header-container"></div>
-
     <!---------- main ---------->
-    <main id="hero">
-      <h1 class="hero-title">Product Design for your vision</h1>
-      <p class="hero-text">per-pj と一緒にプロジェクトに取り組みましょう</p>
-      <button class="hero-btn">
-        <a href="https://per-pj.github.io/per-pj/about.html"
-          >プロフィールを見る</a
-        >
-      </button>
-      <a class="location-link" href="#map">東京を拠点に活動</a>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662976.2599456254!2d138.4477222004693!3d35.50426567457608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1743143052356!5m2!1sja!2sjp"
-        width="100%"
-        height="450"
-        style="border-radius: 0.5rem; border: 1px solid #ebebeb"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        id="map"
-      ></iframe>
+    <main id="top">
+      <!-- hero -->
+      <section class="container">
+        <div class="hero-grid">
+          <div class="hero-grid-item">
+            <h1 class="hero-title">アイデアを形にする。</h1>
+            <p class="hero-desc">
+              お客様のニーズに応じた最適な戦略で、ビジネスの成長を力強くサポートします。
+            </p>
+            <button class="hero-btn">
+              <a href="https://per-pj.github.io/per-pj/about.html"
+                >プロフィールを見る</a
+              >
+            </button>
+          </div>
+          <div class="hero-grid-item">
+            <img src="img/hero.jpg" alt="青い空と海" class="hero-img" />
+          </div>
+        </div>
+      </section>
+      <!-- skills -->
+      <section class="container">
+        <h2 class="section-title">成長を力強くサポート</h2>
+        <p class="section-desc">
+          ビジョンの実現、ビジネス目標達成に向け、現状分析から戦略立案、実行までを一貫してサポート。多様なスキルを組み合わせ、最適なソリューション、プロダクトデザインを提供します。
+        </p>
+        <div class="skills-grid">
+          <div class="skills-grid-item bg-plan">
+            <img src="img/plan.svg" alt="新規事業" />
+            <h3>新規事業立案</h3>
+            <p>
+              市場の潜在ニーズを捉え、革新的なビジネスモデルやサービスを企画・立案し、新たな収益源の創出と事業成長に貢献します。
+            </p>
+          </div>
+          <div class="skills-grid-item bg-ux">
+            <img src="img/ux.svg" alt="UXデザイン" />
+            <h3>UXデザイン</h3>
+            <p>
+              徹底的なユーザー理解に基づき、課題解決に繋がる最適なユーザー体験を設計。情報設計からプロトタイピング、テストまで一貫して担当し、顧客満足度向上を目指します。
+            </p>
+          </div>
+          <div class="skills-grid-item bg-ui">
+            <img src="img/ui.svg" alt="UIデザイン" />
+            <h3>UIデザイン</h3>
+            <p>
+              情報構造とユーザー心理に基づいた、直感的で美しいインターフェースを設計・実装。ブランドイメージを高め、ユーザーエンゲージメントの向上に貢献します。
+            </p>
+          </div>
+          <div class="skills-grid-item bg-mvp">
+            <img src="img/mvp.svg" alt="MVP構築" />
+            <h3>MVP構築</h3>
+            <p>
+              HTML、CSS、JavaScriptなどを用いて、WebアプリケーションやWebサイトのユーザーインターフェースを開発・実装。ユーザーの操作性やパフォーマンスの向上へ。
+            </p>
+          </div>
+          <div class="skills-grid-item bg-marketing">
+            <img src="img/marketing.svg" alt="テストマーケティング" />
+            <h3>ニーズ検証</h3>
+            <p>
+              新規事業やサービスを市場に投入する前に、仮説検証と改善を行うテストマーケティングを実施。リスクを最小限に抑え、成功確率を高めます。
+            </p>
+          </div>
+          <div class="skills-grid-item bg-other">
+            <img src="img/other.svg" alt="その他" />
+            <h3>その他</h3>
+            <p>
+              スタートアップの創業と経営を通して、資金調達、事業企画、アライアンス、セールス、採用など様々な分野の業務を横断的に実行してきました。
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-
     <!---------- footer ---------->
     <div id="footer-container"></div>
-
     <!---------- js ---------->
     <script src="script.js"></script>
   </body>
