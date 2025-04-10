@@ -1,7 +1,7 @@
 /* body */
 body {
   margin: 0;
-  padding: 6rem var(--sides-space) 0 var(--sides-space);
+  padding: 70px var(--sides-space) 0 var(--sides-space);
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   background-color: #fff;
