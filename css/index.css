@@ -8,7 +8,7 @@
 /* layout */
 .container {
   width: 100%;
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 /* hero */
@@ -34,14 +34,13 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
 }
 
 .skills-grid-item {
   background-color: #fff;
   border: 1px solid #ebebeb;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 1.5rem;
   text-align: left;
   border-radius: 0.5rem;
   overflow: hidden;
