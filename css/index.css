@@ -33,15 +33,15 @@
 /* skills */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
 }
 
 .skills-grid-item {
   background-color: #fff;
   border: 1px solid #ebebeb;
-  padding: 2rem 8rem 2rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   text-align: left;
   border-radius: 0.5rem;
   overflow: hidden;
