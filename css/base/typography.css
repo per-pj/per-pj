@@ -48,14 +48,14 @@ h3 {
 }
 
 .tab-content-container h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin: 1.5rem 0;
 }
 .tab-content-container p {
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 3rem;
+  margin-bottom: 0.8rem;
 }
 
 /* contact */

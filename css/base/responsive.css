@@ -84,4 +84,8 @@
   .skills-grid-item {
     padding: 2rem 2rem 2rem 2rem;
   }
+
+  .about-container-small {
+    width: 100%;
+  }
 }

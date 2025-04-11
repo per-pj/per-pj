@@ -9,11 +9,11 @@
 /* layout */
 .about-container {
   width: 100%;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .about-container-small {
-  width: 100%;
+  width: 65%;
   padding: 2rem 0;
   margin: 0 auto;
 }
@@ -50,7 +50,9 @@
 /* tab */
 .tabs {
   display: flex;
-  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem 0;
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -61,7 +63,7 @@
   color: #aaa;
   border: none;
   border-bottom: 3px solid #fff;
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0 2rem 1.5rem 2rem;
   cursor: pointer;
   margin-right: 1rem;
   transition: background 0.3s;
@@ -89,7 +91,7 @@
 }
 
 .tab-content-container {
-  padding: 0 1rem;
+  padding: 4rem 0 0 1rem;
   text-align: left;
 }
 
