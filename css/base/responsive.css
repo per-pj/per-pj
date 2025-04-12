@@ -65,6 +65,28 @@
     background-color: #000;
   }
 
+  .top-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .top-container {
+    padding: 0 0 3rem 0;
+  }
+
+  .top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-grid-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .top-grid-item img {
+    width: 65%;
+  }
+
   .container {
     padding: 3rem 0;
   }

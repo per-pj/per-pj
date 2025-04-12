@@ -1,0 +1,52 @@
+/* id */
+#services {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* layout */
+.container {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+/* hero */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-grid-item {
+  width: 100%;
+}
+
+.hero-grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+/* skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.skills-grid-item {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-grid-item:hover {
+  transform: translateY(-5px);
+}

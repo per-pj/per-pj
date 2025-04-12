@@ -1,4 +1,21 @@
 /* === top === */
+.top-title {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 80px;
+  margin-bottom: 2rem;
+}
+
+.top-desc {
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* === services === */
 .hero-title {
   font-size: 3rem;
   font-weight: 600;
@@ -63,14 +80,14 @@ h3 {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  margin: 1.5rem 0;
+  margin: 3.5rem 0 0.5rem 0;
 }
 
 .tab-content-container p {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.05em;
-  line-height: 1.7;
+  line-height: 2;
   margin-bottom: 0.8rem;
 }
 
