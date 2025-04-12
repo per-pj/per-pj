@@ -63,3 +63,28 @@
   font-size: 1rem;
   letter-spacing: 0.03em;
 }
+
+/* === btt === */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 1;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+}
+
+#back-to-top:hover {
+  background-color: #222;
+}

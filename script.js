@@ -71,3 +71,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+const backToTopButton = document.getElementById('back-to-top');
+
+// スクロールが一定量を超えたらボタンを表示
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 100) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+// ボタンがクリックされたらページトップへスムーズスクロール
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
