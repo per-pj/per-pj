@@ -97,7 +97,8 @@
 
 /* contact */
 .message {
-  background-color: #f7f7f7;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 4rem 1rem;
   border-radius: 0.5rem;
   text-align: center;

@@ -39,7 +39,7 @@
 
 .skills-grid-item {
   background-color: #fff;
-  border: 1px solid #ebebeb;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   text-align: left;
   border-radius: 0.5rem;
@@ -49,34 +49,4 @@
 
 .skills-grid-item:hover {
   transform: translateY(-5px);
-}
-
-.bg-plan:hover {
-  background: #a156c1;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.bg-ux:hover {
-  background: #29b463;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.bg-ui:hover {
-  background: #da627d;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.bg-mvp:hover {
-  background: #2e4cdf;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.bg-marketing:hover {
-  background: rgb(241, 155, 51);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.bg-other:hover {
-  background: #64ccc9;
-  transition: background 0.3s ease, transform 0.2s ease;
 }
