@@ -1,6 +1,6 @@
 /* primary */
 .btn-primary {
-  background-color: #000;
+  background-color: #e7e7e7;
   padding: 1rem 2rem;
   border-radius: 2.5rem;
   border: none;
@@ -10,35 +10,37 @@
 }
 
 .btn-primary:hover {
-  background-color: #222;
+  opacity: 0.8;
   transform: scale(1.05);
 }
 
 .btn-primary a {
   text-decoration: none;
-  color: #fff;
+  color: #222;
+  font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.03em;
 }
 
 /* contact */
 .btn-contact {
-  background-color: #000;
+  background-image: linear-gradient(to right, #265aeb, #4dabf7);
   padding: 1rem 2rem;
   border-radius: 2.5rem;
   border: none;
   cursor: pointer;
-  transition: transform 0.1s ease, background 0.15s;
+  transition: transform 0.1s ease, background-image 0.15s;
 }
 
 .btn-contact:hover {
-  background-color: #222;
+  opacity: 0.9;
   transform: scale(1.05);
 }
 
 .btn-contact a {
   text-decoration: none;
   color: #fff;
+  font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.03em;
 }

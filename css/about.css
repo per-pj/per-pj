@@ -25,6 +25,7 @@
   width: 25%;
   height: auto;
   border-radius: 50%;
+  border: 1px solid #ebebeb;
   margin: 0 auto;
   display: block;
 }
