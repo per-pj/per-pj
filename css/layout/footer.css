@@ -1,94 +1,54 @@
-/* footer */
 .footer {
   width: 100%;
-  max-width: 1200px;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ebebeb;
+}
+
+.footer-flex {
+  width: 100%;
+  height: auto;
+  padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
 .footer-item {
-  margin-top: 1rem;
-}
-
-.footer .copyright {
-  color: var(--text-color);
-  font-size: 0.9rem;
-  letter-spacing: 0.01em;
-  opacity: 0.8;
-}
-
-/* logo */
-.footer-logo a {
-  text-decoration: none;
-}
-
-.footer-logo {
   display: flex;
   align-items: center;
-  text-align: left;
 }
 
-.footer-logo-text {
-  font-size: 1.6rem;
-  color: var(--text-color);
-  font-family: 'Lobster', cursive;
-  font-weight: 800;
-  font-style: italic;
-  transform: rotate(-8deg);
-}
-
-/* grid */
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  gap: 1rem;
-  text-align: center;
-}
-
-.footer-grid-item {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.footer-grid-item nav {
+.footer-item nav {
   padding: 0;
   margin: 0;
 }
 
-.footer-grid-item h5 {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  opacity: 0.8;
-  border-bottom: 1px solid #ebebeb;
-  padding-bottom: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.footer-content {
+.footer-menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: left;
   list-style-type: none;
-  padding-left: 0;
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-content li a {
+.footer-menu li a {
   text-decoration: none;
-  color: #000;
-  font-size: 0.85rem;
+  color: #222;
+  font-size: 0.9rem;
   letter-spacing: 0.01em;
-  padding-bottom: 0.8rem;
+  margin: 0 1rem 0 0;
   display: block;
 }
 
-/* social */
 .social-links {
   display: flex;
   align-items: center;
@@ -97,12 +57,21 @@
 
 .social-link {
   width: 1.5rem;
-  height: 1.5rem;
+  height: auto;
   margin: 0 1rem 0 0;
 }
 
+.copyright {
+  color: #222;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+  border-top: 1px solid #ebebeb;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
 @media (max-width: 767px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
+  .footer-flex {
+    flex-direction: column;
   }
 }

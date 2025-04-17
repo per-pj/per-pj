@@ -1,10 +1,14 @@
-/* === 768px以下 === */
 @media (max-width: 768px) {
   body {
-    padding: 6rem var(--sides-space-small) 0 var(--sides-space-small);
+    padding: 6rem 0 0 0;
   }
+
   .header {
     padding: 1rem var(--sides-space-small);
+  }
+
+  .footer {
+    padding: 2rem 1rem;
   }
 
   /* menu */
@@ -22,9 +26,11 @@
     justify-content: flex-start;
     padding-top: 80px;
   }
+
   .nav.open {
     display: flex;
   }
+
   .nav .nav-menu {
     list-style: none;
     padding: 0;
@@ -33,9 +39,11 @@
     width: 100%;
     flex-direction: column;
   }
+
   .nav .nav-menu li {
     margin: 20px 0;
   }
+
   .nav .nav-menu li a {
     color: #222;
     font-size: 2rem;
@@ -51,18 +59,27 @@
     z-index: 21;
     transform: translateY(-50%);
   }
+
   .toggle-menu.open span:nth-child(1) {
     transform-origin: top right;
     transform: rotate(-45deg);
     background-color: #000;
   }
+
   .toggle-menu.open span:nth-child(2) {
     opacity: 0;
   }
+
   .toggle-menu.open span:nth-child(3) {
     transform-origin: bottom right;
     transform: rotate(45deg);
     background-color: #000;
+  }
+
+  /* top */
+  .top-img {
+    width: 50%;
+    height: auto;
   }
 
   .top-title {
@@ -74,21 +91,19 @@
     padding: 0 0 3rem 0;
   }
 
-  .top-grid {
-    grid-template-columns: 1fr;
+  /* picks */
+  .picks {
+    padding: 2rem 1rem;
   }
 
-  .top-grid-item {
+  .picks-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  /* about */
+  .tabs-container {
     width: 100%;
-    text-align: center;
-  }
-
-  .top-grid-item img {
-    width: 65%;
-  }
-
-  .container {
-    padding: 3rem 0;
   }
 
   .tab-link {
@@ -96,6 +111,24 @@
     border-bottom: 3px solid #fff;
     padding: 0 1rem 1rem 1rem;
     margin-right: 1rem;
+  }
+
+  /* SNS */
+  .social-links {
+    margin-top: 2rem;
+  }
+
+  /* servicecs */
+  .hero-container {
+    padding: 3rem 0;
+  }
+
+  .services-container {
+    padding: 3rem 0;
+  }
+
+  .contact-container {
+    padding: 3rem 0;
   }
 
   .hero-title {
@@ -106,15 +139,18 @@
     grid-template-columns: 1fr;
   }
 
-  .skills-grid {
+  .services-grid {
     grid-template-columns: 1fr;
   }
 
-  .skills-grid-item {
+  .services-grid-item {
     padding: 2rem;
   }
+}
 
-  .about-container-small {
-    width: 100%;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .picks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }

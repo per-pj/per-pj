@@ -1,33 +1,21 @@
-/* id */
-#top {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* layout */
 .top-container {
   width: 100%;
-  height: 100vh;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* hero */
-.top-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+.top-content {
+  width: 70%;
+  height: auto;
   align-items: center;
+  text-align: center;
 }
 
-.top-grid-item {
-  width: 100%;
-}
-
-.top-grid-item img {
-  width: 90%;
+.top-img {
+  width: 20%;
   height: auto;
   border-radius: 50%;
   margin: 0 auto;

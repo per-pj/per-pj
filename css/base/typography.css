@@ -1,78 +1,28 @@
-/* === top === */
+/* top */
 .top-title {
-  font-size: 5rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 80px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .top-desc {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.03em;
   line-height: 1.7;
-  margin-bottom: 2rem;
-  width: 100%;
 }
 
-/* === services === */
-.hero-title {
+/* about */
+.about-title {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 80px;
   margin-bottom: 0.5rem;
 }
 
-.hero-desc {
-  font-size: 1.1rem;
+.about-desc {
+  font-size: 1.2rem;
   letter-spacing: 0.03em;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  width: 90%;
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.5rem;
-}
-
-.section-desc {
-  font-size: 1.05rem;
-  letter-spacing: 0.03em;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  width: 100%;
-}
-
-h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.5rem;
-}
-
-.skills-grid-item p {
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  line-height: 1.7;
-}
-
-/* === about === */
-.profile-title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.02em;
-}
-
-.profile-desc {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   line-height: 1.7;
 }
 
@@ -84,22 +34,68 @@ h3 {
 }
 
 .tab-content-container p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.005em;
   line-height: 2;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
-/* contact */
-.message-title {
+/* services */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: #333;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.services-desc {
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.services-grid-item p {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+
+.contact-title {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   margin-bottom: 1rem;
 }
 
-.message-desc {
+.contact-desc {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.05em;

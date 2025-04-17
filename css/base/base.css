@@ -1,12 +1,11 @@
-/* body */
 body {
   margin: 0;
-  padding: 70px var(--sides-space) 0 var(--sides-space);
+  padding: 4rem 0 0 0;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   background-color: #fff;
   font-size: 1rem;
-  color: #000;
+  color: #222;
   font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 1.7;
@@ -15,9 +14,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* root */
 :root {
-  --sides-space: 2.5rem;
+  --sides-space: 4rem;
   --sides-space-small: 1rem;
   --bg-color: #fff;
   --text-color: #000;

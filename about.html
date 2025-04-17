@@ -7,7 +7,7 @@
       name="description"
       content="per-pjのポートフォリオサイトの自己紹介ページです。"
     />
-    <title>per-pj | About</title>
+    <title>per-pj - About</title>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/base/base.css" />
     <link rel="stylesheet" href="css/layout/header.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/picks.css" />
+    <link rel="stylesheet" href="css/contact-guide.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/base/typography.css" />
@@ -50,343 +52,238 @@
   <body>
     <!-- header -->
     <div id="header-container"></div>
-
-    <!-- main -->
-    <main id="about">
-      <!-- about -->
-      <section class="about-container">
-        <div class="profile-content">
-          <img
-            src="img/profile.jpg"
-            alt="プロフィール画像"
-            class="profile-img"
-          />
-          <h2 class="profile-title">per-pj</h2>
-          <p class="profile-desc">東京都・プロダクトデザイナー</p>
-          <p class="profile-desc">ポートフォリオ準備中</p>
-          <button class="message-btn" style="margin-top: 2rem">
-            <a href="https://forms.gle/f1VjgzjcUNBJVWAA9" target="_blank"
-              >メッセージ</a
-            >
-          </button>
-          <button class="message-btn" style="margin: 2rem 0 0 1rem">
-            <a href="https://per-pj-portfolio.netlify.app/" target="_blank"
-              >ポートフォリオ</a
-            >
-          </button>
+    <!-- about -->
+    <section class="about-container">
+      <div class="about-content">
+        <div class="about-item">
+          <img src="img/profile.jpg" alt="プロフィール画像" class="about-img" />
         </div>
-      </section>
-
-      <section class="about-container-small">
-        <div class="tabs">
-          <button class="tab-link active" data-tab="history">自己紹介</button>
-          <button class="tab-link" data-tab="experience">経験</button>
-          <button class="tab-link" data-tab="skills">スキル</button>
-          <button class="tab-link" data-tab="tools">ツール</button>
-        </div>
-        <div class="tab-content active" id="history">
-          <div class="tab-content-container">
-            <h4>略歴</h4>
-            <ul>
-              <li>
-                <p>
-                  リクルートホールディングス、クラウドワークス、トリッピースなど数社でインターンを経験
-                </p>
-              </li>
-              <li>
-                <p>
-                  リクルートホールディングスの新規事業開発インターンでチームリーダーを担当し、優秀賞を獲得
-                </p>
-              </li>
-              <li><p>2016年4月にスタートアップを創業</p></li>
-              <li>
-                <p>
-                  新規事業開発、プロダクトデザインを中心に様々な業務を横断的に経験
-                </p>
-              </li>
-              <li>
-                <p>
-                  現在、フリーランスのプロダクトデザイナーとして働いています
-                </p>
-              </li>
-            </ul>
-            <h4>最近作っているサービス</h4>
-            <ul>
-              <li>
-                <p>AIを活用したエンジニア向けの学習ツール</p>
-              </li>
-              <li>
-                <p>
-                  AIに関連するニュース記事を収集しパーソナライズするサービス
-                </p>
-              </li>
-              <li>
-                <p>
-                  GithubやBehanceなどのアカウント保有者のみログインできるテキストベースのSNSなど
-                </p>
-              </li>
-            </ul>
-            <h4>最近頑張っていること</h4>
-            <ul>
-              <li>
-                <p>Typescript, React, Next.js, Node.jsの学習</p>
-              </li>
-              <li>
-                <p>Pythonの学習</p>
-              </li>
-            </ul>
-            <h4>ちょっとユニークな経験</h4>
-            <ul>
-              <li><p>転勤族だったので、小学校と中学校だけで6校通った</p></li>
-              <li><p>離島の小さい学校では同級生がいなくて驚いた</p></li>
-              <li>
-                <p>
-                  イギリス留学中に宿なし無一文になるも、初対面の人に助けられ生き抜く
-                </p>
-              </li>
-              <li>
-                <p>
-                  ロンドンオリンピックの女子サッカー決勝の試合をスタジアムで無料で観戦
-                </p>
-              </li>
-              <li><p>100台以上の車にヒッチハイクで搭乗</p></li>
-              <li>
-                <p>
-                  バス停で仲良くなった外国人観光客の方とそのまま一緒にユニバに行った
-                </p>
-              </li>
-              <li><p>DAWソフトを用いた作曲・編曲ができる</p></li>
-              <li>
-                <p>
-                  音楽業界、テレビ番組、出版社、映画業界、イベント会社、飲食店でのアルバイトを経験
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="tab-content" id="experience">
-          <div class="tab-content-container">
-            <h4>これまでに作ってきた主な自社サービス</h4>
-            <ul>
-              <li>
-                <p>
-                  部活動の顧問の外部委託サービス→需要は強かったが、サービス利用までのプロセスが複雑でスタートアップ的なアプローチでは困難を極めた
-                </p>
-              </li>
-              <li>
-                <p>
-                  個人練習にスポーツの指導者を呼べるC2Cプラットフォーム→都心部では場所代なども必要で指導格差を感じているユーザーにとってはハードルが高く、また地方では指導者の母数が少ないことから長期的な成立が難しかった
-                </p>
-              </li>
-              <li>
-                <p>
-                  ビデオ通話に特化したスキル販売サービス→競合がビデオ通話機能をスタートし優位性が失われたのでピボット
-                </p>
-              </li>
-              <li>
-                <p>
-                  業務委託案件に特化したフリーランス向けマッチングアプリ→重要な意思決定に関する情報収集はPCで慎重に行うユーザーが多く、スマホファーストのUIとの親和性が低かった
-                </p>
-              </li>
-              <li>
-                <p>
-                  ショート動画有料Q&Aアプリ→無料のQ&Aに対する優位性を示すことが難しかった
-                </p>
-              </li>
-              <li>
-                <p>
-                  ボイスチャットアプリ→電車内や移動中など再生しにくく、コミュニケーションツールとしての機能を果たすことが難しかった
-                </p>
-              </li>
-              <li>
-                <p>
-                  インスタグラマーと企業をつなぐプラットフォーム→一気に競合で溢れかえりレッドオーシャン化し案件が獲得できなくなっていった
-                </p>
-              </li>
-              <li>
-                <p>
-                  センサーデータの販売プラットフォーム→セキュリティにも強くチャネルも確保している大資本の大手が参入し、また大手が加盟する協会や業界ルールなど立ち上がったため、事業の成立が困難
-                </p>
-              </li>
-              <li>
-                <p>リアル店舗型イベントプラットフォーム→コロナ禍で破談</p>
-              </li>
-              <li>
-                <p>
-                  フリーランス向けコワーキングスペース付きのシェアハウスなど→コロナ禍の長期化により破談
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="tab-content" id="skills">
-          <div class="tab-content-container">
-            <h4>新規事業</h4>
-            <ul>
-              <li>
-                <p>新規事業立ち上げ</p>
-              </li>
-              <li>
-                <p>市場調査、競合調査</p>
-              </li>
-              <li>
-                <p>ユーザーインタビューによる定量・定性調査</p>
-              </li>
-              <li>
-                <p>有識者に対するヒアリング実施</p>
-              </li>
-              <li>
-                <p>プロトタイピングおよびテストマーケティングなど</p>
-              </li>
-            </ul>
-            <h4>デザイン</h4>
-            <ul>
-              <li>
-                <p>
-                  Figmaを用いたWebサービス、モバイルアプリのUI/UX設計およびデザイン
-                </p>
-              </li>
-              <li>
-                <p>Figma, Illustratorなどを用いた簡易的なロゴデザイン</p>
-              </li>
-              <li>
-                <p>Figma, Illustrator, Photoshopを用いた簡易的な広告デザイン</p>
-              </li>
-              <li>
-                <p>Figma, Googleスライド, Keynoteを用いた資料作成</p>
-              </li>
-            </ul>
-            <h4>フロントエンド</h4>
-            <ul>
-              <li>
-                <p>
-                  HTML,
-                  CSSを用いたフロントエンドのデザイン・レスポンシブ対応・アニメーションの実装
-                </p>
-              </li>
-              <li>
-                <p>Bootstrap, Tailwind CSSなどのフレームワークを用いた開発</p>
-              </li>
-              <li>
-                <p>
-                  ジュニアレベル：Javascriptを用いたサービス開発、アニメーションの実装
-                </p>
-              </li>
-              <li>
-                <p>初心者レベル：Reactを用いた開発</p>
-              </li>
-            </ul>
-            <h4>バックエンド</h4>
-            <ul>
-              <li>
-                <p>初心者レベル：Node.jsを用いたAPI実装</p>
-              </li>
-            </ul>
-            <h4>マーケティング</h4>
-            <ul>
-              <li>
-                <p>
-                  小規模予算：SNSアカウント運用、Google広告運用、SNS広告運用、
-                  オウンドメディア記事作成、イベント企画および運営
-                </p>
-              </li>
-              <li>
-                <p>小規模アクセス：ABテストの実施によるクリエイティブの改善</p>
-              </li>
-            </ul>
-            <h4>営業</h4>
-            <ul>
-              <li>
-                <p>
-                  インフルエンサーマーケティング事業の営業戦略立案、営業目標管理、営業リスト作成、営業経験あり
-                </p>
-              </li>
-              <li><p>営業資料の作成</p></li>
-            </ul>
-            <h4>資金調達</h4>
-            <ul>
-              <li><p>国内有力VCおよび個人投資家に対するピッチ経験多数</p></li>
-              <li><p>ピッチ資料、事業計画書の作成</p></li>
-            </ul>
-            <h4>アライアンス</h4>
-            <ul>
-              <li>
-                <p>
-                  大手広告代理店、プロスポーツ球団、プロリーグ、スポーツ系マネジメント事務所との交渉経験あり
-                </p>
-              </li>
-              <li><p>提案企画、提案資料の作成</p></li>
-            </ul>
-            <h4>その他</h4>
-            <ul>
-              <li><p>小規模人数：採用設計、リファラル採用など</p></li>
-            </ul>
-          </div>
-        </div>
-        <div class="tab-content" id="tools">
-          <div class="tab-content-container">
-            <h4>デザイン</h4>
-            <ul>
-              <li><p>Figma, Sketch, Illustrator, Photoshopなど</p></li>
-            </ul>
-            <h4>開発</h4>
-            <ul>
-              <li>
-                <p>
-                  VSCode, Github, Sourcetree, Netlify, microCMS, Cloudflare,
-                  Firebaseなど
-                </p>
-              </li>
-            </ul>
-
-            <h4>分析</h4>
-            <ul>
-              <li><p>GoogleAnalyticsなど</p></li>
-            </ul>
-
-            <h4>生成AI</h4>
-            <ul>
-              <li>
-                <p>
-                  ChatGPT, Copilot, Gemini, Claude, Perplexity, Gensparkなど
-                </p>
-              </li>
-            </ul>
-
-            <h4>作業</h4>
-            <ul>
-              <li>
-                <p>
-                  Googleカレンダー, Notion, Googleドライブ, Trello, Todoist,
-                  Asana, Craft, NotebookLMなど
-                </p>
-              </li>
-            </ul>
-
-            <h4>コミュニケーション</h4>
-            <ul>
-              <li><p>Gmail, Slack, Teams, Google Meet, Discordなど</p></li>
-            </ul>
-            <h4>その他</h4>
-            <ul>
-              <li><p>WordPress, Elementor, Bubble, Studio, formrunなど</p></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-container">
-        <div class="message">
-          <h1 class="message-title">メッセージを送る</h1>
-          <p class="message-desc">あなたのアイデアをお聞かせください。</p>
-          <button class="message-btn">
+        <div class="about-item">
+          <h2 class="about-title">per-pj</h2>
+          <p class="about-desc">プロダクトデザイナー</p>
+          <button class="btn-primary" style="margin: 1rem 0 0 0">
             <a href="https://forms.gle/f1VjgzjcUNBJVWAA9" target="_blank"
               >メッセージ</a
             >
           </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <section class="tabs-container">
+      <div class="tabs">
+        <button class="tab-link active" data-tab="history">自己紹介</button>
+        <button class="tab-link" data-tab="skills">スキル</button>
+        <button class="tab-link" data-tab="tools">ツール</button>
+      </div>
+      <div class="tab-content active" id="history">
+        <div class="tab-content-container">
+          <h4>略歴</h4>
+          <ul>
+            <li>
+              <p>
+                大手、スタートアップなど数社でインターンを経験。リクルートホールディングスの新規事業開発インターンでチームリーダーを担当し、優秀賞を獲得。
+              </p>
+            </li>
+            <li>
+              <p>
+                2016年4月にスタートアップを創業。新規事業開発、プロダクトデザインを中心に様々な業務を横断的に経験。
+              </p>
+            </li>
+            <li>
+              <p>
+                現在、フリーランスのプロダクトデザイナーとしても働いています。
+              </p>
+            </li>
+          </ul>
+          <h4>最近趣味で作っているサービス</h4>
+          <ul>
+            <li>
+              <p>AIを活用したエンジニア向けの学習ツール</p>
+            </li>
+            <li>
+              <p>AIに関連するニュース記事を収集しパーソナライズするサービス</p>
+            </li>
+            <li>
+              <p>
+                GithubやBehanceなどのアカウント保有者のみログインできるテキストベースのSNSなど
+              </p>
+            </li>
+          </ul>
+          <h4>最近頑張っていること</h4>
+          <ul>
+            <li>
+              <p>Typescript, React, Next.js, Node.jsの学習</p>
+            </li>
+            <li>
+              <p>Pythonの学習</p>
+            </li>
+          </ul>
+          <h4>メッセージ</h4>
+          <ul>
+            <li>
+              <p>
+                トップページにこれまで開発してきた自社サービスの一部を掲載しています。ぜひご覧ください。per-pjをプロジェクトにアサインすることができます。お問い合わせをお待ちしております。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="skills">
+        <div class="tab-content-container">
+          <h4>新規事業</h4>
+          <ul>
+            <li>
+              <p>新規事業立ち上げ</p>
+            </li>
+            <li>
+              <p>市場調査、競合調査</p>
+            </li>
+            <li>
+              <p>ユーザーインタビューによる定量・定性調査</p>
+            </li>
+            <li>
+              <p>有識者に対するヒアリング実施</p>
+            </li>
+            <li>
+              <p>プロトタイピングおよびテストマーケティングなど</p>
+            </li>
+          </ul>
+          <h4>デザイン</h4>
+          <ul>
+            <li>
+              <p>
+                Figmaを用いたWebサービス、モバイルアプリのUI/UX設計およびデザイン
+              </p>
+            </li>
+            <li>
+              <p>Figma, Illustratorなどを用いた簡易的なロゴデザイン</p>
+            </li>
+            <li>
+              <p>Figma, Illustrator, Photoshopを用いた簡易的な広告デザイン</p>
+            </li>
+            <li>
+              <p>Figma, Googleスライド, Keynoteを用いた資料作成</p>
+            </li>
+          </ul>
+          <h4>フロントエンド</h4>
+          <ul>
+            <li>
+              <p>
+                HTML,
+                CSSを用いたフロントエンドのデザイン・レスポンシブ対応・アニメーションの実装
+              </p>
+            </li>
+            <li>
+              <p>Bootstrap, Tailwind CSSなどのフレームワークを用いた開発</p>
+            </li>
+            <li>
+              <p>
+                ジュニアレベル：Javascriptを用いたサービス開発、アニメーションの実装
+              </p>
+            </li>
+            <li>
+              <p>初心者レベル：Reactを用いた開発</p>
+            </li>
+          </ul>
+          <h4>バックエンド</h4>
+          <ul>
+            <li>
+              <p>初心者レベル：Node.jsを用いたAPI実装</p>
+            </li>
+          </ul>
+          <h4>マーケティング</h4>
+          <ul>
+            <li>
+              <p>
+                小規模予算：SNSアカウント運用、Google広告運用、SNS広告運用、
+                オウンドメディア記事作成、イベント企画および運営
+              </p>
+            </li>
+            <li>
+              <p>小規模アクセス：ABテストの実施によるクリエイティブの改善</p>
+            </li>
+          </ul>
+          <h4>営業</h4>
+          <ul>
+            <li>
+              <p>
+                インフルエンサーマーケティング事業の営業戦略立案、営業目標管理、営業リスト作成、営業経験あり
+              </p>
+            </li>
+            <li><p>営業資料の作成</p></li>
+          </ul>
+          <h4>資金調達</h4>
+          <ul>
+            <li><p>国内有力VCおよび個人投資家に対するピッチ経験多数</p></li>
+            <li><p>ピッチ資料、事業計画書の作成</p></li>
+          </ul>
+          <h4>アライアンス</h4>
+          <ul>
+            <li>
+              <p>
+                大手広告代理店、プロスポーツ球団、プロリーグ、スポーツ系マネジメント事務所との交渉経験あり
+              </p>
+            </li>
+            <li><p>提案企画、提案資料の作成</p></li>
+          </ul>
+          <h4>その他</h4>
+          <ul>
+            <li><p>小規模人数：採用設計、リファラル採用など</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="tools">
+        <div class="tab-content-container">
+          <h4>デザイン</h4>
+          <ul>
+            <li><p>Figma, Sketch, Illustrator, Photoshopなど</p></li>
+          </ul>
+          <h4>開発</h4>
+          <ul>
+            <li>
+              <p>
+                VSCode, Github, Sourcetree, Netlify, microCMS, Cloudflare,
+                Firebaseなど
+              </p>
+            </li>
+          </ul>
+
+          <h4>分析</h4>
+          <ul>
+            <li><p>GoogleAnalyticsなど</p></li>
+          </ul>
+
+          <h4>生成AI</h4>
+          <ul>
+            <li>
+              <p>ChatGPT, Copilot, Gemini, Claude, Perplexity, Gensparkなど</p>
+            </li>
+          </ul>
+
+          <h4>作業</h4>
+          <ul>
+            <li>
+              <p>
+                Googleカレンダー, Notion, Googleドライブ, Trello, Todoist,
+                Asana, Craft, NotebookLMなど
+              </p>
+            </li>
+          </ul>
+
+          <h4>コミュニケーション</h4>
+          <ul>
+            <li><p>Gmail, Slack, Teams, Google Meet, Discordなど</p></li>
+          </ul>
+          <h4>その他</h4>
+          <ul>
+            <li><p>WordPress, Elementor, Bubble, Studio, formrunなど</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!---------- contact-guide ---------->
+    <div id="contact-guide-container"></div>
     <!-- back-to-top -->
     <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
     <!-- footer -->

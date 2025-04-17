@@ -25,6 +25,10 @@ async function loadHeaderAndFooter() {
   const footerHtml = await footerResponse.text();
   document.getElementById('footer-container').innerHTML = footerHtml;
 
+  const picksResponse = await fetch('picks.html');
+  const picksHtml = await picksResponse.text();
+  document.getElementById('picks-container').innerHTML = picksHtml;
+
   // ヘッダーとフッターが読み込まれた後に、再度 DOM要素を取得してイベントリスナーを設定する
   const updatedToggleMenu = document.querySelector('.toggle-menu');
   const updatedNav = document.querySelector('.nav');
@@ -72,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// ========== btn
 const backToTopButton = document.getElementById('back-to-top');
 
 // スクロールが一定量を超えたらボタンを表示

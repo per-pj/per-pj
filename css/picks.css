@@ -1,0 +1,47 @@
+.picks {
+  margin: 0;
+  padding: 2rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.picks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.picks-grid-item {
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.picks-grid-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.tag {
+  background-color: #f6f6f6;
+  color: #222;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.picks-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.picks-desc {
+  font-size: 0.9rem;
+  color: #333;
+}

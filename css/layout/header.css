@@ -1,19 +1,18 @@
 .header {
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 1rem var(--sides-space);
+  padding: 1rem 3rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 10;
   box-sizing: border-box;
 }
 
-/* logo */
 .logo a {
   text-decoration: none;
 }
@@ -33,33 +32,33 @@
   transform: rotate(-8deg);
 }
 
-/* menu */
 .nav {
   display: flex;
   align-items: center;
 }
 
-.nav .nav-menu {
+.nav-menu {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.nav .nav-menu li {
-  margin-left: 2rem;
+.nav-menu li {
+  margin-left: 1.5rem;
 }
 
-.nav .nav-menu li a {
+.nav-menu li a {
   text-decoration: none;
   color: var(--text-color);
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.nav .nav-menu li a:hover {
-  opacity: 0.5;
-  transition: all 0.3s ease;
+.nav-menu li a:hover {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+  transition: all 0.1s ease;
 }
 
 .nav-menu i.fas {
