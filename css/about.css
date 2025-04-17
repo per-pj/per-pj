@@ -22,7 +22,7 @@
 }
 
 .about-img {
-  width: 20%;
+  width: 25%;
   height: auto;
   border-radius: 50%;
   margin: 0 auto;
@@ -51,16 +51,14 @@
   color: #aaa;
   border: none;
   border-bottom: 3px solid #fff;
-  padding: 0 1.5rem 1rem 1.5rem;
+  padding: 1rem;
   cursor: pointer;
   margin-right: 1rem;
   transition: background 0.3s;
 }
 
 .tab-link:hover {
-  background-color: #fff;
-  color: #aaa;
-  border-bottom: 3px solid #aaa;
+  color: #222;
 }
 
 .tab-link.active {

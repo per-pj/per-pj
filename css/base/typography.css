@@ -7,7 +7,7 @@
 }
 
 .top-desc {
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.03em;
   line-height: 1.7;
 }
@@ -21,7 +21,7 @@
 }
 
 .about-desc {
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.03em;
   line-height: 1.7;
 }
@@ -46,12 +46,11 @@
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  line-height: 80px;
   margin-bottom: 0.5rem;
 }
 
 .hero-desc {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #333;
   letter-spacing: 0.03em;
   line-height: 1.7;
@@ -59,7 +58,7 @@
 }
 
 .services-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 0.5rem;
@@ -67,13 +66,13 @@
 
 .services-desc {
   font-size: 1rem;
+  color: #333;
   letter-spacing: 0.03em;
   line-height: 1.7;
   margin-bottom: 1.5rem;
-  width: 100%;
 }
 
-h3 {
+.services-grid-item h3 {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -82,8 +81,6 @@ h3 {
 
 .services-grid-item p {
   font-size: 0.9rem;
-  color: #333;
-  font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 1.7;
 }

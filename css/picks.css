@@ -18,6 +18,10 @@
   margin-bottom: 1rem;
 }
 
+.picks-grid-item:hover {
+  transform: translateY(-5px);
+}
+
 .picks-grid-img {
   width: 100%;
   height: auto;
