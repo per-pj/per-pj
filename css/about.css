@@ -33,7 +33,7 @@
 /* tabs */
 .tabs-container {
   width: 60%;
-  padding: 2rem 0 8rem 0;
+  padding: 2rem 0 4rem 0;
   margin: 0 auto;
 }
 
@@ -77,13 +77,13 @@
 }
 
 .tab-content-container {
-  padding: 1rem;
+  padding: 2rem;
   text-align: left;
 }
 
 .tab-content-container ul {
   margin: 0;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.5rem;
 }
 
 /* icon */
