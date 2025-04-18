@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/base/typography.css" />
     <link rel="stylesheet" href="css/components/btn.css" />
     <link rel="stylesheet" href="css/layout/footer.css" />
@@ -67,10 +68,10 @@
     </section>
     <!-- services -->
     <section class="services-container">
-      <!--<div class="section-content">
-        <h2 class="services-title"></h2>
-        <p class="services-desc"></p>
-      </div>-->
+      <!-- <div class="section-content">
+        <h2 class="services-title">スキルセット</h2>
+        <p class="services-desc">あなたのプロジェクトのお手伝いをします。</p>
+      </div> -->
       <div class="services-grid">
         <div class="services-grid-item">
           <img src="img/plan.svg" alt="新規事業" />
@@ -116,21 +117,30 @@
         </div>
       </div>
     </section>
-    <!-- contact -->
-    <section class="contact-container">
-      <div class="contact-content">
-        <h1 class="contact-title">お問い合わせ</h1>
-        <p class="contact-desc">まずはお気軽にご連絡ください。</p>
-        <button class="btn-contact">
-          <a href="contact.html"
-            >無料で相談する<i
-              class="fa-solid fa-envelope"
-              style="margin-left: 0.5rem"
-            ></i
-          ></a>
-        </button>
+    <!---------- form ---------->
+    <div class="form-container">
+      <div class="form-content">
+        <h1>お問い合わせ</h1>
+        <p>
+          あなたのプロジェクトにアサインできます。まずはお気軽にご連絡ください。
+        </p>
+        <form action="https://formspree.io/f/mzzelpwq" method="POST">
+          <label>
+            お名前
+            <input type="text" name="name" />
+          </label>
+          <label>
+            メールアドレス
+            <input type="email" name="email" />
+          </label>
+          <label>
+            メッセージ
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">送信する</button>
+        </form>
       </div>
-    </section>
+    </div>
     <!-- back-to-top -->
     <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
     <!---------- footer ---------->

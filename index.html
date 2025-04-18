@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="css/layout/header.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/picks.css" />
-    <link rel="stylesheet" href="css/contact-guide.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/base/typography.css" />
     <link rel="stylesheet" href="css/components/btn.css" />
     <link rel="stylesheet" href="css/layout/footer.css" />
@@ -62,6 +62,28 @@
     </section>
     <!---------- picks ---------->
     <div id="picks-container"></div>
+    <!---------- form ---------->
+    <div class="form-container">
+      <div class="form-content">
+        <h1>お問い合わせ</h1>
+        <p>お気軽にご連絡ください。</p>
+        <form action="https://formspree.io/f/mzzelpwq" method="POST">
+          <label>
+            お名前
+            <input type="text" name="name" />
+          </label>
+          <label>
+            メールアドレス
+            <input type="email" name="email" />
+          </label>
+          <label>
+            メッセージ
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">送信する</button>
+        </form>
+      </div>
+    </div>
     <!-- back-to-top -->
     <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
     <!---------- footer ---------->
