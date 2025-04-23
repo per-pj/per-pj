@@ -4,8 +4,9 @@ description: '元プロスポーツ選手など経験豊富な指導者からマ
 tags: ['work', 'シェアリングエコノミー', 'スポーツ']
 thumbnail: /per-pj/assets/img/sports.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/sports/'
+permalink: '/works/{{ slug }}/'
 slug: 'sports'
+date: 2016-10-01
 ---
 
 ## 作成中

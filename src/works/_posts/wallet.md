@@ -4,8 +4,9 @@ description: '仲の良いグループで共通のウォレットを作成し、
 tags: ['work', 'フィンテック', 'モバイルアプリ']
 thumbnail: /per-pj/assets/img/wallet.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/wallet/'
+permalink: '/works/{{ slug }}/'
 slug: 'wallet'
+date: 2019-10-01
 ---
 
 ## 作成中

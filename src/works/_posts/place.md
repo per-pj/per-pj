@@ -4,8 +4,9 @@ description: 'コロナ禍の孤立の解消を目指す新しいライフスタ
 tags: ['work', '賃貸', '不動産']
 thumbnail: /per-pj/assets/img/place.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/place/'
+permalink: '/works/{{ slug }}/'
 slug: 'place'
+date: 2021-04-01
 ---
 
 ## 作成中

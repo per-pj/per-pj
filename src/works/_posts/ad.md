@@ -4,8 +4,9 @@ description: 'インフルエンサーを活用したい企業に対して最適
 tags: ['work', 'インフルエンサー', 'マーケティング']
 thumbnail: /per-pj/assets/img/ad.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/ad/'
+permalink: '/works/{{ slug }}/'
 slug: 'ad'
+date: 2018-10-01
 ---
 
 ## 作成中

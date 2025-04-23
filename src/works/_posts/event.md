@@ -4,8 +4,9 @@ description: '誰でも気軽にイベントを開催できるイベントスペ
 tags: ['work', '体験', 'オフライン']
 thumbnail: /per-pj/assets/img/event.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/event/'
+permalink: '/works/{{ slug }}/'
 slug: 'event'
+date: 2020-04-01
 ---
 
 ## 作成中

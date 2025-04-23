@@ -4,8 +4,9 @@ description: '顧問の負担を軽減するため外部の指導者に指導を
 tags: ['work', '教育機関向け', 'スポーツ']
 thumbnail: /per-pj/assets/img/school.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/school/'
+permalink: '/works/{{ slug }}/'
 slug: 'school'
+date: 2016-04-01
 recommended:
   - 'sports'
   - 'video'

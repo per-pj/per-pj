@@ -4,7 +4,7 @@ description: 'IoTサービス開発、ハードウェア開発におけるデー
 tags: ['work', 'IoT', 'BtoB']
 thumbnail: /per-pj/assets/img/data.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/data/'
+permalink: '/works/{{ slug }}/'
 slug: 'data'
 ---
 

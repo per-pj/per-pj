@@ -4,8 +4,9 @@ description: 'ユーザーに質問したり、質問に対する回答を有料
 tags: ['work', 'Q&A', 'コミュニティ']
 thumbnail: /per-pj/assets/img/qa.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/qa/'
+permalink: '/works/{{ slug }}/'
 slug: 'qa'
+date: 2017-10-01
 ---
 
 ## 作成中

@@ -4,8 +4,9 @@ description: '隙間時間にサクサク案件を探すことができるマッ
 tags: ['work', '人材', '採用']
 thumbnail: /per-pj/assets/img/job.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/job/'
+permalink: '/works/{{ slug }}/'
 slug: 'job'
+date: 2018-04-01
 ---
 
 ## 作成中
