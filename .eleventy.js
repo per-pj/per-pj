@@ -7,6 +7,9 @@ module.exports = function (eleventyConfig) {
   // パススルー: 静的アセットをコピー
   eleventyConfig.addPassthroughCopy('src/assets');
 
+  // pathPrefixの設定を追加
+  eleventyConfig.setPathPrefix('/[per-pj]/');
+
   // フィルター: slug 生成
   eleventyConfig.addFilter('slug', (str) =>
     slugify(str, { lower: true, remove: /[*+~.()'"!:@]/g })
