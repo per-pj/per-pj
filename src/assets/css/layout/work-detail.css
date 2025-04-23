@@ -1,0 +1,135 @@
+.work-detail-hero-container {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-bg-primary);
+  padding: 4rem 3rem 4rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.work-detail-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5rem;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.work-detail-hero-tags {
+  margin-top: 0;
+}
+
+.tag-large {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-black);
+  background-color: var(--color-tag);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.work-detail-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 1rem;
+}
+
+.work-detail-hero-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-top: 1rem;
+}
+
+.work-detail-hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  margin-top: 2rem;
+}
+
+.work-detail-content-container {
+  width: 90%;
+  padding: 2rem 0 6rem 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.work-detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+/* md text */
+.work-detail-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  line-height: normal;
+  margin: 1rem 0;
+}
+.work-detail-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  line-height: normal;
+  margin: 0.5rem 0;
+}
+.work-detail-content h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+  line-height: normal;
+  margin: 0.5rem 0;
+}
+.work-detail-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  line-height: normal;
+  margin: 0.5rem 0;
+}
+
+.work-detail-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.work-detail-content ul {
+  margin: 1rem 0 1rem 0;
+  padding: 0 0 0 2rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .work-detail-hero-container {
+    padding: 4rem 1rem;
+  }
+  .work-detail-hero-content {
+    width: 100%;
+  }
+  .work-detail-content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+title: per-pj - 私について
+meta_description: per-pj のポートフォリオサイトのプロフィールページです。
+---
+
+<section class="about-container">
+  <div class="about-content">
+    <div class="about-item">
+      <img src="/assets/img/profile.jpg" alt="プロフィール画像" class="about-img" />
+    </div>
+    <div class="about-item">
+      <h2 class="about-title">per-pj</h2>
+      <p class="about-desc">東京を拠点にプロダクトデザイナーとして働いています。</p>
+      <button class="btn-primary" style="margin: 1rem 0 0 0">
+        <a href="/contact/"
+          >メッセージ<i
+            class="fa-solid fa-envelope"
+            style="margin-left: 0.5rem"
+          ></i
+        ></a>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="tabs-container">
+  <div class="tabs">
+    <button class="tab-link active" data-tab="history">自己紹介</button>
+    <button class="tab-link" data-tab="skills">スキル</button>
+    <button class="tab-link" data-tab="tools">ツール</button>
+  </div>
+  <div class="tab-content active" id="history">
+    <div class="tab-content-container">
+     {{ "about/history.md" | mdFile | safe }}
+    </div>
+  </div>
+  <div class="tab-content" id="skills">
+    <div class="tab-content-container">
+     {{ "about/skills.md"  | mdFile | safe }}
+    </div>
+  </div>
+  <div class="tab-content" id="tools">
+    <div class="tab-content-container">
+     {{ "about/tools.md"   | mdFile | safe }}
+    </div>
+  </div>
+</section>

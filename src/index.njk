@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: per-pj
+meta_description: per-pj のポートフォリオサイトのトップページです。
+---
+
+<section class="top-container">
+  <div class="top-content">
+    <img
+      src="/assets/img/profile.jpg"
+      alt="プロフィール用のイラスト画像"
+      class="top-img"
+    />
+    <h1 class="top-title">per-pj</h1>
+    <p class="top-desc">プロダクトデザイナーのポートフォリオです。</p>
+    <button class="btn-primary">
+      <a href="/about/">私について</a>
+    </button>
+  </div>
+</section>
+
+ <!-- {% include "picks.njk" %} -->
+
+<div class="picks">
+    <div class="picks-grid">
+      {% for item in collections.works %}
+        <div class="picks-grid-item">
+          <a href="{{ item.url }}">
+            <img src="{{ item.data.thumbnail }}" alt="{{ item.data.title }}" class="picks-grid-img" />
+            
+            <div class="picks-tags">
+              {% for tag in item.data.tags %}
+                {% if tag != "work" %}
+                  <span class="tag">{{ tag }}</span>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+            <h2 class="picks-title">{{ item.data.title }}</h2>
+            <p class="picks-desc">{{ item.data.description }}</p>
+          </a>
+        </div>
+      {% else %}
+        <p>作品がひとつも見つかりませんでした。</p>
+      {% endfor %}
+    </div>
+  </div>
