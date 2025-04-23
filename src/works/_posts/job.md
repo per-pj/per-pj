@@ -2,9 +2,9 @@
 title: '業務委託案件に特化したフリーランス向けマッチングアプリ'
 description: '隙間時間にサクサク案件を探すことができるマッチングアプリ。'
 tags: ['work', '人材', '採用']
-thumbnail: /assets/img/job.jpg
+thumbnail: /per-pj/assets/img/job.jpg
 layout: layouts/work-detail.njk
-permalink: '/works/job/'
+permalink: '/per-pj/works/job/'
 slug: 'job'
 ---
 

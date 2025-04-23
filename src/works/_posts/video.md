@@ -2,9 +2,9 @@
 title: 'ビデオ通話に特化したスキル販売サービス'
 description: 'スマホひとつであなたのスキルを販売することができます。'
 tags: ['work', 'マーケットプレイス', 'CtoC']
-thumbnail: /assets/img/video.jpg
+thumbnail: /per-pj/assets/img/video.jpg
 layout: layouts/work-detail.njk
-permalink: '/works/video/'
+permalink: '/per-pj/works/video/'
 slug: 'video'
 ---
 

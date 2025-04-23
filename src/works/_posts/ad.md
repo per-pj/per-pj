@@ -2,9 +2,9 @@
 title: 'インスタグラマーと企業をつなぐプラットフォーム'
 description: 'インフルエンサーを活用したい企業に対して最適なインフルエンサーをアサイン。'
 tags: ['work', 'インフルエンサー', 'マーケティング']
-thumbnail: /assets/img/ad.jpg
+thumbnail: /per-pj/assets/img/ad.jpg
 layout: layouts/work-detail.njk
-permalink: '/works/ad/'
+permalink: '/per-pj/works/ad/'
 slug: 'ad'
 ---
 

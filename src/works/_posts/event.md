@@ -2,9 +2,9 @@
 title: 'リアル店舗型イベントプラットフォーム'
 description: '誰でも気軽にイベントを開催できるイベントスペースと会員専用コミュニティアプリ。'
 tags: ['work', '体験', 'オフライン']
-thumbnail: /assets/img/event.jpg
+thumbnail: /per-pj/assets/img/event.jpg
 layout: layouts/work-detail.njk
-permalink: '/works/event/'
+permalink: '/per-pj/works/event/'
 slug: 'event'
 ---
 
