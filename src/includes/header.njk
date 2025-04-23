@@ -1,15 +1,15 @@
 {# src/includes/header.njk #}
 <header class="header">
   <div class="logo">
-    <a href="{{ pathPrefix }}" class="logo-text" aria-label="Home">per-pj</a>
+    <a href="{{ '/' | url }}" class="logo-text" aria-label="Home">per-pj</a>
   </div>
   <nav class="nav">
     <ul class="nav-menu">
-      <li><a href="{{ pathPrefix }}">経験</a></li>
-      <li><a href="{{ pathPrefix }}about/">私について</a></li>
-      <li><a href="{{ pathPrefix }}services/">サービス</a></li>
+      <li><a href="{{ '/' | url }}">経験</a></li>
+      <li><a href="{{ '/about/' | url }}">私について</a></li>
+      <li><a href="{{ '/services/' | url }}">サービス</a></li>
       <li><a href="https://sizu.me/per_pj/" target="_blank">ブログ</a></li>
-      <li><a href="{{ pathPrefix }}contact/">お問い合わせ</a></li>
+      <li><a href="{{ '/contact/' | url }}">お問い合わせ</a></li>
     </ul>
   </nav>
 </header>
