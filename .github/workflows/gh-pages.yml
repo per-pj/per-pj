@@ -3,33 +3,40 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # main ブランチに push されたときにトリガーされる
+      - main # main ブランチに push されたときにトリガー
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    # デプロイに必要な権限を設定します
+    permissions:
+      contents: write # gh-pages ブランチへの書き込み権限
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4 # 最新バージョン (v4) に更新
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3 # 最新バージョンに変更
+        uses: actions/setup-node@v4 # 最新バージョン (v4) に更新
         with:
-          node-version: '18'
+          node-version: '18.x' # LTS バージョン (18.x) を指定 (プロジェクトに合わせて 20.x などに変更可能)
+          cache: 'npm' # npm のキャッシュを有効化
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci # package-lock.json に基づいてクリーンインストール
 
       - name: Build with Eleventy
-        run: npm run build # これで _site フォルダが生成されるはずです
+        run: npm run build # ビルドコマンドを実行
 
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "github-actions@github.com"
-          git add _site/*  # _site内のすべてのファイルを追加
-          git commit -m "Deploy to GitHub Pages"
-          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
-        env:
-          CI: false
+        uses: peaceiris/actions-gh-pages@v4 # デプロイ専用アクションを使用
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site # 公開するディレクトリ (Eleventy の出力先) を指定
+          # 必要に応じて他のオプションを追加できます:
+          # user_name: 'github-actions[bot]' # コミットユーザー名 (デフォルト)
+          # user_email: 'github-actions[bot]@users.noreply.github.com' # コミットユーザーEmail (デフォルト)
+          # commit_message: Deploy to GitHub Pages # コミットメッセージ (デフォルトはアクションが生成)
+          # keep_files: false # デプロイ前に gh-pages ブランチをクリーンにするか (デフォルト: false)
+          # cname: example.com # カスタムドメインを使用する場合
