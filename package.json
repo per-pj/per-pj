@@ -1,0 +1,27 @@
+{
+  "name": "per-pj",
+  "version": "1.0.0",
+  "description": "- [per-pj](https://per-pj.github.io/per-pj/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/per-pj/per-pj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/per-pj/per-pj/issues"
+  },
+  "homepage": "https://github.com/per-pj/per-pj#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4"
+  }
+}

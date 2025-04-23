@@ -1,0 +1,75 @@
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-secondary);
+}
+
+.form-content {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: var(--color-bg-primary);
+  border-radius: 0.5rem;
+}
+
+.form-content h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.form-content p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.form-content label {
+  display: block; /* labelをブロック要素にして改行 */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.form-content input[type='text'],
+.form-content input[type='email'],
+.form-content textarea {
+  width: calc(100% - 12px);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-content textarea {
+  min-height: 10rem;
+  resize: none;
+  width: 100%;
+}
+
+.form-content button[type='submit'] {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  font-weight: 400;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.form-content button[type='submit']:hover {
+  background-color: var(--color-btn-bg-hover);
+}

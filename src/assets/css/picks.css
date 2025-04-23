@@ -1,0 +1,63 @@
+.picks {
+  margin: 0;
+  padding: 2rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.picks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.picks-grid-item {
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.picks-grid-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.picks-grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.picks-grid-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.tag {
+  background-color: var(--color-tag);
+  color: var(--color-black);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.picks-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0.5rem 0 0.5rem 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.picks-desc {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.picks-grid-item a:hover .picks-title {
+  text-decoration: underline;
+}

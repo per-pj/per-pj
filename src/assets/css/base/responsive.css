@@ -1,0 +1,166 @@
+@media (max-width: 768px) {
+  body {
+    padding: 6rem 0 0 0;
+  }
+
+  .header {
+    padding: 1rem var(--sides-space-small);
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  /* menu */
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav .nav-menu li {
+    margin: 20px 0;
+  }
+
+  .nav .nav-menu li a {
+    color: #222;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  /* toggle */
+  .toggle-menu {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 21;
+    transform: translateY(-50%);
+  }
+
+  .toggle-menu.open span:nth-child(1) {
+    transform-origin: top right;
+    transform: rotate(-45deg);
+    background-color: #000;
+  }
+
+  .toggle-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-menu.open span:nth-child(3) {
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+    background-color: #000;
+  }
+
+  /* top */
+  .top-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .top-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .top-container {
+    padding: 0 0 3rem 0;
+  }
+
+  /* picks */
+  .picks {
+    padding: 2rem 1rem;
+  }
+
+  .picks-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  /* about */
+  .about-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .tabs-container {
+    width: 100%;
+  }
+
+  .tab-link {
+    font-size: 0.8rem;
+    border-bottom: 3px solid #fff;
+    padding: 0 1rem 1rem 1rem;
+    margin-right: 1rem;
+  }
+
+  /* SNS */
+  .social-links {
+    margin-top: 2rem;
+  }
+
+  /* servicecs */
+  .hero-container {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .services-container {
+    padding: 3rem 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid-item {
+    padding: 1rem;
+  }
+
+  .contact-container {
+    padding: 3rem 1rem;
+  }
+
+  .form-container {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .picks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

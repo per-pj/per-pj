@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+---
+
+{% block content %}
+  <div class="picks">
+    <div class="picks-grid">
+      {% for item in collections.works %}
+        <div class="picks-grid-item">
+          <a href="{{ item.url }}">
+            <img src="{{ item.data.thumbnail }}" alt="{{ item.data.title }}" class="picks-grid-img" />
+            
+            <div class="picks-tags">
+              {% for tag in item.data.tags %}
+                {% if tag != "work" %}
+                  <span class="tag">{{ tag }}</span>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+            <h2 class="picks-title">{{ item.data.title }}</h2>
+            <p class="picks-desc">{{ item.data.description }}</p>
+          </a>
+        </div>
+      {% else %}
+        <p>作品がひとつも見つかりませんでした。</p>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
