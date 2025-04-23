@@ -4,8 +4,9 @@ description: 'IoTサービス開発、ハードウェア開発におけるデー
 tags: ['work', 'IoT', 'BtoB']
 thumbnail: /per-pj/assets/img/data.jpg
 layout: layouts/work-detail.njk
-permalink: '/works/{{ slug }}/'
+permalink: '/per-pj/works/{{ slug }}/'
 slug: 'data'
+date: 2018-07-01
 ---
 
 ## 作成中

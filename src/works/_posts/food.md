@@ -4,7 +4,7 @@ description: '福利厚生として健康的な食事を社員の皆様に提供
 tags: ['work', '健康', 'オフライン']
 thumbnail: /per-pj/assets/img/food.jpg
 layout: layouts/work-detail.njk
-permalink: '/works/{{ slug }}/'
+permalink: '/per-pj/works/{{ slug }}/'
 slug: 'food'
 date: 2022-04-01
 ---

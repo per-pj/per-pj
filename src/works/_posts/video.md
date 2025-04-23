@@ -4,7 +4,7 @@ description: 'スマホひとつであなたのスキルを販売することが
 tags: ['work', 'マーケットプレイス', 'CtoC']
 thumbnail: /per-pj/assets/img/video.jpg
 layout: layouts/work-detail.njk
-permalink: '/works/{{ slug }}/'
+permalink: '/per-pj/works/{{ slug }}/'
 slug: 'video'
 date: 2017-04-01
 ---
