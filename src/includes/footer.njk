@@ -1,6 +1,7 @@
 {# src/includes/footer.njk #}
 <footer class="footer">
-  <nav aria-label="主要なリンク">
+ <div class="footer-flex">
+  <nav class="footer-item" aria-label="主要なリンク">
     <ul class="footer-menu">
       <li><a href="{{ '/' | url }}">経験</a></li>
       <li><a href="{{ '/about/' | url }}">私について</a></li>
@@ -9,7 +10,7 @@
       <li><a href="{{ '/contact/' | url }}">お問い合わせ</a></li>
     </ul>
   </nav>
-  <div class="social-links">
+  <div class="footer-item social-links">
     <a href="https://www.behance.net/per-pj" target="_blank">
       <img class="social-link"　src="{{ '/assets/img/behance.svg' | url }}" alt="Behance">
     </a>
