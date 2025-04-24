@@ -19,14 +19,12 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
   </div>
 </section>
 
- <!-- {% include "picks.njk" %} -->
-
 <div class="picks">
     <div class="picks-grid">
       {% for item in collections.works %}
         <div class="picks-grid-item">
-          <a href="{{ item.url }}">
-            <img src="{{ item.data.thumbnail }}" alt="{{ item.data.title }}" class="picks-grid-img" />
+          <a href="{{ item.url | url }}">
+            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="picks-grid-img" />
             
             <div class="picks-tags">
               {% for tag in item.data.tags %}
