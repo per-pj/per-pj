@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: per-pj - ブログ
+meta_description: per-pj のポートフォリオサイトのブログページです。
+---
+
+{% block content %}
+  <div class="post-list">
+    <h1>ブログ</h1>
+    <div class="post-list-grid">
+      {% for item in collections.blog %}
+        <div class="post-list-grid-item">
+          <a href="{{ item.url | url }}">
+            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
+            
+            <div class="post-list-tags">
+              {% for tag in item.data.tags %}
+                {% if tag != "blog" %}
+                  <span class="tag">{{ tag }}</span>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+            <h2 class="post-list-title">{{ item.data.title }}</h2>
+            <p class="post-list-desc">{{ item.data.description }}</p>
+          </a>
+        </div>
+      {% else %}
+        <p>作品がひとつも見つかりませんでした。</p>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

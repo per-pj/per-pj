@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: per-pj
+title: per-pj - ようこそ
 meta_description: per-pj のポートフォリオサイトのトップページです。
 ---
 
@@ -19,14 +19,14 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
   </div>
 </section>
 
-<div class="picks">
-    <div class="picks-grid">
+<div class="post-list">
+    <div class="post-list-grid">
       {% for item in collections.works %}
-        <div class="picks-grid-item">
+        <div class="post-list-grid-item">
           <a href="{{ item.url | url }}">
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="picks-grid-img" />
+            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
             
-            <div class="picks-tags">
+            <div class="post-list-tags">
               {% for tag in item.data.tags %}
                 {% if tag != "work" %}
                   <span class="tag">{{ tag }}</span>
@@ -34,8 +34,8 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
               {% endfor %}
             </div>
 
-            <h2 class="picks-title">{{ item.data.title }}</h2>
-            <p class="picks-desc">{{ item.data.description }}</p>
+            <h2 class="post-list-title">{{ item.data.title }}</h2>
+            <p class="post-list-desc">{{ item.data.description }}</p>
           </a>
         </div>
       {% else %}

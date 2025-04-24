@@ -1,4 +1,4 @@
-.work-detail-hero-container {
+.post-detail-hero-container {
   width: 100%;
   height: auto;
   background-color: var(--color-bg-primary);
@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.work-detail-hero-content {
+.post-detail-hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 
-.work-detail-hero-tags {
+.post-detail-hero-tags {
   margin-top: 0;
 }
 
@@ -37,21 +37,21 @@
   display: inline-block;
 }
 
-.work-detail-hero-title {
+.post-detail-hero-title {
   font-size: 3rem;
   font-weight: 700;
   color: #000;
   margin-top: 1rem;
 }
 
-.work-detail-hero-desc {
+.post-detail-hero-desc {
   font-size: 1rem;
   font-weight: 500;
   color: #000;
   margin-top: 1rem;
 }
 
-.work-detail-hero-img {
+.post-detail-hero-img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
@@ -59,14 +59,14 @@
   margin-top: 2rem;
 }
 
-.work-detail-content-container {
+.post-detail-content-container {
   width: 90%;
   padding: 2rem 0 6rem 0;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-.work-detail-content {
+.post-detail-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -80,28 +80,28 @@
 }
 
 /* md text */
-.work-detail-content h1 {
+.post-detail-content h1 {
   font-size: 2rem;
   font-weight: 700;
   color: #000;
   line-height: normal;
   margin: 1rem 0;
 }
-.work-detail-content h2 {
+.post-detail-content h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #000;
   line-height: normal;
   margin: 0.5rem 0;
 }
-.work-detail-content h3 {
+.post-detail-content h3 {
   font-size: 1.2rem;
   font-weight: 500;
   color: #000;
   line-height: normal;
   margin: 0.5rem 0;
 }
-.work-detail-content p {
+.post-detail-content p {
   font-size: 1rem;
   font-weight: 400;
   color: #000;
@@ -109,27 +109,27 @@
   margin: 0.5rem 0;
 }
 
-.work-detail-content img {
+.post-detail-content img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
   margin: 2rem 0;
 }
 
-.work-detail-content ul {
+.post-detail-content ul {
   margin: 1rem 0 1rem 0;
   padding: 0 0 0 2rem;
   margin: 0.5rem 0;
 }
 
 @media (max-width: 768px) {
-  .work-detail-hero-container {
+  .post-detail-hero-container {
     padding: 4rem 1rem;
   }
-  .work-detail-hero-content {
+  .post-detail-hero-content {
     width: 100%;
   }
-  .work-detail-content {
+  .post-detail-content {
     width: 100%;
   }
 }

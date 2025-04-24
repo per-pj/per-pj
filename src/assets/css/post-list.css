@@ -1,33 +1,39 @@
-.picks {
+.post-list {
   margin: 0;
   padding: 2rem 3rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-.picks-grid {
+.post-list h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.post-list-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-.picks-grid-item {
+.post-list-grid-item {
   text-align: left;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   margin-bottom: 1rem;
 }
 
-.picks-grid-item a {
+.post-list-grid-item a {
   text-decoration: none;
   color: inherit;
 }
 
-.picks-grid-item:hover {
+.post-list-grid-item:hover {
   transform: translateY(-5px);
 }
 
-.picks-grid-img {
+.post-list-grid-img {
   width: 100%;
   height: auto;
   display: block;
@@ -44,7 +50,7 @@
   border-radius: 0.5rem;
 }
 
-.picks-title {
+.post-list-title {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: normal;
@@ -53,11 +59,11 @@
   color: #000;
 }
 
-.picks-desc {
+.post-list-desc {
   font-size: 0.9rem;
   color: #000;
 }
 
-.picks-grid-item a:hover .picks-title {
+.post-list-grid-item a:hover .post-list-title {
   text-decoration: underline;
 }

@@ -91,12 +91,12 @@
     padding: 0 0 3rem 0;
   }
 
-  /* picks */
-  .picks {
+  /* post-list */
+  .post-list {
     padding: 2rem 1rem;
   }
 
-  .picks-grid {
+  .post-list-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
   }
@@ -154,7 +154,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .picks-grid {
+  .post-list-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }

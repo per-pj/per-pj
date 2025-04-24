@@ -1,16 +1,19 @@
 ---
 layout: layouts/base.njk
+title: per-pj - ポートフォリオ
+meta_description: per-pj のポートフォリオサイトの作品一覧ページです。
 ---
 
 {% block content %}
-  <div class="picks">
-    <div class="picks-grid">
+  <div class="post-list">
+    <h1>ポートフォリオ</h1>
+    <div class="post-list-grid">
       {% for item in collections.works %}
-        <div class="picks-grid-item">
+        <div class="post-list-grid-item">
           <a href="{{ item.url | url }}">
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="picks-grid-img" />
+            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
             
-            <div class="picks-tags">
+            <div class="post-list-tags">
               {% for tag in item.data.tags %}
                 {% if tag != "work" %}
                   <span class="tag">{{ tag }}</span>
@@ -18,8 +21,8 @@ layout: layouts/base.njk
               {% endfor %}
             </div>
 
-            <h2 class="picks-title">{{ item.data.title }}</h2>
-            <p class="picks-desc">{{ item.data.description }}</p>
+            <h2 class="post-list-title">{{ item.data.title }}</h2>
+            <p class="post-list-desc">{{ item.data.description }}</p>
           </a>
         </div>
       {% else %}
