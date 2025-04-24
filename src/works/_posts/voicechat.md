@@ -4,7 +4,7 @@ description: '音声でのやりとりに特化したコミュニケーション
 tags: ['work', 'コミュニケーション', 'toC']
 thumbnail: /per-pj/assets/img/voicechat.jpg
 layout: layouts/work-detail.njk
-permalink: '/per-pj/works/{{ slug }}/'
+permalink: '/works/{{ slug }}/'
 slug: 'voicechat'
 date: 2019-04-01
 ---
