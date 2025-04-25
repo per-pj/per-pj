@@ -1,0 +1,12 @@
+<a href="{{ item.url | url }}" class="post-card">
+  {% set img = item.data.thumbnail or item.data.image %}
+  {% if img %}
+    <img src="{{ img | url }}" alt="{{ item.data.title }}" class="post-card-image">
+  {% endif %}
+  <div class="post-card-content">
+    <h3 class="post-card-title">{{ item.data.title }}</h3>
+    {% if item.data.description %}
+      <p class="post-card-desc">{{ item.data.description }}</p>
+    {% endif %}
+  </div>
+</a>

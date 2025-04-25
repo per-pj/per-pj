@@ -21,4 +21,28 @@ layout: layouts/base.njk
   </div>
 </section>
 
+{% set recommendedSlugs = recommended or [] %}
+{% set filteredItems = [] %}
+
+{% for p in collections.blog %}
+  {% if p.data.slug in recommendedSlugs %}
+    {% set filteredItems = filteredItems.concat([p]) %}
+  {% endif %}
+{% endfor %}
+
+{% set recommendedItems = filteredItems.slice(0, 6) %}
+
+{% if recommendedItems.length %}
+  <section class="recommended">
+    <h2 class="recommended-title">おすすめの記事</h2>
+    <div class="post-list-scroll">
+      {% for item in recommendedItems %}
+        {% include "layouts/card.njk" %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+
+
 

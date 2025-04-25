@@ -7,6 +7,13 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'wallet'
 date: 2019-10-01
+recommended:
+  - 'sports'
+  - 'video'
+  - 'job'
+  - 'qa'
+  - 'data'
+  - 'wallet'
 ---
 
 ## 作成中

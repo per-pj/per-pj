@@ -7,6 +7,13 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'video'
 date: 2017-04-01
+recommended:
+  - 'sports'
+  - 'video'
+  - 'job'
+  - 'qa'
+  - 'data'
+  - 'wallet'
 ---
 
 ## 作成中
