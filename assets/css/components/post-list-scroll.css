@@ -1,0 +1,30 @@
+.post-list-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+.post-list-scroll > * {
+  flex: 0 0 calc((100% - 2rem - 2rem) / 3); /* gapとpadding考慮して3件表示 */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* スクロールバー非表示 */
+.post-list-scroll::-webkit-scrollbar {
+  display: none;
+}
+.post-list-scroll {
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .post-list-scroll > * {
+    flex: 0 0 80%;
+  }
+}
