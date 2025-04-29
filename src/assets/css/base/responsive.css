@@ -78,17 +78,25 @@
 
   /* top */
   .top-img {
-    width: 80%;
+    width: 60%;
     height: auto;
   }
 
   .top-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
   }
 
   .top-container {
     padding: 0 0 3rem 0;
+  }
+
+  .banner-container {
+    padding: 0 1rem;
+  }
+
+  .banner {
+    padding: 1rem;
   }
 
   /* post-list */
@@ -102,17 +110,25 @@
   }
 
   /* about */
+  .about-container {
+    padding: 0 0 3rem 0;
+  }
+
+  .about-title {
+    font-size: 2.8rem;
+  }
+
   .about-img {
-    width: 80%;
+    width: 60%;
     height: auto;
   }
 
   .tabs-container {
-    width: 100%;
+    width: 90%;
   }
 
   .tab-link {
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-bottom: 3px solid #fff;
     padding: 0 1rem 1rem 1rem;
     margin-right: 1rem;

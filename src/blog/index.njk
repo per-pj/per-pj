@@ -7,7 +7,7 @@ meta_description: per-pj のポートフォリオサイトのブログページ�
 {% block content %}
   <div class="post-list">
     <h1>ブログ</h1>
-    <div class="post-list-grid">
+    <div class="post-list-grid" id="blog-items-container">
       {% for item in collections.blog %}
         <div class="post-list-grid-item">
           <a href="{{ item.url | url }}">
@@ -29,5 +29,10 @@ meta_description: per-pj のポートフォリオサイトのブログページ�
         <p>作品がひとつも見つかりませんでした。</p>
       {% endfor %}
     </div>
+
+    <nav class="pagination" id="pagination-nav">
+      {# JSによってここにリンクが追加されます #}
+    </nav>
+
   </div>
 {% endblock %}

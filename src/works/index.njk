@@ -6,10 +6,10 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
 
 {% block content %}
   <div class="post-list">
-    <h1>ポートフォリオ</h1>
-    <div class="post-list-grid">
+    <h1>プロジェクト</h1>
+    <div class="post-list-grid" id="portfolio-grid">
       {% for item in collections.works %}
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
             
@@ -29,5 +29,10 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
         <p>作品がひとつも見つかりませんでした。</p>
       {% endfor %}
     </div>
+
+    {% if collections.works.length > 6 %}
+      <button id="load-more-button" style="display: block; margin: 20px auto;">+</button> {# 簡単なスタイル例 #}
+    {% endif %}
+
   </div>
 {% endblock %}

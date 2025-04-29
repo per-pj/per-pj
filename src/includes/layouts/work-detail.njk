@@ -11,6 +11,7 @@ layout: layouts/base.njk
     </div>
     <h1 class="post-detail-hero-title">{{ title }}</h1>
     <p class="post-detail-hero-desc">{{ description }}</p>
+    <p class="share-link-text copy-trigger">共有🔗</p>
     <img src="{{ thumbnail | url }}" alt="{{ title }}" class="post-detail-hero-img" />
   </div>
 </section>
@@ -18,6 +19,26 @@ layout: layouts/base.njk
 <section class="post-detail-content-container">
   <div class="post-detail-content">
     {{ content | safe }}
+  </div>
+</section>
+
+<p class="share-link-text copy-trigger">共有🔗</p>
+
+<section class="credit-container">
+  <div class="credit-content">
+    <div class="credit-info">
+      <img
+        src="{{ '/assets/img/profile.jpg' | url }}"
+        alt="プロフィール用のイラスト画像"
+      />
+      <div class="credit-details">
+        <h3>per-pj</h3>
+        <p>プロダクトデザイナー</p>
+      </div>
+    </div>
+    <button class="btn-primary">
+      <a href="#">メッセージ</a>
+    </button>
   </div>
 </section>
 
