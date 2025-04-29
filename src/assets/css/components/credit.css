@@ -1,0 +1,68 @@
+.credit-container {
+  width: 100%;
+  padding: 2rem 3rem 6rem 3rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-content {
+  width: 60%;
+  max-width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--color-bg-secondary);
+  border-radius: 4px;
+}
+
+.credit-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.credit-info img {
+  width: 5rem;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  margin: 0;
+  display: block;
+  flex-shrink: 0;
+}
+
+.credit-details {
+  width: 100%;
+}
+
+.credit-details h3 {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+}
+
+.credit-details p {
+  font-size: 1rem;
+  color: var(--color-black);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* === share link === */
+.share-link-text {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--color-link);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.share-link-text:hover {
+  opacity: 0.8;
+}
