@@ -82,3 +82,17 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+.portfolio-item.hidden {
+  display: none;
+}
+
+#load-more-button {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

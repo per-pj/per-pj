@@ -15,12 +15,18 @@
   scroll-snap-stop: always;
 }
 
-/* スクロールバー非表示 */
+/* スクロールバー */
 .post-list-scroll::-webkit-scrollbar {
-  display: none;
+  height: 8px;
 }
-.post-list-scroll {
-  scrollbar-width: none;
+
+.post-list-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.post-list-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) {

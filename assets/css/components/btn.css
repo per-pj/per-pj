@@ -1,7 +1,7 @@
 /* primary */
 .btn-primary {
   background-color: var(--color-btn-bg);
-  padding: 0.9rem 1.6rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;

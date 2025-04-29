@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="/per-pj/assets/css/components/btn.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/post-list-scroll.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/post-card.css" />
+    <link rel="stylesheet" href="/per-pj/assets/css/components/credit.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/base/responsive.css" />
     <link
       rel="stylesheet"
@@ -54,15 +55,18 @@
   </head>
   <body>
     
+<div class="fixed-banner">
+  <a href="/per-pj/services/">現在、フリーランス・フルタイムに対応可能🎉</a>
+</div>
 <header class="header">
   <div class="logo">
     <a href="/per-pj/" class="logo-text" aria-label="Home">per-pj</a>
   </div>
   <nav class="nav">
     <ul class="nav-menu">
-      <li><a href="/per-pj/about/">私について</a></li>
-      <li><a href="/per-pj/works/">経験</a></li>
-      <li><a href="/per-pj/services/">サービス</a></li>
+      <li><a href="/per-pj/about/">プロフィール</a></li>
+      <li><a href="/per-pj/services/">ソリューション</a></li>
+      <li><a href="/per-pj/works/">プロジェクト</a></li>
       <li><a href="/per-pj/blog/">ブログ</a></li>
       <li><a href="/per-pj/contact/">お問い合わせ</a></li>
     </ul>
@@ -74,10 +78,10 @@
       
 
   <div class="post-list">
-    <h1>ポートフォリオ</h1>
-    <div class="post-list-grid">
+    <h1>プロジェクト</h1>
+    <div class="post-list-grid" id="portfolio-grid">
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/school/">
             <img src="/per-pj/assets/img/school.jpg" alt="部活動の顧問の外部委託サービス" class="post-list-grid-img" />
             
@@ -100,7 +104,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/sports/">
             <img src="/per-pj/assets/img/sports.jpg" alt="個人練習にスポーツの指導者を呼べるプラットフォーム" class="post-list-grid-img" />
             
@@ -123,7 +127,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/video/">
             <img src="/per-pj/assets/img/video.jpg" alt="ビデオ通話に特化したスキル販売サービス" class="post-list-grid-img" />
             
@@ -146,7 +150,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/qa/">
             <img src="/per-pj/assets/img/qa.jpg" alt="ショート動画有料Q&amp;Aアプリ" class="post-list-grid-img" />
             
@@ -169,7 +173,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/job/">
             <img src="/per-pj/assets/img/job.jpg" alt="業務委託案件に特化したフリーランス向けマッチングアプリ" class="post-list-grid-img" />
             
@@ -192,7 +196,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/data/">
             <img src="/per-pj/assets/img/data.jpg" alt="センサーデータの販売プラットフォーム" class="post-list-grid-img" />
             
@@ -215,7 +219,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/ad/">
             <img src="/per-pj/assets/img/ad.jpg" alt="インスタグラマーと企業をつなぐプラットフォーム" class="post-list-grid-img" />
             
@@ -238,7 +242,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/voicechat/">
             <img src="/per-pj/assets/img/voicechat.jpg" alt="ティーン向けボイスチャットアプリ" class="post-list-grid-img" />
             
@@ -261,7 +265,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/wallet/">
             <img src="/per-pj/assets/img/wallet.jpg" alt="友人と共通のウォレットを持てるアプリ" class="post-list-grid-img" />
             
@@ -284,7 +288,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/event/">
             <img src="/per-pj/assets/img/event.jpg" alt="リアル店舗型イベントプラットフォーム" class="post-list-grid-img" />
             
@@ -307,7 +311,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/place/">
             <img src="/per-pj/assets/img/place.jpg" alt="フリーランス向けコワーキングスペース付きのシェアハウス" class="post-list-grid-img" />
             
@@ -330,7 +334,7 @@
           </a>
         </div>
       
-        <div class="post-list-grid-item">
+        <div class="post-list-grid-item  portfolio-item">
           <a href="/per-pj/works/food/">
             <img src="/per-pj/assets/img/food.jpg" alt="健康的な食事に特化した社食のアウトソーシング" class="post-list-grid-img" />
             
@@ -354,6 +358,11 @@
         </div>
       
     </div>
+
+    
+      <button id="load-more-button" style="display: block; margin: 20px auto;">+</button> 
+    
+
   </div>
 
 
@@ -391,9 +400,9 @@
  <div class="footer-flex">
   <nav class="footer-item" aria-label="主要なリンク">
     <ul class="footer-menu">
-      <li><a href="/per-pj/about/">私について</a></li>
-      <li><a href="/per-pj/works/">経験</a></li>
-      <li><a href="/per-pj/services/">サービス</a></li>
+      <li><a href="/per-pj/about/">プロフィール</a></li>
+      <li><a href="/per-pj/services/">ソリューション</a></li>
+      <li><a href="/per-pj/works/">プロジェクト</a></li>
       <li><a href="/per-pj/blog/">ブログ</a></li>
       <li><a href="/per-pj/contact/">お問い合わせ</a></li>
     </ul>

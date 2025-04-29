@@ -1,5 +1,6 @@
 .recommended {
-  padding: 2rem 3rem;
+  padding: 3rem;
+  background-color: var(--color-bg-primary);
 }
 
 .recommended-title {

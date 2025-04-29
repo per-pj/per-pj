@@ -1,7 +1,7 @@
 /* about */
 .about-container {
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 3rem 3rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -19,10 +19,12 @@
 
 .about-item {
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .about-img {
-  width: 25%;
+  width: 20%;
   height: auto;
   border-radius: 50%;
   border: 1px solid var(--color-border);
@@ -33,7 +35,7 @@
 /* tabs */
 .tabs-container {
   width: 60%;
-  padding: 2rem 0 4rem 0;
+  padding: 0 0 4rem 0;
   margin: 0 auto;
 }
 

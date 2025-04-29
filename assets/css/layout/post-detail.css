@@ -45,7 +45,7 @@
 }
 
 .post-detail-hero-desc {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #000;
   margin-top: 1rem;
@@ -102,7 +102,7 @@
   margin: 0.5rem 0;
 }
 .post-detail-content p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: #000;
   line-height: normal;
@@ -117,6 +117,7 @@
 }
 
 .post-detail-content ul {
+  font-size: 1.05rem;
   margin: 1rem 0 1rem 0;
   padding: 0 0 0 2rem;
   margin: 0.5rem 0;
