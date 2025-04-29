@@ -34,7 +34,7 @@
 
 .banner {
   width: 100%;
-  background-color: #f1efe7;
+  background-color: var(--color-bg-secondary);
   text-align: center;
   padding: 2rem 0;
   display: flex;
