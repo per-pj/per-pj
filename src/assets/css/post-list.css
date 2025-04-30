@@ -1,6 +1,6 @@
 .post-list {
   margin: 0;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 0 3rem 4rem 3rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -8,7 +8,8 @@
 .post-list h1 {
   font-size: 2.2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.08em;
 }
 
 .post-list-grid {
@@ -52,7 +53,7 @@
 .tag {
   background-color: var(--color-tag);
   color: var(--color-black);
-  padding: 0.4rem 0.6rem;
+  padding: 0.3rem 0.6rem;
   font-size: 0.8rem;
   font-weight: 500;
   border-radius: 0.5rem;
@@ -82,7 +83,7 @@
 }
 
 .pagination {
-  margin: 4rem 0;
+  margin: 4rem 0 2rem 0;
   text-align: center;
 }
 

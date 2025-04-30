@@ -4,18 +4,16 @@ title: per-pj - ようこそ
 meta_description: per-pj のポートフォリオサイトのトップページです。
 ---
 
-<section class="top-container">
-  <div class="top-content">
-    <img
-      src="{{ '/assets/img/profile.jpg' | url }}"
-      alt="プロフィール用のイラスト画像"
-      class="top-img"
-    />
-    <h1 class="top-title">per-pj</h1>
-    <p class="top-desc">東京を拠点にプロダクトデザイナーとして働いています。</p>
+<section class="hero-container">
+  <div class="hero-content">
+    <h1 class="hero-title">ポートフォリオ</h1>
+    <p class="hero-desc">
+      プロダクトデザイナーとして企画、開発してきたサービスを公開。
+    </p>
     <button class="btn-primary">
       <a href="{{ '/about/' | url }}">私について</a>
     </button>
+    <img src="{{ '/assets/img/top-hero.jpg' | url }}" alt="オフィス" class="hero-img" />
   </div>
 </section>
 
@@ -46,7 +44,6 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
         <p>作品がひとつも見つかりませんでした。</p>{%- endfor -%}
     </div>
 
-    {# ポートフォリオの「全て見る」ボタン #}
     <div class="see-all-button-container" style="text-align: center; margin-top: 2rem;">
       <button class="btn-primary"><a href="{{ '/works/' | url }}">全て表示</a></button>
     </div>
@@ -54,9 +51,9 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 
 {# --- ブログセクション --- #}
 <section class="post-list">
-    <h1>ブログ</h1>
+    <h1>最新情報</h1>
     {# post-list-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="post-list-grid">{%- for item in (collections.blog.slice(0, 6)) -%}
+    <div class="post-list-grid">{%- for item in (collections.blog.slice(0, 3)) -%}
         <div class="post-list-grid-item">
           <a href="{{ item.url | url }}">
             {% if item.data.thumbnail %}
@@ -76,7 +73,6 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
         <p>ブログ記事がひとつも見つかりませんでした。</p>{%- endfor -%}
     </div>
 
-    {# ブログの「全て見る」ボタン #}
     <div class="see-all-button-container" style="text-align: center; margin-top: 2rem;">
       <button class="btn-primary"><a href="{{ '/blog/' | url }}">全て表示</a></button>
     </div>
