@@ -25,27 +25,59 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
   </div>
 </section>
 
-<div class="post-list">
-    <div class="post-list-grid">
-      {% for item in collections.works %}
+{# --- ポートフォリオセクション --- #}
+<section class="post-list">
+    <h1>プロジェクト</h1>
+
+    {# post-list-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
+    <div class="post-list-grid">{%- for item in (collections.works.slice(0, 6)) -%}
         <div class="post-list-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
-            
-            <div class="post-list-tags">
-              {% for tag in item.data.tags %}
-                {% if tag != "work" %}
-                  <span class="tag">{{ tag }}</span>
-                {% endif %}
-              {% endfor %}
-            </div>
+
+            {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
+            <div class="post-list-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>
 
             <h2 class="post-list-title">{{ item.data.title }}</h2>
             <p class="post-list-desc">{{ item.data.description }}</p>
           </a>
-        </div>
-      {% else %}
-        <p>作品がひとつも見つかりませんでした。</p>
-      {% endfor %}
+        </div>{%- else -%}
+        {# .slice() メソッドの結果が空の場合はここが表示されますが、通常は表示されないはずです #}
+        <p>作品がひとつも見つかりませんでした。</p>{%- endfor -%}
     </div>
-  </div>
+
+    {# ポートフォリオの「全て見る」ボタン #}
+    <div class="see-all-button-container" style="text-align: center; margin-top: 2rem;">
+      <button class="btn-primary"><a href="{{ '/works/' | url }}">全て表示</a></button>
+    </div>
+</section>
+
+{# --- ブログセクション --- #}
+<section class="post-list">
+    <h1>ブログ</h1>
+    {# post-list-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
+    <div class="post-list-grid">{%- for item in (collections.blog.slice(0, 3)) -%}
+        <div class="post-list-grid-item">
+          <a href="{{ item.url | url }}">
+            {% if item.data.thumbnail %}
+              <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
+            {% endif %}
+
+            {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
+            <div class="post-list-tags">{%- for tag in item.data.tags -%}{%- if tag != "blog" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>
+
+            <h3 class="post-list-title">{{ item.data.title }}</h3>
+            {% if item.data.description %}
+              <p class="post-list-desc">{{ item.data.description }}</p>
+            {% endif %}
+          </a>
+        </div>{%- else -%}
+        {# .slice() メソッドの結果が空の場合はここが表示されますが、通常は表示されないはずです #}
+        <p>ブログ記事がひとつも見つかりませんでした。</p>{%- endfor -%}
+    </div>
+
+    {# ブログの「全て見る」ボタン #}
+    <div class="see-all-button-container" style="text-align: center; margin-top: 2rem;">
+      <button class="btn-primary"><a href="{{ '/blog/' | url }}">全て表示</a></button>
+    </div>
+</section>

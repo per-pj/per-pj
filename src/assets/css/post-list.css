@@ -15,13 +15,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  grid-auto-flow: row dense;
+  align-items: start;
 }
 
 .post-list-grid-item {
   text-align: left;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  margin-bottom: 1rem;
+  align-self: start;
 }
 
 .post-list-grid-item a {
@@ -39,6 +41,12 @@
   display: block;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
+}
+
+.post-list-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .tag {
