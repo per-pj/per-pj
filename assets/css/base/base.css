@@ -17,7 +17,7 @@ body {
 :root {
   --color-bg-primary: #fff;
   --color-bg-secondary: #f5f5f5;
-  --color-tag: #f2c37d;
+  --color-tag: #eabb6f;
   --color-black: #000;
   --color-border: #dcdcdc;
   --color-btn-bg: #000;
@@ -28,7 +28,7 @@ body {
   --color-copyright: #555;
   --color-tab: #aaa;
   --color-tab-active: #000;
-  --color-bg-header-banner: var(--color-bg-secondary);
+  --color-bg-header-banner: var(--color-tag);
   --sides-space: 4rem;
   --sides-space-small: 1rem;
 }
