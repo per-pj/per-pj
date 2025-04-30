@@ -60,3 +60,18 @@
   font-weight: 500;
   border-radius: 0.5rem;
 }
+
+/* sp */
+@media (max-width: 768px) {
+  .recommended {
+    padding: 2rem 1rem;
+  }
+
+  .post-card-title {
+    font-size: 1.5rem;
+  }
+
+  .post-card-desc {
+    font-size: 0.8rem;
+  }
+}
