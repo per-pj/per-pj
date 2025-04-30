@@ -78,7 +78,7 @@
 
   /* top */
   .top-img {
-    width: 60%;
+    width: 50%;
     height: auto;
   }
 
@@ -88,7 +88,7 @@
   }
 
   .top-container {
-    padding: 0 0 3rem 0;
+    padding: 1rem 0 3rem 0;
   }
 
   .banner-container {
@@ -111,7 +111,7 @@
 
   /* about */
   .about-container {
-    padding: 0 0 3rem 0;
+    padding: 1rem 0 3rem 0;
   }
 
   .about-title {
@@ -119,7 +119,7 @@
   }
 
   .about-img {
-    width: 60%;
+    width: 50%;
     height: auto;
   }
 
