@@ -56,7 +56,7 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 <section class="post-list">
     <h1>ブログ</h1>
     {# post-list-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="post-list-grid">{%- for item in (collections.blog.slice(0, 3)) -%}
+    <div class="post-list-grid">{%- for item in (collections.blog.slice(0, 6)) -%}
         <div class="post-list-grid-item">
           <a href="{{ item.url | url }}">
             {% if item.data.thumbnail %}
