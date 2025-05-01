@@ -6,20 +6,20 @@ meta_description: per-pj のポートフォリオサイトのブログページ�
 
 {% block content %}
   <div class="post-list">
-    <h1>最新情報</h1>
+    <h1>お知らせ</h1>
     <div class="post-list-grid" id="blog-items-container">
       {% for item in collections.blog %}
         <div class="post-list-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
             
-            <div class="post-list-tags">
+            <!--<div class="post-list-tags">
               {% for tag in item.data.tags %}
                 {% if tag != "blog" %}
                   <span class="tag">{{ tag }}</span>
                 {% endif %}
               {% endfor %}
-            </div>
+            </div>-->
 
             <h2 class="post-list-title">{{ item.data.title }}</h2>
             <p class="post-list-desc">{{ item.data.description }}</p>

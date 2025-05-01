@@ -13,13 +13,13 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
             
-            <div class="post-list-tags">
+            <!--<div class="post-list-tags">
               {% for tag in item.data.tags %}
                 {% if tag != "work" %}
                   <span class="tag">{{ tag }}</span>
                 {% endif %}
               {% endfor %}
-            </div>
+            </div>-->
 
             <h2 class="post-list-title">{{ item.data.title }}</h2>
             <p class="post-list-desc">{{ item.data.description }}</p>

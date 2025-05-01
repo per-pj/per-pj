@@ -1,31 +1,6 @@
-.top-container {
-  width: 100%;
-  padding: 3rem 3rem;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.top-content {
-  width: 70%;
-  height: auto;
-  align-items: center;
-  text-align: center;
-}
-
-.top-img {
-  width: 20%;
-  height: auto;
-  border-radius: 50%;
-  border: 1px solid var(--color-border);
-  margin: 0 auto;
-  display: block;
-}
-
 .banner-container {
   width: 100%;
-  padding: 0 3rem;
+  padding: 0 var(--space-sides);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -34,20 +9,20 @@
 
 .banner {
   width: 100%;
-  background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-banner);
   text-align: center;
   padding: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0;
   border-radius: 4px;
 }
 
 .banner a {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
   color: var(--color-black);
-  font-size: 1.15rem;
   text-decoration: none;
 }
 

@@ -2,7 +2,7 @@
 .hero-container {
   width: 100%;
   height: auto;
-  padding: 4rem 3rem 2rem 3rem;
+  padding: 4rem var(--space-sides) 2rem var(--space-sides);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@
 /* services */
 .services-container {
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 2rem var(--space-sides);
   box-sizing: border-box;
 }
 

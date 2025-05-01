@@ -47,13 +47,14 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+/* tab text */
 .tab-link {
   background-color: inherit;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: var(--font-normal);
+  font-weight: var(--weight-bold);
   color: var(--color-tab);
   border: none;
-  border-bottom: 3px solid var(--color-bg-primary);
+  border-bottom: 2px solid var(--color-bg-primary);
   padding: 1rem;
   cursor: pointer;
   margin: 0 0.6rem;
@@ -67,7 +68,7 @@
 .tab-link.active {
   background-color: inherit;
   color: var(--color-tab-active);
-  border-bottom: 3px solid var(--color-tab-active);
+  border-bottom: 2px solid var(--color-tab-active);
 }
 
 .tab-content {
