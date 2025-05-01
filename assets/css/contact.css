@@ -1,7 +1,7 @@
 .form-container {
   width: 100%;
   min-height: 100vh;
-  padding: 2rem 3rem;
+  padding: 2rem var(--space-sides);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -18,23 +18,26 @@
 }
 
 .form-content h1 {
+  font-size: var(--font-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--color-black);
 }
 
 .form-content p {
+  font-size: var(--font-normal);
+  font-weight: var(--weight-normal);
+  color: var(--color-desc);
   text-align: center;
-  font-size: 0.95rem;
   margin-bottom: 1rem;
-  color: var(--color-black);
 }
 
 .form-content label {
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
   display: block; /* labelをブロック要素にして改行 */
   margin-bottom: 0.5rem;
-  font-weight: bold;
-  color: var(--color-black);
 }
 
 .form-content input[type='text'],

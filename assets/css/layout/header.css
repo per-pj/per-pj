@@ -27,7 +27,7 @@
 .header {
   background-color: var(--color-bg-primary);
   color: var(--color-black);
-  padding: 1rem 3rem;
+  padding: 1rem var(--space-sides);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@
   left: 0;
   z-index: 10;
   box-sizing: border-box;
-  margin-top: 32px;
+  margin-top: 0;
 }
 
 .logo a {
@@ -72,14 +72,14 @@
 }
 
 .nav-menu li {
-  margin-left: 1.35rem;
+  margin-left: 1.3rem;
 }
 
 .nav-menu li a {
   text-decoration: none;
+  font-size: var(--font-small);
+  font-weight: var(--weight-normal);
   color: var(--color-black);
-  font-size: 0.95rem;
-  font-weight: 500;
   letter-spacing: 0.02em;
   transition: all 0.1s ease;
 }
