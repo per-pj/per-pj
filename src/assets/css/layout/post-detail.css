@@ -38,16 +38,16 @@
 }
 
 .post-detail-hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #000;
+  font-size: var(--font-xxl);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
   margin-top: 1rem;
 }
 
 .post-detail-hero-desc {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #000;
+  font-size: var(--font-normal);
+  font-weight: var(--weight-normal);
+  color: var(color-desc);
   margin-top: 1rem;
 }
 

@@ -6,7 +6,7 @@
 }
 
 .post-list h1 {
-  font-size: var(--font-xl);
+  font-size: var(--font-large);
   font-weight: var(--weight-bold);
   margin-bottom: 1rem;
   letter-spacing: -0.02em;

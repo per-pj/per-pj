@@ -6,7 +6,7 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
 
 {% block content %}
   <div class="post-list">
-    <h1>プロジェクト</h1>
+    <h1>プロダクトデザイン</h1>
     <div class="post-list-grid" id="portfolio-grid">
       {% for item in collections.works %}
         <div class="post-list-grid-item  portfolio-item">
@@ -31,7 +31,7 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
     </div>
 
     {% if collections.works.length > 6 %}
-      <button id="load-more-button" style="display: block; margin: 20px auto;">+</button>
+      <button id="load-more-button" style="display: block; margin: 20px auto;">もっと見る</button>
     {% endif %}
 
   </div>
