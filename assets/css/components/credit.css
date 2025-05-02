@@ -14,11 +14,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 3rem 3rem 3rem;
-  background-color: var(--color-bg-primary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background-color: var(--color-bg-secondary);
   border-radius: 4px;
-  margin-top: 2rem;
 }
 
 .credit-info {
@@ -57,12 +55,13 @@
 
 /* === share link === */
 .share-link-text {
-  margin-top: 3rem;
-  text-align: center;
+  font-size: var(--font-normal);
+  font-weight: var(--weight-bold);
   color: var(--color-link);
+  margin-top: 2rem;
+  text-align: center;
   text-decoration: underline;
   cursor: pointer;
-  font-size: 1.2rem;
 }
 
 .share-link-text:hover {
