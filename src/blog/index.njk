@@ -5,15 +5,15 @@ meta_description: per-pj のポートフォリオサイトのブログページ�
 ---
 
 {% block content %}
-  <div class="post-list">
-    <h1>お知らせ</h1>
-    <div class="post-list-grid" id="blog-items-container">
+  <div class="posts-layout">
+    <h1 class="posts-layout-section-title">お知らせ</h1>
+    <div class="posts-layout-grid" id="blog-items-container">
       {% for item in collections.blog %}
-        <div class="post-list-grid-item">
+        <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
+            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
             
-            <!--<div class="post-list-tags">
+            <!--<div class="posts-layout-tags">
               {% for tag in item.data.tags %}
                 {% if tag != "blog" %}
                   <span class="tag">{{ tag }}</span>
@@ -21,8 +21,8 @@ meta_description: per-pj のポートフォリオサイトのブログページ�
               {% endfor %}
             </div>-->
 
-            <h2 class="post-list-title">{{ item.data.title }}</h2>
-            <p class="post-list-desc">{{ item.data.description }}</p>
+            <h2 class="posts-layout-title">{{ item.data.title }}</h2>
+            <p class="posts-layout-desc">{{ item.data.description }}</p>
           </a>
         </div>
       {% else %}

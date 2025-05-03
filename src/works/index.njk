@@ -5,15 +5,15 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
 ---
 
 {% block content %}
-  <div class="post-list">
-    <h1>プロダクトデザイン</h1>
-    <div class="post-list-grid" id="portfolio-grid">
+  <div class="posts-layout">
+    <h1 class="posts-layout-section-title">ポートフォリオ</h1>
+    <div class="posts-layout-grid" id="portfolio-grid">
       {% for item in collections.works %}
-        <div class="post-list-grid-item  portfolio-item">
+        <div class="posts-layout-grid-item  portfolio-item">
           <a href="{{ item.url | url }}">
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
+            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
             
-            <!--<div class="post-list-tags">
+            <!--<div class="posts-layout-tags">
               {% for tag in item.data.tags %}
                 {% if tag != "work" %}
                   <span class="tag">{{ tag }}</span>
@@ -21,8 +21,8 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
               {% endfor %}
             </div>-->
 
-            <h2 class="post-list-title">{{ item.data.title }}</h2>
-            <p class="post-list-desc">{{ item.data.description }}</p>
+            <h2 class="posts-layout-title">{{ item.data.title }}</h2>
+            <p class="posts-layout-desc">{{ item.data.description }}</p>
           </a>
         </div>
       {% else %}

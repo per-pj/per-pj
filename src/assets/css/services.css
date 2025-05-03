@@ -1,53 +1,9 @@
-/* hero */
-.hero-container {
-  width: 100%;
-  height: auto;
-  padding: 4rem var(--space-sides) 2rem var(--space-sides);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  border-radius: 0.5rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.hero-img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  display: block;
-  margin-top: 2rem;
-}
-
-/* services */
-.services-container {
-  width: 100%;
-  padding: 2rem var(--space-sides);
-  box-sizing: border-box;
-}
-
-.section-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  box-sizing: border-box;
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
+  grid-auto-flow: row dense;
+  align-items: start;
 }
 
 .services-grid-item {

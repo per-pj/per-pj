@@ -4,9 +4,9 @@ title: per-pj - ようこそ
 meta_description: per-pj のポートフォリオサイトのトップページです。
 ---
 
-<section class="hero-container">
-  <div class="hero-content">
-    <h1 class="hero-title">製品を構築する</h1>
+<section class="container-primary">
+  <div class="content-primary">
+    <h1 class="hero-title">製品を構築</h1>
     <p class="hero-desc">
       プロダクトの企画、構築に取り組んでいます。
     </p>
@@ -17,27 +17,27 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
   </div>
 </section>
 
-<section class="banner-container">
+<section class="container-primary">
   <div class="banner">
     <a href="{{ '/services/' | url }}">現在、フリーランス・フルタイムに対応可能です🎉 一緒に働きませんか？</a>
   </div>
 </section>
 
 {# --- ポートフォリオセクション --- #}
-<section class="post-list">
-    <h1>プロダクトデザイン</h1>
+<section class="posts-layout">
+    <h1 class="posts-layout-section-title">ポートフォリオ</h1>
 
-    {# post-list-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="post-list-grid">{%- for item in (collections.works.slice(0, 6)) -%}
-        <div class="post-list-grid-item">
+    {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
+    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 6)) -%}
+        <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
+            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
 
             {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-            <!--<div class="post-list-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>-->
+            <!--<div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>-->
 
-            <h2 class="post-list-title">{{ item.data.title }}</h2>
-            <p class="post-list-desc">{{ item.data.description }}</p>
+            <h2 class="posts-layout-title">{{ item.data.title }}</h2>
+            <p class="posts-layout-desc">{{ item.data.description }}</p>
           </a>
         </div>{%- else -%}
         {# .slice() メソッドの結果が空の場合はここが表示されますが、通常は表示されないはずです #}
@@ -50,22 +50,22 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 </section>
 
 {# --- ブログセクション --- #}
-<section class="post-list">
-    <h1>お知らせ</h1>
-    {# post-list-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="post-list-grid">{%- for item in (collections.blog.slice(0, 3)) -%}
-        <div class="post-list-grid-item">
+<section class="posts-layout">
+    <h1 class="posts-layout-section-title">お知らせ</h1>
+    {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
+    <div class="posts-layout-grid">{%- for item in (collections.blog.slice(0, 3)) -%}
+        <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             {% if item.data.thumbnail %}
-              <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="post-list-grid-img" />
+              <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
             {% endif %}
 
             {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-            <!--<div class="post-list-tags">{%- for tag in item.data.tags -%}{%- if tag != "blog" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>-->
+            <!--<div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "blog" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>-->
 
-            <h3 class="post-list-title">{{ item.data.title }}</h3>
+            <h3 class="posts-layout-title">{{ item.data.title }}</h3>
             {% if item.data.description %}
-              <p class="post-list-desc">{{ item.data.description }}</p>
+              <p class="posts-layout-desc">{{ item.data.description }}</p>
             {% endif %}
           </a>
         </div>{%- else -%}

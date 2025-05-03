@@ -55,10 +55,10 @@ layout: layouts/base.njk
 
 {% if recommendedItems.length %}
   <section class="recommended">
-    <h2 class="recommended-title">あなたにおすすめ</h2>
-    <div class="post-list-scroll">
+    <h2 class="recommended-section-title">あなたにおすすめ</h2>
+    <div class="scrollbar">
       {% for item in recommendedItems %}
-        {% include "layouts/card.njk" %}
+        {% include "layouts/recommended-detail.njk" %}
       {% endfor %}
     </div>
   </section>

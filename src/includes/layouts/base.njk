@@ -25,17 +25,19 @@
     <link rel="stylesheet" href="{{ '/assets/css/base/reset.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/base/base.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/layout/header.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/base/global.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/index.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/layout/post-detail.css' | url }}" />
-    <link rel="stylesheet" href="{{ '/assets/css/post-list.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/layout/posts-layout.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/about.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/services.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/contact.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/layout/footer.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/base/typography.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/components/btn.css' | url }}" />
-    <link rel="stylesheet" href="{{ '/assets/css/components/post-list-scroll.css' | url }}" />
-    <link rel="stylesheet" href="{{ '/assets/css/components/post-card.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/components/add-contact.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/components/scrollbar.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/components/recommended.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/components/credit.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/base/responsive.css' | url }}" />
     <link
@@ -61,7 +63,7 @@
     </main>
 
     {% if page.url != "/contact/" %}
-      {% include "contact-form.njk" %}
+      {% include "add-contact.njk" %}
     {% endif %}
 
     {% include "footer.njk" %}

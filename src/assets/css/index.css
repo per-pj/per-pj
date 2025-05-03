@@ -1,21 +1,20 @@
-.banner-container {
+.hero-img {
   width: 100%;
-  padding: 0 var(--space-sides);
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  margin-top: 2rem;
 }
 
 .banner {
   width: 100%;
-  background-color: var(--color-bg-banner);
+  height: 4rem;
+  background-color: var(--color-gray-lightest);
   text-align: center;
-  padding: 2rem 0;
+  padding: var(--space-lg);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
   border-radius: 4px;
 }
 

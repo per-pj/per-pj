@@ -1,0 +1,12 @@
+<a href="{{ item.url | url }}" class="recommended-item">
+  {% set img = item.data.thumbnail or item.data.image %}
+  {% if img %}
+    <img src="{{ img | url }}" alt="{{ item.data.title }}" class="recommended-image">
+  {% endif %}
+  <div class="recommended-content">
+    <h3 class="recommended-title">{{ item.data.title }}</h3>
+    {% if item.data.description %}
+      <p class="recommended-desc">{{ item.data.description }}</p>
+    {% endif %}
+  </div>
+</a>
