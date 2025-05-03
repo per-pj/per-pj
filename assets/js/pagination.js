@@ -1,7 +1,7 @@
 // blog-pagination
 document.addEventListener('DOMContentLoaded', () => {
   const blogItems = document.querySelectorAll(
-    '#blog-items-container .post-list-grid-item'
+    '#blog-items-container .posts-layout-grid-item'
   );
   const paginationNav = document.getElementById('pagination-nav');
 

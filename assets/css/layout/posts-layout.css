@@ -1,19 +1,19 @@
-.post-list {
+.posts-layout {
   margin: 0;
-  padding: 3rem var(--space-sides) 3rem var(--space-sides);
+  padding: var(--space-lg);
   width: 100%;
   box-sizing: border-box;
 }
 
-.post-list h1 {
-  font-size: var(--font-large);
+.posts-layout-section-title {
+  font-size: var(--title-md);
   font-weight: var(--weight-bold);
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
 
-.post-list-title {
-  font-size: var(--font-big);
+.posts-layout-title {
+  font-size: var(--title-sm);
   font-weight: var(--weight-bold);
   color: var(--color-black);
   line-height: normal;
@@ -21,17 +21,17 @@
   text-decoration: none;
 }
 
-.post-list-desc {
+.posts-layout-desc {
   font-size: var(--font-small);
   font-weight: var(--weight-normal);
   color: var(--color-desc);
 }
 
-.post-list-grid-item a:hover .post-list-title {
+.posts-layout-grid-item a:hover .posts-layout-title {
   text-decoration: underline;
 }
 
-.post-list-grid {
+.posts-layout-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -39,24 +39,24 @@
   align-items: start;
 }
 
-.post-list-grid-item {
+.posts-layout-grid-item {
   text-align: left;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   align-self: start;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-.post-list-grid-item a {
+.posts-layout-grid-item a {
   text-decoration: none;
   color: inherit;
 }
 
-.post-list-grid-item:hover {
+.posts-layout-grid-item:hover {
   transform: translateY(-5px);
 }
 
-.post-list-grid-img {
+.posts-layout-grid-img {
   width: 100%;
   height: auto;
   display: block;
@@ -64,7 +64,7 @@
   border-radius: 0.5rem;
 }
 
-.post-list-tags {
+.posts-layout-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -80,7 +80,7 @@
 }
 
 /* ページネーション */
-.post-list-grid-item.hidden {
+.posts-layout-grid-item.hidden {
   display: none;
 }
 

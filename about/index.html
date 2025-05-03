@@ -25,17 +25,19 @@
     <link rel="stylesheet" href="/per-pj/assets/css/base/reset.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/base/base.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/layout/header.css" />
+    <link rel="stylesheet" href="/per-pj/assets/css/base/global.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/index.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/layout/post-detail.css" />
-    <link rel="stylesheet" href="/per-pj/assets/css/post-list.css" />
+    <link rel="stylesheet" href="/per-pj/assets/css/layout/posts-layout.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/about.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/services.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/contact.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/layout/footer.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/base/typography.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/btn.css" />
-    <link rel="stylesheet" href="/per-pj/assets/css/components/post-list-scroll.css" />
-    <link rel="stylesheet" href="/per-pj/assets/css/components/post-card.css" />
+    <link rel="stylesheet" href="/per-pj/assets/css/components/add-contact.css" />
+    <link rel="stylesheet" href="/per-pj/assets/css/components/scrollbar.css" />
+    <link rel="stylesheet" href="/per-pj/assets/css/components/recommended.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/credit.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/base/responsive.css" />
     <link
@@ -73,7 +75,7 @@
     <ul class="nav-menu">
       <li><a href="/per-pj/about/">プロフィール</a></li>
       <li><a href="/per-pj/services/">サービス</a></li>
-      <li><a href="/per-pj/works/">プロダクト</a></li>
+      <li><a href="/per-pj/works/">ポートフォリオ</a></li>
       <li><a href="/per-pj/blog/">ブログ</a></li>
       <li><a href="/per-pj/contact/">お問い合わせ</a></li>
     </ul>
@@ -83,7 +85,7 @@
 
     <main>
       
-<section class="about-container">
+<section class="container-primary">
   <div class="about-content">
     <div class="about-item">
       <img src="/per-pj/assets/img/profile.jpg" alt="プロフィール画像" class="about-img" />
@@ -120,7 +122,8 @@
   </div>
   <div class="tab-content" id="skills">
     <div class="tab-content-container">
-     <p>新規事業の立ち上げフェーズを中心に多様な役割を経験。ユーザーインサイトの獲得から、UI/UX デザイン、フロントエンド実装、マーケティング施策の実行、アライアンス交渉まで、事業を前進させるために必要なプロセスを一気通貫で推進するスキルを有しています。</p>
+     <h2>サマリー</h2>
+<p>新規事業の立ち上げフェーズを中心に多様な役割を経験。ユーザーインサイトの獲得から、UI/UX デザイン、フロントエンド実装、マーケティング施策の実行、アライアンス交渉まで、事業を前進させるために必要なプロセスを一気通貫で推進するスキルを有しています。</p>
 <h2>事業開発・企画</h2>
 <ul>
 <li>0→1 フェーズにおける新規事業の企画・立案、実行経験</li>
@@ -184,7 +187,7 @@
   </div>
 </section>
 
-<section class="banner-container">
+<section class="container-primary">
   <div class="banner">
     <a href="/per-pj/services/">現在、フリーランス・フルタイムに対応可能です🎉 一緒に働きませんか？</a>
   </div>
@@ -193,27 +196,11 @@
     </main>
 
     
-      <div class="form-container">
-  <div class="form-content">
-    <h1>お問い合わせ</h1>
-    <p>
-      あなたのプロジェクトにアサインできます。per-pjと一緒に働きませんか？アイデアを実現させましょう。まずはお気軽にご連絡ください。
-    </p>
-    <form action="https://formspree.io/f/mzzelpwq" method="POST">
-      <label>
-        お名前
-        <input type="text" name="name" />
-      </label>
-      <label>
-        メールアドレス
-        <input type="email" name="email" />
-      </label>
-      <label>
-        メッセージ
-        <textarea name="message"></textarea>
-      </label>
-      <button type="submit">送信</button>
-    </form>
+      <div class="add-contact-container">
+  <div class="add-contact-content">
+    <h2>お問い合わせ</h2>
+    <p>まずはお気軽にご連絡ください。</p>
+    <button class="btn-primary"><a href="/per-pj/contact/">無料で相談する</a></button>
   </div>
 </div>
 
@@ -226,7 +213,7 @@
     <ul class="footer-menu">
       <li><a href="/per-pj/about/">プロフィール</a></li>
       <li><a href="/per-pj/services/">サービス</a></li>
-      <li><a href="/per-pj/works/">プロダクト</a></li>
+      <li><a href="/per-pj/works/">ポートフォリオ</a></li>
       <li><a href="/per-pj/blog/">ブログ</a></li>
       <li><a href="/per-pj/contact/">お問い合わせ</a></li>
     </ul>

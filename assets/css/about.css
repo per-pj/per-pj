@@ -1,13 +1,4 @@
 /* about */
-.about-container {
-  width: 100%;
-  padding: 3rem 3rem;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .about-content {
   width: 70%;
   display: flex;
@@ -80,7 +71,7 @@
 }
 
 .tab-content-container {
-  padding: 3rem 1rem;
+  padding: var(--space-md);
   text-align: left;
 }
 
