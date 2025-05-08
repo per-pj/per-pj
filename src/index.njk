@@ -6,9 +6,9 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 
 <section class="container-primary">
   <div class="content-primary">
-    <h1 class="hero-title">製品を構築</h1>
+    <h1 class="hero-title">フリーランスのプロダクトデザイナー</h1>
     <p class="hero-desc">
-      プロダクトの企画、構築に取り組んでいます。
+      課題を解決する製品を構築します。プロダクトの企画、構築に取り組んでいます。
     </p>
     <button class="btn-primary">
       <a href="{{ '/about/' | url }}">私について</a>
@@ -18,12 +18,27 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 </section>
 
 <section class="container-primary">
-  <div class="banner">
-    <a href="{{ '/services/' | url }}">現在、フリーランス・フルタイムに対応可能です🎉 一緒に働きませんか？</a>
+  <div class="content-primary">
+    <h3 class="intro-desc">per-pjは東京を拠点に活動するフリーランスのプロダクトデザイナーです。新規事業企画、UI/UXデザイン、フロントエンド開発などを中心に様々な業務を横断的に経験してきました。多くの人々が抱える課題を解決するサービスの構築を目指しています。これまでに企画・開発したサービスの一部を公開しています。</h3>
   </div>
 </section>
 
-{# --- ポートフォリオセクション --- #}
+<section class="container-primary">
+  <div class="flex-container">
+    <img src="{{ '/assets/img/recruit.jpg' | url }}" alt="採用可能" class="item-image" />
+    <div class="item-content">
+      <div class="alert-message tag-primary">
+        <span class="alert-text">大事なお知らせ</span>
+      </div>
+      <h2 class="item-title">フリーランス・フルタイムでの業務が可能</h2>
+      <p class="item-description">現在、お客様からのご依頼に柔軟に対応可能です。あなたのプロジェクトをサポートします。</p>
+      <button class="btn-primary">
+        <a href="{{ '/services/' | url }}">スキルを見る</a>
+      </button>
+    </div>
+  </div>
+</section>
+
 <section class="posts-layout">
     <h1 class="posts-layout-section-title">ポートフォリオ</h1>
 
@@ -34,7 +49,7 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
 
             {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-            <!--<div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>-->
+            <div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>
 
             <h2 class="posts-layout-title">{{ item.data.title }}</h2>
             <p class="posts-layout-desc">{{ item.data.description }}</p>
@@ -49,7 +64,6 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
     </div>
 </section>
 
-{# --- ブログセクション --- #}
 <section class="posts-layout">
     <h1 class="posts-layout-section-title">お知らせ</h1>
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
@@ -61,7 +75,7 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
             {% endif %}
 
             {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-            <!--<div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "blog" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>-->
+            <div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "blog" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>
 
             <h3 class="posts-layout-title">{{ item.data.title }}</h3>
             {% if item.data.description %}

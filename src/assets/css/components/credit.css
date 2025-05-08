@@ -8,15 +8,16 @@
 }
 
 .credit-content {
-  width: 60%;
+  width: 68%;
   max-width: 800px;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-color: var(--color-bg-secondary);
-  border-radius: 4px;
+  background-color: var(--color-white-secondary);
+  border-radius: var(--border-radius-normal);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .credit-info {
@@ -41,14 +42,14 @@
 
 .credit-details h3 {
   font-size: 1.5rem;
-  color: var(--color-black);
-  font-weight: 800;
+  color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
   margin: 0 0 0.5rem 0;
 }
 
 .credit-details p {
   font-size: 1rem;
-  color: var(--color-black);
+  color: var(--color-black-primary);
   font-weight: 400;
   margin: 0;
 }

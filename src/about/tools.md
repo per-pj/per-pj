@@ -4,11 +4,11 @@ Figma, Illustrator, Photoshop など
 
 ## 開発
 
-VSCode, Github, Sourcetree, 11ty, microCMS, Netlify, Cloudflare, Supabase, Stripe など
+VSCode, Github, Sourcetree, Netlify, 11ty, microCMS, Cloudflare, Supabase, Stripe など
 
 ## 作業
 
-Google アカウント, Google アナリティクス, Notion, Todoist, Slack, Teams など
+各種 Google ツール, Google アナリティクス, Notion, Todoist, Slack, Teams など
 
 ## AI
 
