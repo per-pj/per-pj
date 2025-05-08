@@ -1,12 +1,12 @@
 .recommended {
-  padding: var(--space-sides);
+  padding: var(--spacing-sides);
   background-color: var(--color-bg-primary);
 }
 
 .recommended-section-title {
-  font-size: var(--font-large);
-  font-weight: var(--weight-bold);
-  color: var(--color-black);
+  font-size: var(--title-h2);
+  font-weight: var(--weight-normal);
+  color: var(--color-black-primary);
   margin-bottom: 1rem;
 }
 
@@ -42,23 +42,23 @@
 }
 
 .recommended-title {
-  font-size: var(--font-big);
-  font-weight: var(--weight-bold);
+  font-size: var(--title-h4);
+  font-weight: var(--weight-normal);
   color: var(--color-black);
   margin: 0.5rem 0 0.5rem 0;
 }
 
 .recommended-desc {
-  font-size: var(--font-small);
+  font-size: var(--text-small);
   font-weight: var(--weight-normal);
-  color: var(--color-desc);
+  color: var(--color-black-primary);
   margin: 0;
   line-height: 1.5;
 }
 
 .recommended-tag {
-  background-color: var(--color-tag);
-  color: var(--color-black);
+  background-color: var(--color-tag-primary);
+  color: var(--color-black-primary);
   padding: 0.5rem;
   font-size: 0.8rem;
   font-weight: 500;

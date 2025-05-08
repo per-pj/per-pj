@@ -1,13 +1,13 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
   grid-auto-flow: row dense;
   align-items: start;
 }
 
 .services-grid-item {
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -44,8 +44,8 @@
 }
 
 #load-more-button {
-  background-color: var(--color-btn-bg);
-  color: var(--color-btn-text);
+  background-color: var(--color-black-primary);
+  color: var(--color-white-primary);
   border: none;
   font-size: 1rem;
   padding: 0.8rem 1.5rem;

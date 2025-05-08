@@ -1,104 +1,123 @@
-/* top, solution */
+/* top, services */
 .hero-title {
-  font-size: var(--title-lg);
-  font-weight: var(--weight-bold);
-  color: var(--color-black);
-  letter-spacing: 0.02em;
-  margin-bottom: var(--space-sm);
+  font-size: var(--title-h1);
+  font-weight: var(--weight-normal);
+  color: var(--color-black-primary);
+  letter-spacing: var(--letter-spacing-title);
+  margin-top: var(--spacing-100);
 }
 
 .hero-desc {
-  font-size: var(--text-md);
+  font-size: var(--text-big);
   font-weight: var(--weight-normal);
-  color: var(--color-gray);
-  letter-spacing: 0.03em;
+  color: var(--color-black-primary);
+  letter-spacing: var(--letter-spacing-desc);
   line-height: 1.7;
-  margin-bottom: var(--space-sm);
+  margin: var(--spacing-100) 0;
 }
 
 /* about */
 .about-title {
-  font-size: var(--title-md);
-  font-weight: var(--weight-bold);
+  font-size: var(--title-h2);
+  font-weight: var(--weight-normal);
   color: var(--color-black);
   letter-spacing: 0.02em;
-  margin: var(--space-md);
+  margin-top: var(--spacing-100);
 }
 
 .about-desc {
-  font-size: var(--text-md);
+  font-size: var(--text-normal);
   font-weight: var(--weight-normal);
-  color: var(--color-gray);
+  color: var(--color-black-secondary);
   letter-spacing: 0.03em;
   line-height: 1.7;
-  margin-bottom: var(--space-sm);
+  margin-top: var(--spacing-100);
 }
 
 /* tab content */
 .tab-content-container h2 {
-  font-size: var(--title-sm);
-  font-weight: var(--weight-bold);
+  font-size: var(--text-large);
+  font-weight: var(--weight-normal);
   color: var(--color-black);
   letter-spacing: 0.01em;
-  margin-top: 2rem;
+  margin-top: var(--spacing-200);
 }
 
 .tab-content-container h3 {
-  font-size: var(--text-lg);
-  font-weight: var(--weight-bold);
-  color: var(--color-black);
+  font-size: var(--text-big);
+  font-weight: var(--weight-normal);
+  color: var(--color-black-primary);
   letter-spacing: 0.02em;
-  margin-top: 1rem;
+  margin-top: var(--spacing-100);
 }
 
 .tab-content-container p {
-  font-size: var(--text-md);
+  font-size: var(--text-normal);
   font-weight: var(--weight-normal);
-  color: var(--color-black);
+  color: var(--color-black-primary);
   letter-spacing: 0;
   line-height: 1.7;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-50);
 }
 
 .tab-content-container li {
-  font-size: var(--text-md);
+  font-size: var(--text-normal);
   font-weight: var(--weight-normal);
-  color: var(--color-black);
+  color: var(--color-black-primary);
   letter-spacing: 0;
   line-height: 1.7;
-  margin-top: 1rem;
+  margin-top: var(--spacing-100);
 }
 
 /* services */
 .section-title {
-  font-size: var(--title-md);
-  font-weight: var(--weight-bold);
-  color: var(--color-black);
-  letter-spacing: 0.02em;
+  font-size: var(--title-h2);
+  font-weight: var(--weight-normal);
+  color: var(--color-black-primary);
+  letter-spacing: var(--letter-spacing-title);
   margin-bottom: 0.5rem;
 }
 
 .section-desc {
-  font-size: var(--text-md);
+  font-size: var(--text-normal);
   font-weight: var(--weight-normal);
-  color: var(--color-gray);
-  letter-spacing: 0.03em;
+  color: var(--color-gray-primary);
+  letter-spacing: var(--letter-spacing-desc);
   line-height: 1.7;
   margin-bottom: 0.5rem;
 }
 
 .services-grid-item h3 {
-  font-size: var(--title-sm);
-  font-weight: var(--weight-bold);
+  font-size: var(--title-h4);
+  font-weight: var(--weight-normal);
   color: var(--color-black);
-  letter-spacing: 0.02em;
+  letter-spacing: var(--letter-spacing-title);
   margin-bottom: 0.5rem;
 }
 
 .services-grid-item p {
-  font-size: var(--text-sm);
+  font-size: var(--text-normal);
   font-weight: var(--weight-normal);
-  color: var(--color-gray);
-  letter-spacing: 0.05em;
+  color: var(--color-gray-primary);
+  letter-spacing: var(--letter-spacing-desc);
   line-height: 1.7;
+}
+
+/* add-contact, contact-form */
+.contact-title {
+  font-size: var(--title-h2);
+  font-weight: var(--weight-normal);
+  color: var(--black-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-desc {
+  font-size: var(--text-normal);
+  font-weight: var(--weight-normal);
+  color: var(--color-black-primary);
+  letter-spacing: var(--letter-spacing-normal);
+  text-align: center;
+  margin-bottom: 1rem;
 }

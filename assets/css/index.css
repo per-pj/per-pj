@@ -1,30 +1,92 @@
+/* hero-section */
 .hero-img {
   width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-normal);
   display: block;
-  margin-top: 2rem;
+  margin-top: var(--spacing-200);
 }
 
-.banner {
-  width: 100%;
-  height: 4rem;
-  background-color: var(--color-gray-lightest);
-  text-align: center;
-  padding: var(--space-lg);
+.intro-desc {
+  width: 68%;
+  height: auto;
+  font-size: var(--text-xLarge);
+  color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
+}
+
+.flex-container {
+  height: 68vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 4px;
+  flex-wrap: wrap;
+  background-color: var(--color-white-secondary);
+  border-radius: var(--border-radius-normal);
+  padding: var(--spacing-300);
+  gap: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.banner a {
-  font-size: var(--font-large);
-  font-weight: var(--weight-bold);
-  color: var(--color-black);
-  text-decoration: none;
+.item-image {
+  width: 50%;
+  height: auto;
+  border-radius: var(--border-radius-normal);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
-.banner a:hover {
-  text-decoration: underline;
+.item-content {
+  flex: 1;
+  width: 50%;
+}
+
+.alert-message {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-large);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.tag-primary {
+  background-color: var(--color-tag-primary);
+}
+
+.alert-text {
+  color: var(--color-black-primary);
+  font-size: var(--text-small);
+  font-weight: var(--weight-normal);
+  letter-spacing: 1px;
+}
+
+.item-title {
+  font-size: var(--title-h3);
+  color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
+  margin-bottom: var(--spacing-50);
+}
+
+.item-description {
+  font-size: var(--text-big);
+  color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
+  margin-bottom: 1rem;
+}
+
+/* モバイル対応 */
+@media (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: var(--spacing-100);
+  }
+
+  .item-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .item-content {
+    width: 100%;
+  }
 }

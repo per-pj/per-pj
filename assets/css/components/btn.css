@@ -1,49 +1,49 @@
 /* primary */
 .btn-primary {
-  background-color: var(--color-btn-bg);
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.5rem;
+  background-color: var(--color-black-primary);
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--border-radius-small);
   border: none;
   cursor: pointer;
   transition: transform 0.15s ease, background-color 0.15s ease;
-  margin-top: 1rem;
+  margin-top: var(--spacing-100);
 }
 
 .btn-primary:hover {
   transform: scale(1.03);
-  background-color: var(--color-btn-bg-hover);
+  background-color: var(--color-black-secondary);
 }
 
 .btn-primary a {
   text-decoration: none;
-  color: var(--color-btn-text);
-  font-weight: 400;
-  font-size: 1rem;
+  color: var(--color-white-primary);
+  font-weight: var(--weight-normal);
+  font-size: var(--text-normal);
   letter-spacing: 0.03em;
 }
 
 /* === back-to-top === */
 #back-to-top {
+  background-color: var(--color-black-primary);
+  color: var(--color-white-primary);
+  font-size: var(--text-normal);
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+  line-height: 1;
   display: none;
+  text-align: center;
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
   border: none;
   outline: none;
-  background-color: var(--color-btn-bg);
-  color: var(--color-btn-text);
   cursor: pointer;
-  padding: 1rem;
-  border-radius: 50%;
-  font-size: 1rem;
-  line-height: 1;
-  width: 4rem;
-  height: 4rem;
-  text-align: center;
   transition: background-color 0.15s ease;
 }
 
 #back-to-top:hover {
-  background-color: var(--color-btn-bg-hover);
+  background-color: var(--color-black-secondary);
 }
