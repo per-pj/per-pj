@@ -16,7 +16,7 @@
 
 .btn-primary a {
   font-size: var(--text-normal);
-  color: var(--color-white-primary);
+  color: var(--color-white-secondary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-normal);
   text-decoration: none;

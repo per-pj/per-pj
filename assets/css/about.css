@@ -43,7 +43,7 @@
   background-color: inherit;
   padding: 1rem;
   font-size: var(--text-normal);
-  color: var(--color-black-secondary);
+  color: var(--color-copyright);
   font-weight: var(--weight-normal);
   border: none;
   border-bottom: 3px solid var(--color-white-primary);
