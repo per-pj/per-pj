@@ -38,17 +38,17 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-/* tab text */
+/* tab */
 .tab-link {
   background-color: inherit;
+  padding: 1rem;
   font-size: var(--text-normal);
-  font-weight: var(--weight-normal);
   color: var(--color-black-secondary);
+  font-weight: var(--weight-normal);
   border: none;
   border-bottom: 3px solid var(--color-white-primary);
-  padding: 1rem;
-  cursor: pointer;
   margin: 0 0.6rem;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -62,6 +62,7 @@
   border-bottom: 3px solid var(--color-black-primary);
 }
 
+/* content */
 .tab-content {
   display: none;
 }

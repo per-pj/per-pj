@@ -1,16 +1,16 @@
-/* top, services */
+/* top & services */
 .hero-title {
   font-size: var(--title-h1);
-  font-weight: var(--weight-normal);
   color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-title);
   margin-top: var(--spacing-100);
 }
 
 .hero-desc {
   font-size: var(--text-big);
-  font-weight: var(--weight-normal);
   color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-desc);
   line-height: 1.7;
   margin: var(--spacing-100) 0;
@@ -19,9 +19,9 @@
 /* about */
 .about-title {
   font-size: var(--title-h2);
-  font-weight: var(--weight-normal);
   color: var(--color-black);
-  letter-spacing: 0.02em;
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-tight);
   margin-top: var(--spacing-100);
 }
 
@@ -29,33 +29,33 @@
   font-size: var(--text-normal);
   font-weight: var(--weight-normal);
   color: var(--color-black-secondary);
-  letter-spacing: 0.03em;
+  letter-spacing: var(--letter-spacing-normal);
   line-height: 1.7;
   margin-top: var(--spacing-100);
 }
 
-/* tab content */
+/* about > tab > content */
 .tab-content-container h2 {
   font-size: var(--text-large);
-  font-weight: var(--weight-normal);
   color: var(--color-black);
-  letter-spacing: 0.01em;
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-tight);
   margin-top: var(--spacing-200);
 }
 
 .tab-content-container h3 {
   font-size: var(--text-big);
-  font-weight: var(--weight-normal);
   color: var(--color-black-primary);
-  letter-spacing: 0.02em;
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-tight);
   margin-top: var(--spacing-100);
 }
 
 .tab-content-container p {
   font-size: var(--text-normal);
-  font-weight: var(--weight-normal);
   color: var(--color-black-primary);
-  letter-spacing: 0;
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-normal);
   line-height: 1.7;
   margin-top: var(--spacing-50);
 }
@@ -64,7 +64,7 @@
   font-size: var(--text-normal);
   font-weight: var(--weight-normal);
   color: var(--color-black-primary);
-  letter-spacing: 0;
+  letter-spacing: var(--letter-spacing-normal);
   line-height: 1.7;
   margin-top: var(--spacing-100);
 }
@@ -72,16 +72,16 @@
 /* services */
 .section-title {
   font-size: var(--title-h2);
-  font-weight: var(--weight-normal);
   color: var(--color-black-primary);
-  letter-spacing: var(--letter-spacing-title);
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-tight);
   margin-bottom: 0.5rem;
 }
 
 .section-desc {
   font-size: var(--text-normal);
-  font-weight: var(--weight-normal);
   color: var(--color-gray-primary);
+  font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-desc);
   line-height: 1.7;
   margin-bottom: 0.5rem;
@@ -89,25 +89,25 @@
 
 .services-grid-item h3 {
   font-size: var(--title-h4);
-  font-weight: var(--weight-normal);
   color: var(--color-black);
-  letter-spacing: var(--letter-spacing-title);
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-tight);
   margin-bottom: 0.5rem;
 }
 
 .services-grid-item p {
   font-size: var(--text-normal);
-  font-weight: var(--weight-normal);
   color: var(--color-gray-primary);
-  letter-spacing: var(--letter-spacing-desc);
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-normal);
   line-height: 1.7;
 }
 
-/* add-contact, contact-form */
+/* add-contact & contact*/
 .contact-title {
   font-size: var(--title-h2);
-  font-weight: var(--weight-normal);
   color: var(--black-primary);
+  font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-tight);
   text-align: center;
   margin-bottom: 1rem;
@@ -115,8 +115,8 @@
 
 .contact-desc {
   font-size: var(--text-normal);
-  font-weight: var(--weight-normal);
   color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-normal);
   text-align: center;
   margin-bottom: 1rem;
