@@ -1,13 +1,14 @@
 /* layout */
 .form-container {
-  width: 100%;
-  min-height: 100vh;
+  width: 68vw;
+  height: auto;
   background-color: var(--color-white-primary);
   padding: var(--spacing-300);
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .form-content {
@@ -15,8 +16,8 @@
   max-width: 500px;
   background-color: var(--color-white-secondary);
   padding: var(--spacing-200);
+  border-radius: var(--border-radius-normal);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
 }
 
 /* form */
@@ -24,7 +25,7 @@
   font-weight: var(--weight-normal);
   color: var(--color-black-primary);
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-50);
 }
 
 .form-content input[type='text'],
@@ -33,11 +34,11 @@
   width: 100%;
   width: calc(100% - 12px);
   background-color: var(--color-white-secondary);
-  padding: 0.5rem;
-  font-size: var(--text-small);
+  padding: var(--spacing-50);
   border: 1px solid var(--color-border);
   border-radius: 0.25rem;
-  margin-bottom: 1rem;
+  font-size: var(--text-small);
+  margin-bottom: var(--spacing-100);
   box-sizing: border-box;
 }
 
@@ -52,8 +53,8 @@
   padding: 0.75rem 1.5rem;
   background-color: var(--color-black-primary);
   font-size: var(--text-small);
-  font-weight: var(--weight-normal);
   color: var(--color-white-primary);
+  font-weight: var(--weight-normal);
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;

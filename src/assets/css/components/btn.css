@@ -10,27 +10,27 @@
 }
 
 .btn-primary:hover {
-  transform: scale(1.03);
   background-color: var(--color-black-secondary);
+  transform: scale(1.03);
 }
 
 .btn-primary a {
-  text-decoration: none;
+  font-size: var(--text-normal);
   color: var(--color-white-primary);
   font-weight: var(--weight-normal);
-  font-size: var(--text-normal);
-  letter-spacing: 0.03em;
+  letter-spacing: var(--letter-spacing-normal);
+  text-decoration: none;
 }
 
 /* === back-to-top === */
 #back-to-top {
-  background-color: var(--color-black-primary);
-  color: var(--color-white-primary);
-  font-size: var(--text-normal);
   width: 4rem;
   height: 4rem;
   padding: 1rem;
   border-radius: 50%;
+  background-color: var(--color-black-primary);
+  font-size: var(--text-normal);
+  color: var(--color-white-primary);
   line-height: 1;
   display: none;
   text-align: center;

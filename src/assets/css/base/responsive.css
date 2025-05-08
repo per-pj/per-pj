@@ -3,31 +3,20 @@
     padding: 6rem 0 0 0;
   }
 
+  /* header */
   .header {
     padding: var(--spacing-100) var(--spacing-sides-responsive);
   }
 
-  .footer {
-    padding: var(--spacing-100) var(--spacing-sides-responsive);
-  }
-
-  .flex-container {
-    gap: 1rem;
-  }
-
-  .intro-desc {
-    width: 100%;
-  }
-
   /* menu */
   .nav {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white-primary);
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color-white-primary);
     z-index: 20;
     flex-direction: column;
     align-items: center;
@@ -92,6 +81,23 @@
     padding: var(--space-sides);
   }
 
+  /* top */
+  .container-primary {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .flex-container {
+    gap: 1rem;
+  }
+
+  .intro-desc {
+    width: 100%;
+  }
+
   /* posts-layout */
   .posts-layout {
     padding: var(--spacing-300) var(--spacing-sides-responsive);
@@ -102,12 +108,13 @@
     gap: 1rem;
   }
 
-  .about-content {
-    width: 100%;
+  .posts-layout h1 {
+    font-size: 1.5rem;
   }
 
-  .about-title {
-    font-size: var(--title-h3);
+  /* about */
+  .about-content {
+    width: 100%;
   }
 
   .about-img {
@@ -115,6 +122,11 @@
     height: auto;
   }
 
+  .about-title {
+    font-size: var(--title-h3);
+  }
+
+  /* tab */
   .tabs-container {
     width: 90%;
   }
@@ -125,25 +137,12 @@
 
   .tab-link {
     font-size: 1rem;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid var(--color-white-primary);
     padding: 0 1rem 1rem 1rem;
     margin-right: 1rem;
   }
 
-  /* SNS */
-  .social-links {
-    margin-top: 2rem;
-  }
-
-  /* servicecs */
-  .container-primary {
-    padding: 3rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 2.4rem;
-  }
-
+  /* services */
   .container-secondary {
     padding: 3rem 1rem;
   }
@@ -160,6 +159,7 @@
     font-size: 2.2rem;
   }
 
+  /* contact */
   .contact-container {
     padding: 3rem 1rem;
   }
@@ -168,10 +168,7 @@
     padding: 3rem 1rem;
   }
 
-  .posts-layout h1 {
-    font-size: 1.5rem;
-  }
-
+  /* add-contact */
   .add-contact-container {
     padding: var(--spacing-100) var(--spacing-sides-responsive);
   }
@@ -179,9 +176,20 @@
   .add-contact-content {
     padding: var(--spacing-100) var(--spacing-sides-responsive);
   }
+
+  /* footer */
+  .footer {
+    padding: var(--spacing-100) var(--spacing-sides-responsive);
+  }
+
+  /* links */
+  .social-links {
+    margin-top: 2rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* grid */
   .posts-layout-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;

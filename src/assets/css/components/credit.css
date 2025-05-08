@@ -1,6 +1,7 @@
+/* layout */
 .credit-container {
   width: 100%;
-  padding: 3rem 3rem 3rem 3rem;
+  padding: var(--spacing-300);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -11,13 +12,13 @@
   width: 68%;
   max-width: 800px;
   height: auto;
+  background-color: var(--color-white-secondary);
+  padding: 2rem;
+  border-radius: var(--border-radius-normal);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  background-color: var(--color-white-secondary);
-  border-radius: var(--border-radius-normal);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .credit-info {
@@ -29,8 +30,8 @@
 .credit-info img {
   width: 5rem;
   height: auto;
-  border-radius: 50%;
   border: 1px solid var(--color-border);
+  border-radius: 50%;
   margin: 0;
   display: block;
   flex-shrink: 0;
@@ -40,15 +41,16 @@
   width: 100%;
 }
 
+/* text */
 .credit-details h3 {
-  font-size: 1.5rem;
+  font-size: var(--text-large);
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   margin: 0 0 0.5rem 0;
 }
 
 .credit-details p {
-  font-size: 1rem;
+  font-size: var(--text-normal);
   color: var(--color-black-primary);
   font-weight: 400;
   margin: 0;
@@ -57,8 +59,8 @@
 /* === share link === */
 .share-link-text {
   font-size: var(--font-normal);
-  font-weight: var(--weight-bold);
   color: var(--color-link);
+  font-weight: var(--weight-bold);
   margin-top: 2rem;
   text-align: center;
   text-decoration: underline;
@@ -69,7 +71,7 @@
   opacity: 0.8;
 }
 
-/* sp */
+/* respondive */
 @media (max-width: 768px) {
   .credit-container {
     padding: 2rem 1rem 2rem 1rem;

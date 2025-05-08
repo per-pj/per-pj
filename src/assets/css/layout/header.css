@@ -1,9 +1,9 @@
-/* header */
+/* layout */
 .header {
-  background-color: var(--color-white-primary);
-  color: var(--color-black-primary);
-  padding: 1rem var(--spacing-sides);
   width: 100%;
+  background-color: var(--color-white-primary);
+  padding: 1rem var(--spacing-sides);
+  color: var(--color-black-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@
   transform: rotate(-8deg);
 }
 
-/* nav */
+/* menu */
 .nav {
   display: flex;
   align-items: center;
@@ -43,10 +43,10 @@
 
 .nav-menu {
   background-color: var(--color-white-primary);
-  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  list-style: none;
 }
 
 .nav-menu li {
@@ -54,10 +54,10 @@
 }
 
 .nav-menu li a {
-  font-size: var(--text-small);
-  font-weight: var(--weight-normal);
+  font-size: var(--text-normal);
   color: var(--color-black-primary);
-  letter-spacing: var(--latter-spacing-desc);
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--latter-spacing-normal);
   text-decoration: none;
   transition: all 0.1s ease;
 }
