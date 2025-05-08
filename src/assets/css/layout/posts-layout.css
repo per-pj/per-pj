@@ -48,14 +48,14 @@
 
 .posts-layout-grid-item {
   background-color: var(--color-white-secondary);
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
   border-radius: var(--border-radius-normal);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 4rem;
   transition: transform 0.3s ease-in-out;
   text-align: left;
   overflow: hidden;
   align-self: start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .posts-layout-grid-item a {

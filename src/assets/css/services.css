@@ -7,7 +7,7 @@
 }
 
 .services-grid-item {
-  padding: 1.5rem;
+  padding: 1rem 1rem 2rem 1rem;
   text-align: center;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -20,6 +20,14 @@
 
 .portfolio-item.hidden {
   display: none;
+}
+
+.add-card {
+  background-color: var(--color-white-secondary);
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 
 #load-more-button {

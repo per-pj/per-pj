@@ -4,7 +4,7 @@
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-title);
-  margin-top: var(--spacing-100);
+  margin-top: var(--spacing-200);
 }
 
 .hero-desc {
@@ -36,15 +36,15 @@
 
 /* about > tab > content */
 .tab-content-container h2 {
-  font-size: var(--text-large);
+  font-size: 24px;
   color: var(--color-black);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-tight);
-  margin-top: var(--spacing-200);
+  margin-top: 2rem;
 }
 
 .tab-content-container h3 {
-  font-size: var(--text-big);
+  font-size: 20px;
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-tight);
@@ -52,21 +52,21 @@
 }
 
 .tab-content-container p {
-  font-size: var(--text-normal);
+  font-size: 16px;
+  color: var(--color-black-primary);
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  line-height: normal;
+  margin-top: var(--spacing-50);
+}
+
+.tab-content-container li {
+  font-size: 16px;
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-normal);
   line-height: 1.7;
   margin-top: var(--spacing-50);
-}
-
-.tab-content-container li {
-  font-size: var(--text-normal);
-  font-weight: var(--weight-normal);
-  color: var(--color-black-primary);
-  letter-spacing: var(--letter-spacing-normal);
-  line-height: 1.7;
-  margin-top: var(--spacing-100);
 }
 
 /* services */

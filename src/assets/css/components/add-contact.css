@@ -10,14 +10,14 @@
 
 .add-contact-content {
   width: 100%;
-  height: 58vh;
+  height: auto;
+  background-color: var(--color-white-secondary);
   padding: var(--spacing-300);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-normal);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background-color: var(--color-white-secondary);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
