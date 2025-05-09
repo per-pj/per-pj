@@ -43,7 +43,7 @@
 
   .nav .nav-menu li a {
     color: var(--color-black-primary);
-    font-size: var(--title-normal);
+    font-size: var(--text-xLarge);
     text-decoration: none;
   }
 
@@ -166,6 +166,7 @@
 
   .form-container {
     padding: 3rem 1rem;
+    width: 100%;
   }
 
   /* add-contact */

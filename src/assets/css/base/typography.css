@@ -26,7 +26,7 @@
 }
 
 .about-desc {
-  font-size: var(--text-normal);
+  font-size: var(--text-big);
   font-weight: var(--weight-normal);
   color: var(--color-black-secondary);
   letter-spacing: var(--letter-spacing-normal);
@@ -52,7 +52,7 @@
 }
 
 .tab-content-container p {
-  font-size: var(--text-big);
+  font-size: 17px;
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-normal);
