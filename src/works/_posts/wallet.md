@@ -2,11 +2,11 @@
 title: '友人と共通のウォレットを持てるアプリ'
 description: '仲の良いグループで共通のウォレットを作成し、毎月指定の金額をプール。決済に利用できます。'
 tags: ['work', 'フィンテック', 'モバイルアプリ']
-thumbnail: /assets/img/wallet.jpg
+thumbnail: /assets/img/wallet.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'wallet'
-date: 2019-10-01
+date: 2021-10-01
 recommended:
   - 'sports'
   - 'video'
