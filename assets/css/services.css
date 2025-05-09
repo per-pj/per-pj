@@ -12,6 +12,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .services-grid-item:hover {
@@ -24,9 +25,8 @@
 
 .add-card {
   background-color: var(--color-white-secondary);
-  padding: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-normal);
   margin-top: 1rem;
 }
 

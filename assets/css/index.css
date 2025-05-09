@@ -1,7 +1,7 @@
 /* hero-section */
 .hero-img {
   width: 100%;
-  height: 68vh;
+  height: auto;
   border-radius: var(--border-radius-normal);
   display: block;
   margin-top: var(--spacing-300);
@@ -84,7 +84,8 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    padding: var(--spacing-100);
+    padding: var(--spacing-200);
+    gap: 6rem;
   }
 
   .item-image {
