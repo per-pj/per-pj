@@ -48,7 +48,7 @@
 
 .posts-layout-grid-item {
   background-color: var(--color-white-secondary);
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   border-radius: var(--border-radius-normal);
   margin-bottom: 4rem;
   transition: transform 0.3s ease-in-out;

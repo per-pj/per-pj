@@ -2,7 +2,7 @@
 title: '部活動の顧問の外部委託サービス'
 description: '顧問の負担を軽減するため外部の指導者に指導を委託できます。'
 tags: ['work', '教育機関向け', 'スポーツ']
-thumbnail: /assets/img/school.jpg
+thumbnail: /assets/img/school.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'school'

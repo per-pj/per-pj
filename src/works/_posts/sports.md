@@ -2,7 +2,7 @@
 title: '練習にスポーツの指導者を呼べるプラットフォーム'
 description: '元プロスポーツ選手など経験豊富な指導者からマンツーマンの指導を受けることができます。'
 tags: ['work', 'シェアリングエコノミー', 'スポーツ']
-thumbnail: /assets/img/sports.jpg
+thumbnail: /assets/img/sports.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'sports'

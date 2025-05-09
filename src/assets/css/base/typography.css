@@ -4,7 +4,7 @@
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-title);
-  margin-top: var(--spacing-200);
+  margin-top: var(--spacing-300);
 }
 
 .hero-desc {
@@ -52,7 +52,7 @@
 }
 
 .tab-content-container p {
-  font-size: 16px;
+  font-size: var(--text-big);
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-normal);
@@ -61,7 +61,7 @@
 }
 
 .tab-content-container li {
-  font-size: 16px;
+  font-size: var(--text-big);
   color: var(--color-black-primary);
   font-weight: var(--weight-normal);
   letter-spacing: var(--letter-spacing-normal);

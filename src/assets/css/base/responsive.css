@@ -109,7 +109,7 @@
   }
 
   .posts-layout h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   /* about */
@@ -174,7 +174,7 @@
   }
 
   .add-contact-content {
-    padding: var(--spacing-100) var(--spacing-sides-responsive);
+    padding: var(--spacing-300) var(--spacing-200);
   }
 
   /* footer */
