@@ -6,13 +6,14 @@
 
 .recommended-item {
   color: inherit;
-  gap: 1rem;
+  gap: 0.5rem;
   display: flex;
   flex-direction: column;
   text-align: left;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   text-decoration: none;
+  margin-bottom: 3rem;
 }
 
 .recommended-image {
@@ -72,6 +73,10 @@
 @media (max-width: 768px) {
   .recommended {
     padding: 2rem 1rem;
+  }
+
+  .recommended-section-title {
+    font-size: 2rem;
   }
 
   .recommended-title {

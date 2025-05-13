@@ -82,3 +82,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// faq
+document.querySelectorAll('.faq-question').forEach((item) => {
+  item.addEventListener('click', () => {
+    const answer = item.nextElementSibling;
+    const toggle = item.querySelector('.toggle');
+
+    answer.classList.toggle('open');
+    item.parentNode.classList.toggle('open');
+
+    toggle.textContent = answer.classList.contains('open') ? '×' : '+';
+  });
+});

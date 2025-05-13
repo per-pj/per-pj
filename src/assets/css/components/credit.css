@@ -9,13 +9,14 @@
 }
 
 .credit-content {
-  width: 68%;
+  width: 60%;
   max-width: 800px;
   height: auto;
-  background-color: var(--color-white-secondary);
+  background-color: var(--color-white-primary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   padding: 2rem;
   border-radius: var(--border-radius-normal);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,21 +55,6 @@
   color: var(--color-black-primary);
   font-weight: 400;
   margin: 0;
-}
-
-/* === share link === */
-.share-link-text {
-  font-size: var(--font-normal);
-  color: var(--color-link);
-  font-weight: var(--weight-bold);
-  margin-top: 2rem;
-  text-align: center;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.share-link-text:hover {
-  opacity: 0.8;
 }
 
 /* respondive */

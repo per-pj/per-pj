@@ -11,7 +11,7 @@ layout: layouts/base.njk
     </div>
     <h1 class="post-detail-hero-title">{{ title }}</h1>
     <p class="post-detail-hero-desc">{{ description }}</p>
-    <p class="share-link-text copy-trigger">リンクをコピー🔗</p>
+    <p class="share-link-text copy-trigger">URLをコピー</p>
     <img src="{{ thumbnail | url }}" alt="{{ title }}" class="post-detail-hero-img" />
   </div>
 </section>
@@ -22,7 +22,9 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<p class="share-link-text copy-trigger">共有🔗</p>
+<section class="container-primary">
+  <p class="share-link-text copy-trigger">URLをコピー</p>
+</section>
 
 <section class="credit-container">
   <div class="credit-content">
@@ -37,7 +39,7 @@ layout: layouts/base.njk
       </div>
     </div>
     <button class="btn-primary">
-      <a href="#">ご連絡ください</a>
+      <a href="#">お問い合わせ</a>
     </button>
   </div>
 </section>
