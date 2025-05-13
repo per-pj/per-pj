@@ -55,7 +55,7 @@
   text-align: left;
   overflow: hidden;
   align-self: start;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
 }
 
 .posts-layout-grid-item a {
@@ -64,6 +64,7 @@
 }
 
 .posts-layout-grid-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
 

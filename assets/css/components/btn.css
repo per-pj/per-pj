@@ -22,6 +22,16 @@
   text-decoration: none;
 }
 
+#load-more-button {
+  background-color: var(--color-black-primary);
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius-small);
+  font-size: 1rem;
+  color: var(--color-white-secondary);
+  border: none;
+  cursor: pointer;
+}
+
 /* === back-to-top === */
 #back-to-top {
   width: 4rem;

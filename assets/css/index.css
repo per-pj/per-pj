@@ -27,7 +27,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
 }
 
 .item-image {
@@ -68,7 +68,7 @@
 }
 
 .tag-primary {
-  background-color: var(--color-tag-primary);
+  background-color: var(--color-tag-blue);
 }
 
 .alert-text {
