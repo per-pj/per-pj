@@ -6,23 +6,24 @@ meta_description: per-pj のポートフォリオサイトのブログページ�
 
 {% block content %}
   <div class="posts-layout">
-    <h1 class="posts-layout-section-title">お知らせ</h1>
+    <h1 class="posts-layout-section-title">Blog</h1>
     <div class="posts-layout-grid" id="blog-items-container">
       {% for item in collections.blog %}
         <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
-            
-            <div class="posts-layout-tags">
-              {% for tag in item.data.tags %}
-                {% if tag != "blog" %}
-                  <span class="tag">{{ tag }}</span>
-                {% endif %}
-              {% endfor %}
-            </div>
+            <div class="card-content">
+              <div class="posts-layout-tags">
+                {% for tag in item.data.tags %}
+                  {% if tag != "blog" %}
+                    <span class="tag">{{ tag }}</span>
+                  {% endif %}
+                {% endfor %}
+              </div>
 
-            <h2 class="posts-layout-title">{{ item.data.title }}</h2>
-            <p class="posts-layout-desc">{{ item.data.description }}</p>
+              <h2 class="posts-layout-title">{{ item.data.title }}</h2>
+              <p class="posts-layout-desc">{{ item.data.description }}</p>
+            </div>
           </a>
         </div>
       {% else %}

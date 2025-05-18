@@ -44,9 +44,8 @@
 
 /* text */
 .credit-details h3 {
-  font-size: var(--text-large);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
+  font-size: 1.5rem;
+  font-weight: var(--text-bold);
   margin: 0 0 0.5rem 0;
 }
 

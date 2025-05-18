@@ -6,23 +6,24 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
 
 {% block content %}
   <div class="posts-layout">
-    <h1 class="posts-layout-section-title">ポートフォリオ</h1>
+    <h1 class="posts-layout-section-title">Works</h1>
     <div class="posts-layout-grid" id="portfolio-grid">
       {% for item in collections.works %}
         <div class="posts-layout-grid-item  portfolio-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
-            
-            <div class="posts-layout-tags">
-              {% for tag in item.data.tags %}
-                {% if tag != "work" %}
-                  <span class="tag">{{ tag }}</span>
-                {% endif %}
-              {% endfor %}
-            </div>
+            <div class="card-content">
+              <div class="posts-layout-tags">
+                {% for tag in item.data.tags %}
+                  {% if tag != "work" %}
+                    <span class="tag">{{ tag }}</span>
+                  {% endif %}
+                {% endfor %}
+              </div>
 
-            <h2 class="posts-layout-title">{{ item.data.title }}</h2>
-            <p class="posts-layout-desc">{{ item.data.description }}</p>
+              <h2 class="posts-layout-title">{{ item.data.title }}</h2>
+              <p class="posts-layout-desc">{{ item.data.description }}</p>
+            </div>
           </a>
         </div>
       {% else %}
