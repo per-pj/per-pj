@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 4.5rem 0 0 0;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  background-color: var(--color-white-primary);
+  font-family: 'Open Sans', sans-serif, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue';
+  background-color: var(--color-bg-primary);
   font-size: 1rem;
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: 0.05em;
+  color: #222;
+  font-weight: 400;
+  letter-spacing: normal;
   line-height: normal;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -26,34 +26,18 @@ body {
   --spacing-100: 1rem;
   --spacing-50: 0.5rem;
   /* color */
-  --color-white-primary: #f9f9f5;
-  --color-white-secondary: #fff;
-  --color-black-primary: #222;
-  --color-black-secondary: #333;
-  --color-copyright: #999;
-  --color-border: #e7e7e7;
-  --color-tag-primary: #f3efef;
-  --color-tag-blue: #e5eefa;
-  /* border-radium */
-  --border-radius-large: 2rem;
-  --border-radius-normal: 0.5rem;
-  --border-radius-small: 0.3rem;
+  --color-bg-primary: #f9f9f4;
+  --color-bg-secondary: #f3ede2;
+  --color-border: #e2e2e2;
+  --color-copyright: #555;
   /* weight */
-  --weight-bold: 700;
-  --weight-normal: 400;
-  /* letter-spacing */
-  --letter-spacing-normal: 0.03px;
-  --letter-spacing-tight: -1.4px;
+  --text-bold: 700;
+  /* border-radius */
+  --border-radius-primary: 2rem;
+  --border-radius-secondary: 0.8rem;
   /* title */
-  --title-h1: 2.8rem;
-  --title-h2: 2.3rem;
+  --title-h1: 3rem;
+  --title-h2: 2.5rem;
   --title-h3: 2rem;
-  --title-h4: 1.3rem;
-  /* text */
-  --text-xLarge: 1.6rem;
-  --text-large: 1.2rem;
-  --text-big: 1.1rem;
-  --text-normal: 1rem;
-  --text-small: 0.9rem;
-  --text-xSmall: 0.8rem;
+  --title-h4: 1.5rem;
 }

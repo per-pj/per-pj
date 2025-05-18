@@ -1,35 +1,35 @@
-/* layout */
+/* コンテナ */
 .posts-layout {
   width: 100%;
-  padding: var(--spacing-sides);
+  padding: var(--spacing-300);
   box-sizing: border-box;
   margin: 0;
 }
 
-/* text */
+/* テキスト */
 .posts-layout-section-title {
-  font-size: var(--title-h2);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-tight);
-  margin-bottom: var(--spacing-100);
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin-bottom: 1rem;
 }
 
 .posts-layout-title {
-  font-size: var(--title-h4);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-tight);
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: normal;
   line-height: normal;
-  margin: 0.6rem 0 0.5rem 0;
+  margin: 0.5rem 0;
   text-decoration: none;
 }
 
 .posts-layout-desc {
-  font-size: var(--text-small);
-  color: var(--color-black-secondary);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-normal);
+  font-size: 0.9rem;
+  color: #3b3b3b;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 /* hover */
@@ -37,25 +37,24 @@
   text-decoration: underline;
 }
 
-/* item */
+/* レイアウト・カードデザイン */
 .posts-layout-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
   grid-auto-flow: row dense;
   align-items: start;
 }
 
 .posts-layout-grid-item {
-  background-color: var(--color-white-secondary);
-  padding: 2rem 1.5rem 2rem 1.5rem;
-  border-radius: var(--border-radius-normal);
-  margin-bottom: 4rem;
-  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
   text-align: left;
   overflow: hidden;
   align-self: start;
-  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-secondary);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .posts-layout-grid-item a {
@@ -64,37 +63,33 @@
 }
 
 .posts-layout-grid-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
 
 .posts-layout-grid-img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius-normal);
   display: block;
-  margin-bottom: 1rem;
 }
 
-/* tag */
+.card-content {
+  padding: 1.5rem 2rem 2.5rem 1.5rem;
+}
+
+/* 記事一覧のタグ */
 .posts-layout-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
 .tag {
-  background-color: var(--color-tag-primary);
-  padding: 0.3rem 0.7rem;
-  border-radius: 30px;
-  font-size: var(--text-xSmall);
-  color: var(--color-black-primary);
-  font-weight: 400;
-  letter-spacing: var(--letter-spacing-normal);
+  font-size: 0.8rem;
+  color: #5b5b5b;
   display: inline-block;
 }
 
-/* pagination */
+/* ブログページのページネーション */
 .posts-layout-grid-item.hidden {
   display: none;
 }
@@ -118,30 +113,24 @@
 
 .pagination a {
   text-decoration: none;
-  background-color: var(--color-white-secondary);
+  background-color: var(--color-bg-primary);
   padding: 10px 15px;
-  border: 1px solid var(--color-border);
+  border: 1px solid #222;
   border-radius: 4px;
-  color: var(--color-black-primary);
+  color: #222;
   cursor: pointer;
 }
 
-.pagination a:hover {
-  background-color: var(--color-white-secondary);
-  border: 1px solid var(--color-border);
-  color: var(--color-black-primary);
-}
-
 .pagination a.active {
-  background-color: var(--color-black-primary);
-  border: 1px solid var(--color-border);
-  color: var(--color-white-primary);
+  background-color: #222;
+  border: 1px solid #222;
+  color: #fff;
   pointer-events: none;
   cursor: default;
 }
 
 .pagination li.disabled span {
-  background-color: var(--color-white-secondary);
+  background-color: var(--color-bg-primary);
   padding: 5px 10px;
   border: 1px solid var(--color-border);
   border-radius: 3px;

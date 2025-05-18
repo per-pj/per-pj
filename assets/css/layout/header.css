@@ -1,9 +1,9 @@
-/* layout */
+/* レイアウト */
 .header {
   width: 100%;
-  background-color: var(--color-white-primary);
+  background-color: var(--color-bg-primary);
   padding: 1rem var(--spacing-sides);
-  color: var(--color-black-primary);
+  color: #222;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +15,7 @@
   margin-top: 0;
 }
 
-/* logo */
+/* ロゴ */
 .logo {
   display: flex;
   justify-content: center;
@@ -28,21 +28,20 @@
 
 .logo-text {
   font-size: 1.6rem;
-  color: var(--color-black-primary);
+  color: #222;
   font-family: 'Lobster', cursive;
-  font-weight: var(--weight-normal);
+  font-weight: 700;
   font-style: italic;
   transform: rotate(-8deg);
 }
 
-/* menu */
+/* メニュー */
 .nav {
   display: flex;
   align-items: center;
 }
 
 .nav-menu {
-  background-color: var(--color-white-primary);
   padding: 0;
   margin: 0;
   display: flex;
@@ -54,19 +53,19 @@
 }
 
 .nav-menu li a {
-  font-size: var(--text-normal);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--latter-spacing-normal);
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: normal;
   text-decoration: none;
   transition: all 0.1s ease;
 }
 .nav-menu li a:hover {
-  border-bottom: 1px solid var(--color-black-secondary);
+  border-bottom: 2px solid #222;
   padding-bottom: 0.5rem;
 }
 
-/* toggle */
+/* トグルメニュー */
 .toggle-menu {
   width: 40px;
   height: 40px;
@@ -83,7 +82,8 @@
 .toggle-menu span {
   width: 24px;
   height: 3px;
-  background-color: var(--color-black-primary);
+  background-color: #222;
+  color: #222;
   border-radius: 1px;
   display: block;
   transition: all 0.3s ease;

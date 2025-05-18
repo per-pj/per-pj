@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadMoreButton = document.getElementById('load-more-button');
 
   const initialItems = 9;
-  const itemsPerLoad = 3;
+  const itemsPerLoad = 6;
 
   let currentlyVisibleItems = initialItems;
 

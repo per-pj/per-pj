@@ -1,8 +1,7 @@
-/* layout */
+/* コンテナ */
 .post-detail-hero-container {
   width: 100%;
   height: auto;
-  background-color: var(--color-white-primary);
   padding: 4rem 3rem 4rem 3rem;
   display: flex;
   justify-content: center;
@@ -23,45 +22,36 @@
   box-sizing: border-box;
 }
 
-/* tag */
+/* 記事内のタグ */
 .post-detail-hero-tags {
   margin-top: 0;
 }
 
 .tag-large {
-  background-color: var(--color-tag-primary);
-  padding: 0.5rem 0.8rem;
-  border-radius: var(--border-radius-large);
-  font-size: var(--text-big);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
+  font-size: 1.2rem;
+  color: #5b5b5b;
   margin: 0 0.5rem;
   display: inline-block;
 }
 
-/* text */
+/* 記事内のヒーローセクション */
 .post-detail-hero-title {
-  font-size: var(--title-h1);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-tight);
-  margin-top: var(--spacing-100);
+  font-size: 3rem;
+  font-weight: var(--text-bold);
+  margin-top: 1rem;
 }
 
 .post-detail-hero-desc {
-  font-size: var(--font-normal);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-normal);
-  margin-top: var(--spacing-100);
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
 
 .post-detail-hero-img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius-normal);
+  border-radius: var(--border-radius-secondary);
   display: block;
-  margin-top: var(--spacing-200);
+  margin-top: 2rem;
 }
 
 .post-detail-content-container {
@@ -84,69 +74,52 @@
   box-sizing: border-box;
 }
 
-/* text */
+/* 記事内のテキスト */
 .post-detail-content h1 {
-  font-size: var(--title-h2);
-  font-weight: var(--weight-normal);
-  color: var(--color-black-primary);
-  letter-spacing: var(--letter-spacing-tight);
-  line-height: normal;
+  font-size: 3rem;
+  font-weight: var(--text-bold);
   margin: 1rem 0;
 }
+
 .post-detail-content h2 {
-  font-size: var(--title-h3);
-  font-weight: var(--weight-normal);
-  color: var(--color-black-primary);
-  letter-spacing: var(--letter-spacing-tight);
-  line-height: normal;
+  font-size: 2rem;
+  font-weight: var(--text-bold);
   margin: 0.5rem 0;
 }
+
 .post-detail-content h3 {
-  font-size: var(--title-h4);
-  font-weight: var(--weight-normal);
-  color: var(--color-black-primary);
-  letter-spacing: var(--letter-spacing-tight);
-  line-height: normal;
+  font-size: 1.5rem;
+  font-weight: var(--text-bold);
   margin: 0.5rem 0;
 }
+
 .post-detail-content p {
-  font-size: var(--text-big);
-  font-weight: var(--weight-normal);
-  color: var(--color-black-primary);
-  letter-spacing: var(--letter-spacing-normal);
-  line-height: normal;
-  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 
 .post-detail-content img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius-normal);
+  border-radius: var(--border-radius-secondary);
   margin: 2rem 0;
 }
 
 .post-detail-content ul {
-  font-size: var(--text-big);
-  font-weight: var(--weight-normal);
-  color: var(--color-black-primary);
-  letter-spacing: var(--letter-spacing-normal);
-  line-height: normal;
+  font-size: 1.2rem;
   margin: 1rem 0 1rem 0;
   padding: 0 0 0 2rem;
-  margin: 0.5rem 0;
 }
 
-/* share */
+/* シェアボタン */
 .share-link-text {
-  background-color: var(--color-white-secondary);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  border: 2px solid #222;
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius-large);
+  border-radius: var(--border-radius-primary);
   text-decoration: none;
-  font-size: var(--font-normal);
-  color: var(--color-link);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-tight);
+  font-size: 1rem;
+  font-weight: var(--text-bold);
   margin-top: 2rem;
   text-align: center;
   cursor: pointer;
@@ -156,7 +129,7 @@
   opacity: 0.8;
 }
 
-/* responsive リファクタリング対象 */
+/* レスポンシブ */
 @media (max-width: 768px) {
   .post-detail-hero-container {
     padding: 4rem 1rem;
@@ -201,8 +174,6 @@
   }
   .post-detail-hero-desc {
     font-size: 1rem;
-    font-weight: 500;
-    color: #000;
     margin-top: 1rem;
   }
   .post-detail-hero-tags {
@@ -210,9 +181,6 @@
   }
   .tag-large {
     font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--color-black);
-    background-color: var(--color-tag-primary);
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
     margin: 0 0.5rem;

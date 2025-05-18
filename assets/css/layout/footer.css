@@ -1,7 +1,6 @@
 /* layout */
 .footer {
   width: 100%;
-  background-color: var(--color-white-primary);
   padding: var(--spacing-sides);
   margin: 0;
   box-sizing: border-box;
