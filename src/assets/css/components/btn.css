@@ -5,14 +5,14 @@
   border-radius: var(--border-radius-primary);
   border: none;
   cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.15s ease;
+  transition: transform 0.1s ease, background-color 0.1s ease;
   margin-top: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
   background-color: #555;
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 
 .btn-primary a {
@@ -53,7 +53,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.1s ease;
 }
 
 #back-to-top:hover {

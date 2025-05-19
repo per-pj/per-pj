@@ -1,8 +1,8 @@
-/* contaner */
+/* コンテナ */
 .container-primary {
   width: 100%;
   height: auto;
-  padding: var(--spacing-300);
+  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,19 +31,5 @@
   margin: 0;
   border-radius: 0.5rem;
   width: 100%;
-  box-sizing: border-box;
-}
-
-/* services */
-.container-secondary {
-  width: 100%;
-  padding: var(--spacing-300);
-  box-sizing: border-box;
-}
-
-.section-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   box-sizing: border-box;
 }

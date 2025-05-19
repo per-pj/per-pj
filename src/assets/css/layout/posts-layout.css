@@ -9,27 +9,20 @@
 /* テキスト */
 .posts-layout-section-title {
   font-size: 2.5rem;
-  color: #222;
-  font-weight: 700;
-  letter-spacing: normal;
+  font-weight: var(--text-bold);
   margin-bottom: 1rem;
 }
 
 .posts-layout-title {
   font-size: 1.5rem;
-  color: #222;
-  font-weight: 700;
-  letter-spacing: normal;
-  line-height: normal;
+  font-weight: var(--text-bold);
   margin: 0.5rem 0;
   text-decoration: none;
 }
 
 .posts-layout-desc {
   font-size: 0.9rem;
-  color: #3b3b3b;
-  font-weight: 400;
-  letter-spacing: normal;
+  color: #2c2c2c;
 }
 
 /* hover */
@@ -53,7 +46,7 @@
   align-self: start;
   border-radius: var(--border-radius-secondary);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   margin-bottom: 2rem;
 }
 
@@ -63,7 +56,7 @@
 }
 
 .posts-layout-grid-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .posts-layout-grid-img {
@@ -85,7 +78,7 @@
 
 .tag {
   font-size: 0.8rem;
-  color: #5b5b5b;
+  color: #6b6b6b;
   display: inline-block;
 }
 
