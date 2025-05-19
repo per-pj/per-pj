@@ -3,7 +3,6 @@
   width: 100%;
   background-color: var(--color-bg-primary);
   padding: 1rem var(--spacing-sides);
-  color: #222;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +29,7 @@
   font-size: 1.6rem;
   color: #222;
   font-family: 'Lobster', cursive;
-  font-weight: 700;
+  font-weight: var(--text-bold);
   font-style: italic;
   transform: rotate(-8deg);
 }
@@ -49,14 +48,13 @@
 }
 
 .nav-menu li {
-  margin-left: var(--spacing-150);
+  margin-left: 1.5rem;
 }
 
 .nav-menu li a {
   font-size: 1.1rem;
   color: #222;
-  font-weight: 700;
-  letter-spacing: normal;
+  font-weight: var(--text-bold);
   text-decoration: none;
   transition: all 0.1s ease;
 }

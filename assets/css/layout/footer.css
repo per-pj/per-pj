@@ -1,4 +1,4 @@
-/* layout */
+/* レイアウト */
 .footer {
   width: 100%;
   padding: var(--spacing-sides);
@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-/* menu */
+/* メニュー */
 .footer-item nav {
   padding: 0;
   margin: 0;
@@ -42,17 +42,15 @@
 
 .footer-menu li a {
   text-decoration: none;
-  font-size: var(--text-small);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-normal);
+  font-size: 0.9rem;
+  color: #222;
   margin: 0 1rem 0 0;
   display: block;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .footer-menu li a:hover {
-  color: var(--color-black-secondary);
+  color: #a7a7a7;
 }
 
 .social-links {
@@ -73,16 +71,14 @@
 }
 
 .copyright {
-  font-size: var(--text-xSmall);
+  font-size: 0.8rem;
   color: var(--color-copyright);
-  font-weight: var(--weight-normal);
-  letter-spacing: var(--letter-spacing-normal);
   padding-top: 2rem;
   border-top: 1px solid var(--color-border);
   margin-top: 2rem;
 }
 
-/* responsive */
+/* レスポンシブ対応 */
 @media (max-width: 767px) {
   .footer-flex {
     flex-direction: column;
@@ -93,7 +89,6 @@
   }
 
   .footer-menu li a {
-    font-size: var(--text-normal);
     margin: 0 0 1rem 0;
   }
 }

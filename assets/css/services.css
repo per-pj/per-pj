@@ -8,6 +8,20 @@
 }
 
 /* services */
+.container-secondary {
+  width: 100%;
+  padding: var(--spacing-300);
+  box-sizing: border-box;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* services */
 .section-title {
   font-size: var(--title-h2);
   color: var(--color-black-primary);
