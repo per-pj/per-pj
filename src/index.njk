@@ -6,29 +6,29 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 
 <section class="container-primary">
   <div class="content-primary">
-    <h1 class="hero-title">Portfolio</h1>
+    <h1 class="hero-title">From pain to product</h1>
     <p class="hero-desc">
-      新規事業開発に取り組むプロダクトデザイナー
+      これまでに作ってきたサービスの一部をポートフォリオとして公開しています。
     </p>
     <button class="btn-primary">
       <a href="{{ '/about/' | url }}">プロフィール</a>
     </button>
-    <img src="{{ '/assets/img/top-hero.png' | url }}" alt="オフィス" class="hero-img" />
+    <!--<img src="{{ '/assets/img/top-hero.png' | url }}" alt="オフィス" class="hero-img" />-->
   </div>
 </section>
 
 <section class="posts-layout">
-    <h1 class="posts-layout-section-title">Works</h1>
+    <!--<h1 class="posts-layout-section-title">ポートフォリオ</h1>-->
 
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 3)) -%}
+    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 9)) -%}
         <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
             <div class="card-content">
 
              {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-             <div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>
+             <!-- <div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div> -->
 
              <h2 class="posts-layout-title">{{ item.data.title }}</h2>
              <p class="posts-layout-desc">{{ item.data.description }}</p>
@@ -44,8 +44,9 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
     </div>
 </section>
 
+<!--
 <section class="posts-layout">
-    <h1 class="posts-layout-section-title">Blog</h1>
+    <h1 class="posts-layout-section-title">お知らせ</h1>
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
     <div class="posts-layout-grid">{%- for item in (collections.blog.slice(0, 3)) -%}
         <div class="posts-layout-grid-item">
@@ -73,3 +74,4 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
       <button class="btn-primary"><a href="{{ '/blog/' | url }}">全て表示</a></button>
     </div>
 </section>
+-->

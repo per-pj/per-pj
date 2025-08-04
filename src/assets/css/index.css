@@ -1,11 +1,11 @@
 .hero-title {
-  font-size: 3.5rem;
-  font-weight: var(--text-bold);
+  font-size: var(--text-hero);
+  font-weight: var(--weight-normal);
   margin-top: 3rem;
 }
 
 .hero-desc {
-  font-size: 1.15rem;
+  font-size: var(--text-big);
   margin: 1rem 0;
 }
 

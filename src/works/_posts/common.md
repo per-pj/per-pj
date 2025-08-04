@@ -1,17 +1,17 @@
 ---
-title: 'Common'
-description: '部活動の指導を外部の指導者に委託'
-tags: ['work', '教育機関向け', '人材']
+title: 'Kommon'
+description: '部活動の指導を外部の指導者に委託できます。'
+tags: ['work', 'スポーツ']
 thumbnail: /assets/img/common.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'common'
 date: 2016-04-01
 recommended:
+  - 'common'
   - 'proath'
-  - 'shabel'
   - 'patchworks'
-  - 'weask'
+  - 'modan'
   - 'datahub'
   - 'moai'
 ---

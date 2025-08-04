@@ -2,7 +2,7 @@
 .header {
   width: 100%;
   background-color: var(--color-bg-primary);
-  padding: 1rem var(--spacing-sides);
+  padding: 1.5rem var(--spacing-sides);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@
 
 .logo-text {
   font-size: 1.6rem;
-  color: #222;
+  color: var(--color-black);
   font-family: 'Lobster', cursive;
   font-weight: var(--text-bold);
   font-style: italic;
@@ -52,14 +52,13 @@
 }
 
 .nav-menu li a {
-  font-size: 1.1rem;
-  color: #222;
-  font-weight: var(--text-bold);
+  font-size: 1rem;
+  color: var(--color-black);
   text-decoration: none;
   transition: all 0.1s ease;
 }
 .nav-menu li a:hover {
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid var(--color-black);
   padding-bottom: 0.5rem;
 }
 

@@ -1,17 +1,17 @@
 ---
-title: 'GoWith'
-description: 'フリーランス向けコワーキングスペース付きシェアハウス'
+title: 'Fromspot'
+description: 'フリーランス向けコワーキングスペース付きシェアハウス。'
 tags: ['work', '賃貸', '不動産']
 thumbnail: /assets/img/gowith.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'gowith'
-date: 2020-04-01
+date: 2020-01-01
 recommended:
+  - 'common'
   - 'proath'
-  - 'shabel'
   - 'patchworks'
-  - 'weask'
+  - 'modan'
   - 'datahub'
   - 'moai'
 ---

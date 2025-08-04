@@ -45,18 +45,14 @@
 }
 
 .recommended-title {
-  font-size: var(--title-h4);
-  color: var(--color-black);
-  font-weight: var(--weight-normal);
-  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: var(--text-bold);
+  margin: 0.5rem 0 0 0;
 }
 
 .recommended-desc {
-  font-size: var(--text-small);
-  color: var(--color-black-primary);
-  font-weight: var(--weight-normal);
+  font-size: 1rem;
   margin: 0;
-  line-height: 1.5;
 }
 
 /* tag */

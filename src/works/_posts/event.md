@@ -1,17 +1,17 @@
 ---
-title: 'GoPlace'
-description: 'リアル店舗型イベントプラットフォーム'
+title: 'Eveplace'
+description: 'イベントに特化したコミュニティスペースと専用アプリ。'
 tags: ['work', '体験', 'オフライン']
 thumbnail: /assets/img/event.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'event'
-date: 2022-04-01
+date: 2019-04-01
 recommended:
+  - 'common'
   - 'proath'
-  - 'shabel'
   - 'patchworks'
-  - 'weask'
+  - 'modan'
   - 'datahub'
   - 'moai'
 ---

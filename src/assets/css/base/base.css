@@ -5,8 +5,8 @@ body {
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue';
   background-color: var(--color-bg-primary);
   font-size: 1rem;
-  color: #222;
-  font-weight: 400;
+  color: var(--color-black);
+  font-weight: var(--weight-normal);
   letter-spacing: normal;
   line-height: normal;
   box-sizing: border-box;
@@ -26,13 +26,18 @@ body {
   --spacing-100: 1rem;
   --spacing-50: 0.5rem;
   /* color */
-  --color-bg-primary: #f9f9f4;
-  --color-bg-secondary: #f3ede2;
+  --color-bg-primary: #fdfbf1;
+  --color-bg-contact: #f6f3e8;
+  --color-bg-secondary: #fdfaf5;
   --color-border: #e2e2e2;
-  --color-copyright: #959595;
+  --color-copyright: #7d7d7d;
+  --color-black: #111;
+  --color-white: #fff;
   /* weight */
+  --weight-normal: 400;
   --text-bold: 700;
   /* border-radius */
+  --border-radius-btn: 1rem;
   --border-radius-primary: 2rem;
   --border-radius-secondary: 0.8rem;
   /* title */
@@ -40,4 +45,9 @@ body {
   --title-h2: 2.5rem;
   --title-h3: 2rem;
   --title-h4: 1.5rem;
+  /* text */
+  --text-hero: 3.2rem;
+  --text-big: 1.2rem;
+  --text-normal: 1rem;
+  --text-small: 0.8rem;
 }

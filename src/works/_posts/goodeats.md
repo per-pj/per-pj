@@ -1,17 +1,17 @@
 ---
 title: 'GoodEats'
-description: '栄養士が考えたヘルシーな社食'
+description: '栄養士が考えたヘルシーな社食をお届け。'
 tags: ['work', 'ヘルスケア', '福利厚生']
 thumbnail: /assets/img/goodeats.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'goodeats'
-date: 2022-04-01
+date: 2022-01-01
 recommended:
+  - 'common'
   - 'proath'
-  - 'shabel'
   - 'patchworks'
-  - 'weask'
+  - 'modan'
   - 'datahub'
   - 'moai'
 ---
