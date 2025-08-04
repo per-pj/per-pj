@@ -9,20 +9,21 @@
 /* テキスト */
 .posts-layout-section-title {
   font-size: 2.5rem;
-  font-weight: var(--text-bold);
-  margin-bottom: 1rem;
+  font-weight: var(--weight-normal);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .posts-layout-title {
-  font-size: 1.5rem;
-  font-weight: var(--text-bold);
+  font-size: 1.6rem;
+  font-weight: var(--weight-normal);
   margin: 0.5rem 0;
   text-decoration: none;
 }
 
 .posts-layout-desc {
-  font-size: 0.9rem;
-  color: #2c2c2c;
+  font-size: var(--text-normal);
+  color: var(--color-black);
 }
 
 /* hover */
@@ -40,12 +41,11 @@
 }
 
 .posts-layout-grid-item {
-  background-color: #fff;
+  background-color: var(--color-white);
   text-align: left;
   overflow: hidden;
   align-self: start;
   border-radius: var(--border-radius-secondary);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.1s ease-in-out;
   margin-bottom: 2rem;
 }
@@ -57,6 +57,7 @@
 
 .posts-layout-grid-item:hover {
   transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .posts-layout-grid-img {
@@ -77,8 +78,8 @@
 }
 
 .tag {
-  font-size: 0.8rem;
-  color: #6b6b6b;
+  font-size: 1rem;
+  color: var(--color-black);
   display: inline-block;
 }
 
@@ -108,16 +109,16 @@
   text-decoration: none;
   background-color: var(--color-bg-primary);
   padding: 10px 15px;
-  border: 1px solid #222;
+  border: 1px solid var(--color-black);
   border-radius: 4px;
-  color: #222;
+  color: var(--color-black);
   cursor: pointer;
 }
 
 .pagination a.active {
-  background-color: #222;
-  border: 1px solid #222;
-  color: #fff;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
+  color: var(--color-white);
   pointer-events: none;
   cursor: default;
 }

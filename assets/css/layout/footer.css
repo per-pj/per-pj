@@ -2,6 +2,7 @@
 .footer {
   width: 100%;
   padding: var(--spacing-sides);
+  background-color: var(--color-black);
   margin: 0;
   box-sizing: border-box;
 }
@@ -43,14 +44,14 @@
 .footer-menu li a {
   text-decoration: none;
   font-size: 0.9rem;
-  color: #222;
+  color: var(--color-white);
   margin: 0 1rem 0 0;
   display: block;
   transition: 0.1s ease-in-out;
 }
 
 .footer-menu li a:hover {
-  color: #a7a7a7;
+  color: var(--color-white);
 }
 
 .social-links {
@@ -64,6 +65,9 @@
   height: auto;
   margin: 0 0.5rem;
   transition: opacity 0.1s ease-in-out;
+  background-color: var(--color-white);
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .social-link:hover {
@@ -72,9 +76,9 @@
 
 .copyright {
   font-size: 0.8rem;
-  color: var(--color-copyright);
+  color: var(--color-white);
   padding-top: 2rem;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-white);
   margin-top: 2rem;
 }
 
