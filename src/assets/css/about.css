@@ -58,7 +58,7 @@
   color: #999;
   font-weight: var(--text-bold);
   border: none;
-  border-bottom: 3px solid var(--color-bg-primary);
+  border-bottom: 3px solid #222;
   padding: 1rem;
   margin: 0 0.6rem;
   cursor: pointer;
@@ -66,13 +66,13 @@
 }
 
 .tab-link:hover {
-  color: #222;
+  color: #fff;
 }
 
 .tab-link.active {
   background-color: inherit;
-  color: #222;
-  border-bottom: 3px solid #222;
+  color: #fff;
+  border-bottom: 3px solid #fff;
 }
 
 /* タブの切り替え */

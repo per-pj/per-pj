@@ -1,7 +1,7 @@
 /* レイアウト */
 .header {
   width: 100%;
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-black);
   padding: 1.5rem var(--spacing-sides);
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@
 
 .logo-text {
   font-size: 1.6rem;
-  color: var(--color-black);
+  color: var(--color-white);
   font-family: 'Lobster', cursive;
   font-weight: var(--text-bold);
   font-style: italic;
@@ -53,12 +53,12 @@
 
 .nav-menu li a {
   font-size: 1rem;
-  color: var(--color-black);
+  color: var(--color-white);
   text-decoration: none;
   transition: all 0.1s ease;
 }
 .nav-menu li a:hover {
-  border-bottom: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-white);
   padding-bottom: 0.5rem;
 }
 

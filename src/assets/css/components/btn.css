@@ -1,6 +1,6 @@
 /* primary */
 .btn-primary {
-  background-color: var(--color-black);
+  background-color: #fff;
   padding: 0.8rem 1.8rem;
   border-radius: var(--border-radius-btn);
   border: none;
@@ -11,13 +11,13 @@
 }
 
 .btn-primary:hover {
-  background-color: #555;
+  background-color: #dfdfdf;
   transform: scale(1.1);
 }
 
 .btn-primary a {
   font-size: 1rem;
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: var(--weight-normal);
   letter-spacing: normal;
   text-decoration: none;
@@ -27,7 +27,7 @@
   background-color: var(--color-bg-primary);
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
-  font-weight: var(--text-bold);
+  font-weight: var(--text-normal);
   color: var(--color-black);
   border: 2px solid var(--color-black);
   border-radius: var(--border-radius-btn);
@@ -40,9 +40,9 @@
   height: 4rem;
   padding: 1rem;
   border-radius: 50%;
-  background-color: #222;
+  background-color: #fff;
   font-size: 1rem;
-  color: var(--color-white);
+  color: #000;
   line-height: 1;
   display: none;
   text-align: center;
@@ -57,5 +57,5 @@
 }
 
 #back-to-top:hover {
-  background-color: #555;
+  background-color: #dfdfdf;
 }

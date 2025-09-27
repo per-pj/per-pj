@@ -51,7 +51,7 @@
 }
 
 .footer-menu li a:hover {
-  color: var(--color-white);
+  color: #dfdfdf;
 }
 
 .social-links {
@@ -76,9 +76,9 @@
 
 .copyright {
   font-size: 0.8rem;
-  color: var(--color-white);
+  color: #dfdfdf;
   padding-top: 2rem;
-  border-top: 1px solid var(--color-white);
+  border-top: 1px solid #505050;
   margin-top: 2rem;
 }
 
