@@ -1,7 +1,7 @@
 /* layout */
 .recommended {
   padding: var(--spacing-sides);
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-black);
 }
 
 .recommended-item {
@@ -46,7 +46,7 @@
 
 .recommended-title {
   font-size: 1.5rem;
-  font-weight: var(--text-bold);
+  font-weight: var(--weight-normal);
   margin: 0.5rem 0 0 0;
 }
 

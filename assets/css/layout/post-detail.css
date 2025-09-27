@@ -29,7 +29,7 @@
 
 .tag-large {
   font-size: 1.2rem;
-  color: #5b5b5b;
+  color: #fff;
   margin: 0 0.5rem;
   display: inline-block;
 }
@@ -114,12 +114,13 @@
 /* シェアボタン */
 .share-link-text {
   background-color: var(--color-bg-primary);
+  color: var(--color-black);
   border: 2px solid #222;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-primary);
   text-decoration: none;
   font-size: 1rem;
-  font-weight: var(--text-bold);
+  font-weight: var(--text-normal);
   margin-top: 2rem;
   text-align: center;
   cursor: pointer;

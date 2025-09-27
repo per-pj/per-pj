@@ -17,6 +17,7 @@
 .posts-layout-title {
   font-size: 1.6rem;
   font-weight: var(--weight-normal);
+  color: var(--color-black);
   margin: 0.5rem 0;
   text-decoration: none;
 }
@@ -41,13 +42,14 @@
 }
 
 .posts-layout-grid-item {
-  background-color: var(--color-white);
+  background: #ffffff;
   text-align: left;
   overflow: hidden;
   align-self: start;
   border-radius: var(--border-radius-secondary);
   transition: transform 0.1s ease-in-out;
   margin-bottom: 2rem;
+  border: #505050 1px solid;
 }
 
 .posts-layout-grid-item a {
