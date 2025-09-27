@@ -6,7 +6,7 @@ thumbnail: /assets/img/voicechat.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'Speek'
-date: 2021-01-01
+date: 2019-03-01
 recommended:
   - 'common'
   - 'proath'

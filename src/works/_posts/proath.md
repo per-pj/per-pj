@@ -1,6 +1,6 @@
 ---
 title: 'Proath'
-description: '実績豊富なプロのコーチによる有料のプライベートレッスン。'
+description: 'プロのコーチによる有料のプライベートレッスン。'
 tags: ['work', 'スポーツ']
 thumbnail: /assets/img/proath.png
 layout: layouts/work-detail.njk

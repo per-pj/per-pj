@@ -1,6 +1,6 @@
 ---
 title: 'PatchWork'
-description: '企業とフリーランスをマッチングするプラットフォーム。'
+description: '企業とフリーランスをマッチング。'
 tags: ['work', '人材']
 thumbnail: /assets/img/patchworks.png
 layout: layouts/work-detail.njk

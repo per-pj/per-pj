@@ -6,7 +6,7 @@ thumbnail: /assets/img/gowith.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'gowith'
-date: 2020-01-01
+date: 2023-01-01
 recommended:
   - 'common'
   - 'proath'

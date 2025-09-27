@@ -1,6 +1,6 @@
 ---
 title: 'Eveplace'
-description: 'イベントに特化したコミュニティスペースと専用アプリ。'
+description: 'イベントスペースと専用コミュニティアプリ。'
 tags: ['work', '体験', 'オフライン']
 thumbnail: /assets/img/event.png
 layout: layouts/work-detail.njk

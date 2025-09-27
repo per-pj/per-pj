@@ -1,6 +1,6 @@
 ---
 title: 'FitPocket'
-description: '好きな場所でいつでも動画でトレーニングできます。'
+description: 'トレーニング動画に特化したSNS。'
 tags: ['work', 'ヘルスケア']
 thumbnail: /assets/img/fitpocket.png
 layout: layouts/work-detail.njk

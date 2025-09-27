@@ -6,7 +6,7 @@ thumbnail: /assets/img/datahub.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'datahub'
-date: 2018-04-01
+date: 2019-03-02
 recommended:
   - 'common'
   - 'proath'
