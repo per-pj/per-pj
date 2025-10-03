@@ -39,8 +39,12 @@ module.exports = function (eleventyConfig) {
   console.log('Added date filter');
 
   // works コレクション
-  eleventyConfig.addCollection('works', (collectionApi) =>
-    collectionApi.getFilteredByGlob('./src/works/_posts/*.md')
+  eleventyConfig.addCollection(
+    'works',
+    (collectionApi) =>
+      collectionApi
+        .getFilteredByGlob('./src/works/_posts/*.md')
+        .sort((a, b) => b.date - a.date) // ← 新しい順にソート
   );
   console.log("Added 'works' collection");
 

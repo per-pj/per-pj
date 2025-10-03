@@ -6,7 +6,7 @@ thumbnail: /assets/img/hazziy.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'hazziy'
-date: 2023-04-01
+date: 2020-04-01
 recommended:
   - 'common'
   - 'proath'
