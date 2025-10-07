@@ -1,6 +1,6 @@
 ---
 title: 'Kommon'
-description: '部活動の指導を外部の指導者に委託できます。'
+description: '部活動の指導を外部のコーチに委託できます。'
 tags: ['work', 'スポーツ']
 thumbnail: /assets/img/common.png
 layout: layouts/work-detail.njk

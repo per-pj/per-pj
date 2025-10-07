@@ -1,6 +1,6 @@
 ---
 title: 'WeAsk'
-description: '専門家や著名人に有料で質問できる動画SNS。'
+description: '専門家や著名人に有料で質問できる動画ソーシャルメディア。'
 tags: ['work', 'コンシューマー向け']
 thumbnail: /assets/img/weask.png
 layout: layouts/work-detail.njk

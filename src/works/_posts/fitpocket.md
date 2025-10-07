@@ -1,6 +1,6 @@
 ---
 title: 'FitPocket'
-description: 'トレーニング動画に特化したSNS。'
+description: 'トレーニング動画に特化したソーシャルメディア。'
 tags: ['work', 'ヘルスケア']
 thumbnail: /assets/img/fitpocket.png
 layout: layouts/work-detail.njk
