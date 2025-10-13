@@ -1,14 +1,14 @@
 ---
 title: 'Kommon'
 description: '部活動の指導を外部のコーチに委託できます。'
-tags: ['work', 'スポーツ']
-thumbnail: /assets/img/common.png
+tags: ['work', 'スポーツ', '教育機関']
+thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
-slug: 'common'
+slug: 'kommon'
 date: 2016-04-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'

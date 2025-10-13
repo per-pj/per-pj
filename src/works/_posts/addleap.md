@@ -1,12 +1,12 @@
 ---
-title: 'Shabel'
-description: 'フリマのように知識を動画やビデオ通話で簡単に売買できるアプリ。'
-tags: ['work', 'シェアリングエコノミー']
+title: 'AddLeap'
+description: '留学中の学生と企業の採用担当者をマッチングする採用プラットフォーム。'
+tags: ['採用', 'マッチング']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
-slug: 'shabel'
-date: 2017-07-01
+slug: 'addleap'
+date: 2018-10-01
 recommended:
   - 'kommon'
   - 'proath'

@@ -6,9 +6,9 @@ thumbnail: /assets/img/goodeats.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'goodeats'
-date: 2022-01-01
+date: 2019-04-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'
@@ -17,7 +17,3 @@ recommended:
 ---
 
 福利厚生として健康的な食事を社員の皆様に提供するシェア社食サービス。
-
-## 作成中
-
-現在、準備中。

@@ -1,12 +1,12 @@
 ---
-title: 'Shabel'
-description: 'フリマのように知識を動画やビデオ通話で簡単に売買できるアプリ。'
-tags: ['work', 'シェアリングエコノミー']
+title: 'Say'
+description: '世界中の人々をビデオチャットでつなぐコミュニケーションアプリ。'
+tags: ['work', 'ビデオチャット']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
-slug: 'shabel'
-date: 2017-07-01
+slug: 'say'
+date: 2017-10-01
 recommended:
   - 'kommon'
   - 'proath'

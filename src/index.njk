@@ -8,7 +8,7 @@ meta_description: sk335_ のポートフォリオサイトのトップページ�
   <div class="content-primary">
     <h1 class="hero-title">Create products people need.</h1>
     <!--<p class="hero-desc">
-      現在、作成中です。
+      今まで立ち上げてきた新規事業の一部をポートフォリオとして公開
     </p>-->
     <!--<button class="btn-primary">
       <a href="{{ '/about/' | url }}">プロフィールを見る</a>
@@ -21,7 +21,7 @@ meta_description: sk335_ のポートフォリオサイトのトップページ�
     <!--<h1 class="posts-layout-section-title">ポートフォリオ</h1>-->
 
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 15)) -%}
+    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 25)) -%}
         <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />

@@ -1,14 +1,14 @@
 ---
-title: 'Eveplace'
-description: 'イベンター向けスペースと専用のコミュニティアプリ。'
+title: 'Triber'
+description: 'イベント主催者向けのスペースと専用のコミュニティアプリ。'
 tags: ['work', '体験', 'オフライン']
-thumbnail: /assets/img/event.png
+thumbnail: /assets/img/triber.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
-slug: 'event'
-date: 2019-04-01
+slug: 'triber'
+date: 2019-07-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'
@@ -17,7 +17,3 @@ recommended:
 ---
 
 誰でも気軽にイベントを開催できるイベントスペースと会員専用コミュニティアプリ。
-
-## 作成中
-
-現在、準備中。

@@ -1,14 +1,14 @@
 ---
 title: 'Speek'
-description: '音声チャットに特化したコミュニケーションアプリ。'
-tags: ['work', 'コミュニケーション', 'toC']
-thumbnail: /assets/img/voicechat.png
+description: '音声チャットに特化した若年層向けコミュニケーションアプリ。'
+tags: ['work', 'コミュニケーション', '音声']
+thumbnail: /assets/img/speek.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'Speek'
-date: 2019-03-01
+date: 2019-07-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'

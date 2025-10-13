@@ -1,14 +1,14 @@
 ---
 title: 'Hazziy'
 description: '短時間で投稿が消えるテキストベースで安全なソーシャルメディア。'
-tags: ['work', 'コミュニケーション', 'toC']
-thumbnail: /assets/img/hazziy.png
+tags: ['work', 'コミュニケーション', 'SNS']
+thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'hazziy'
-date: 2020-04-01
+date: 2020-01-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'

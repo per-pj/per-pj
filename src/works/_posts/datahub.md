@@ -1,14 +1,14 @@
 ---
 title: 'Datahub'
 description: 'センサーデータを安全に販売・購入できます。'
-tags: ['work', '企業向け']
-thumbnail: /assets/img/datahub.png
+tags: ['work', 'B向け']
+thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'datahub'
-date: 2019-03-02
+date: 2019-01-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'

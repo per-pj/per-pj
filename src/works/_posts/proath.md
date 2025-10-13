@@ -6,9 +6,9 @@ thumbnail: /assets/img/proath.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'proath'
-date: 2016-10-01
+date: 2016-07-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'

@@ -6,9 +6,9 @@ thumbnail: /assets/img/fitpocket.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fitpocket'
-date: 2017-01-01
+date: 2016-10-01
 recommended:
-  - 'common'
+  - 'kommon'
   - 'proath'
   - 'patchworks'
   - 'modan'
