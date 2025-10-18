@@ -6,7 +6,7 @@ thumbnail: /assets/img/fastclub.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fastclub'
-date: 2019-07-01
+date: 2020-10-01
 recommended:
   - 'kommon'
   - 'proath'

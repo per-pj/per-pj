@@ -6,7 +6,7 @@ thumbnail: /assets/img/triber.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'triber'
-date: 2019-07-01
+date: 2020-07-01
 recommended:
   - 'kommon'
   - 'proath'
@@ -16,4 +16,4 @@ recommended:
   - 'moai'
 ---
 
-誰でも気軽にイベントを開催できるイベントスペースと会員専用コミュニティアプリ。
+Coming Soon...

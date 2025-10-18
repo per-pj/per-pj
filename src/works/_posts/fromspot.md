@@ -2,7 +2,7 @@
 title: 'Fromspot'
 description: 'フリーランス向けのコワーキングスペース付きシェアハウス。'
 tags: ['work', '賃貸', '不動産']
-thumbnail: /assets/img/cs.png
+thumbnail: /assets/img/fromspot.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fromspot'
@@ -16,4 +16,4 @@ recommended:
   - 'moai'
 ---
 
-コロナ禍の孤立の解消を目指す新しいライフスタイルの提案。
+Coming Soon...
