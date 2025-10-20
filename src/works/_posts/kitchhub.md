@@ -2,7 +2,7 @@
 title: 'KitchHub'
 description: 'ローカルに根付いた月額制のシェアキッチンスペース。'
 tags: ['work', 'コミュニティ', 'ヘルスケア']
-thumbnail: /assets/img/kitchub.png
+thumbnail: /assets/img/kitchhub.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'kitchHub'
