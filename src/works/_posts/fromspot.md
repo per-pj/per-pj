@@ -6,7 +6,7 @@ thumbnail: /assets/img/fromspot.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fromspot'
-date: 2019-04-20
+date: 2019-04-25
 recommended:
   - 'kommon'
   - 'proath'
