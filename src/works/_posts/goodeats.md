@@ -6,7 +6,7 @@ thumbnail: /assets/img/goodeats.png
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'goodeats'
-date: 2019-04-01
+date: 2019-04-10
 recommended:
   - 'kommon'
   - 'proath'

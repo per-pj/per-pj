@@ -21,7 +21,7 @@ meta_description: sk335_ のポートフォリオサイトのトップページ�
     <!--<h1 class="posts-layout-section-title">ポートフォリオ</h1>-->
 
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 25)) -%}
+    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 30)) -%}
         <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
