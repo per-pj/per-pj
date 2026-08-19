@@ -32,7 +32,7 @@
 
 /* プロフィールテキスト */
 .about-desc {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 1.5rem 0;
 }
 
@@ -58,7 +58,7 @@
   color: #999;
   font-weight: var(--text-bold);
   border: none;
-  border-bottom: 3px solid #222;
+  border-bottom: 3px solid #fff;
   padding: 1rem;
   margin: 0 0.6rem;
   cursor: pointer;
@@ -66,13 +66,13 @@
 }
 
 .tab-link:hover {
-  color: #fff;
+  color: #000;
 }
 
 .tab-link.active {
   background-color: inherit;
-  color: #fff;
-  border-bottom: 3px solid #fff;
+  color: #000;
+  border-bottom: 3px solid #000;
 }
 
 /* タブの切り替え */
@@ -97,8 +97,8 @@
 
 /* コンテンツのタイポグラフィ */
 .tab-content-container h2 {
-  font-size: 1.5rem;
-  font-weight: var(--text-bold);
+  font-size: 1.3rem;
+  font-weight: normal;
   margin-top: 2.5rem;
 }
 
@@ -109,11 +109,11 @@
 }
 
 .tab-content-container p {
-  font-size: 1.05rem;
-  margin-top: 0.3rem;
+  font-size: 1rem;
+  margin-top: 0.4rem;
 }
 
 .tab-content-container li {
-  font-size: 1.05rem;
-  margin-top: 0.3rem;
+  font-size: 1rem;
+  margin-top: 0.4rem;
 }

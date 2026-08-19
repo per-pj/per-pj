@@ -12,8 +12,8 @@
   width: 60%;
   max-width: 800px;
   height: auto;
-  border-top: 1px solid #505050;
-  border-bottom: 1px solid #505050;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@
 /* text */
 .credit-details h3 {
   font-size: 1.5rem;
-  font-weight: var(--text-bold);
+  font-weight: normal;
   margin: 0 0 0.5rem 0;
 }
 

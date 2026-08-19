@@ -1,11 +1,10 @@
 body {
   margin: 0;
   padding: 4.5rem 0 0 0;
-  font-family: 'Open Sans', sans-serif, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue';
-  background-color: var(--color-black);
+  font-family: sans-serif, roboto, arial, helvetica, sans-serif;
+  background-color: var(--color-bg-primary);
   font-size: 1rem;
-  color: var(--color-white);
+  color: var(--color-text-primary);
   font-weight: var(--weight-normal);
   letter-spacing: normal;
   line-height: normal;
@@ -26,13 +25,15 @@ body {
   --spacing-100: 1rem;
   --spacing-50: 0.5rem;
   /* color */
-  --color-bg-primary: #fff;
+  --color-bg-primary: #ffffff;
   --color-bg-contact: #f6f3e8;
   --color-bg-secondary: #fdfaf5;
   --color-border: #e2e2e2;
   --color-copyright: #7d7d7d;
   --color-black: #111;
   --color-white: #fff;
+  --color-text-primary: #111;
+  --color-text-secondary: #666;
   /* weight */
   --weight-normal: 400;
   --text-bold: 700;
