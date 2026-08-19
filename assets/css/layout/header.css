@@ -1,8 +1,8 @@
 /* レイアウト */
 .header {
   width: 100%;
-  background-color: var(--color-black);
-  padding: 1.5rem var(--spacing-sides);
+  background-color: var(--color-bg-primary);
+  padding: 1.2rem var(--spacing-sides);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,12 +26,10 @@
 }
 
 .logo-text {
-  font-size: 1.6rem;
-  color: var(--color-white);
-  font-family: 'Lobster', cursive;
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  font-family: roboto, sans-serif;
   font-weight: var(--text-bold);
-  font-style: italic;
-  transform: rotate(-8deg);
 }
 
 /* メニュー */
@@ -52,8 +50,8 @@
 }
 
 .nav-menu li a {
-  font-size: 1rem;
-  color: var(--color-white);
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
   text-decoration: none;
   transition: all 0.1s ease;
 }

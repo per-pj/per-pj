@@ -15,16 +15,16 @@
 }
 
 .posts-layout-title {
-  font-size: 1.6rem;
-  font-weight: var(--weight-normal);
+  font-size: 1.3rem;
+  font-weight: normal;
   color: var(--color-black);
-  margin: 0.5rem 0;
+  margin: 0 0 0.2rem 0;
   text-decoration: none;
 }
 
 .posts-layout-desc {
-  font-size: var(--text-normal);
-  color: var(--color-black);
+  font-size: 15px;
+  color: #333;
 }
 
 /* hover */
@@ -46,10 +46,9 @@
   text-align: left;
   overflow: hidden;
   align-self: start;
-  border-radius: var(--border-radius-secondary);
   transition: transform 0.1s ease-in-out;
-  margin-bottom: 2rem;
-  border: #505050 1px solid;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
 }
 
 .posts-layout-grid-item a {
@@ -69,7 +68,7 @@
 }
 
 .card-content {
-  padding: 1.5rem 2rem 2.5rem 1.5rem;
+  padding: 0.8rem 2.2rem 1.5rem 0.8rem;
 }
 
 /* 記事一覧のタグ */

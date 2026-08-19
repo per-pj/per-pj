@@ -1,7 +1,7 @@
 /* layout */
 .recommended {
   padding: var(--spacing-sides);
-  background-color: var(--color-black);
+  background-color: var(--color-bg-primary);
 }
 
 .recommended-item {

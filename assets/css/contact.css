@@ -2,7 +2,6 @@
 .form-container {
   width: 68vw;
   height: auto;
-  background-color: var(--color-black);
   padding: 3rem;
   display: flex;
   justify-content: center;
