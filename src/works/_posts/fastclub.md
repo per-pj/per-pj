@@ -2,7 +2,7 @@
 title: 'Fastclub'
 description: '音楽イベント情報を作成・管理・閲覧・決済できるオールインワンSNS。'
 tags: ['work', '体験', 'オフライン']
-thumbnail: /assets/img/fastclub.png
+thumbnail: /assets/img/product/fastclub.jpg
 layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fastclub'
@@ -15,41 +15,3 @@ recommended:
   - 'datahub'
   - 'moai'
 ---
-
-## 顧客の課題
-
-テキスト
-
-## 顧客セグメント
-
-テキスト
-
-## 価値提案
-
-テキスト
-
-## ソリューション
-
-テキスト
-
-## チャネル
-
-テキスト
-
-## 収益の流れ
-
-テキスト
-
-## コスト後続
-
-テキスト
-
-## 主要指標
-
-テキスト
-
-## 圧倒的な優位性
-
-テキスト
-
-Coming Soon...

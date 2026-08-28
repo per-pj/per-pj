@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 4.5rem 0 0 0;
-  font-family: sans-serif, roboto, arial, helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-bg-primary);
   font-size: 1rem;
   color: var(--color-text-primary);
@@ -11,6 +11,16 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+.display {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
 }
 
 :root {

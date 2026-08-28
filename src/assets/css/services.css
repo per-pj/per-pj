@@ -2,7 +2,6 @@
 .intro-desc {
   width: 68%;
   height: auto;
-  font-size: 1.8rem;
   color: var(--color-black-primary);
   font-weight: var(--weight-bold);
 }

@@ -6,20 +6,54 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 
 <section class="container-primary">
   <div class="content-primary">
-    <h1 class="hero-title">新規事業ポートフォリオ</h1>
-    <p class="hero-desc">事業機会を捉え、アイデアを社会に届ける。</p>
+    <h1 class="hero-title">Exploring ideas. Building businesses.</h1>
+    <p class="hero-desc">事業機会を見つけ、戦略を描き、プロダクトと体験をつくる。</p>
     <button class="btn-primary">
-      <a href="{{ '/about/' | url }}">プロフィールを見る</a>
+      <a href="{{ '/about/' | url }}">もっと詳しく</a>
     </button>
-    <!--<img src="{{ '/assets/img/top-hero.png' | url }}" alt="オフィス" class="hero-img" />-->
+    <img src="{{ '/assets/img/top-hero.jpg' | url }}" alt="オフィス" class="hero-img" />
   </div>
 </section>
 
+<section class="container-primary">
+  <div class="content-primary">
+  <h1 class="posts-layout-section-title">私について</h1>
+    <p class="intro-desc">起業家、プロダクトデザイナー として、10年以上、新規事業を作り続けています。</p>
+  </div>
+</section>
+
+<!--<section class="container-secondary">
+  <div class="section-content">
+    <h1 class="posts-layout-section-title">What I Do</h1>
+    <p class="intro-desc">起業家、プロダクトデザイナー として、10年以上、新規事業を作り続けています。</p>
+  </div>
+  <div class="services-grid">
+    <div class="services-grid-item add-card">
+      <img src="{{ '/assets/img/top-hero.png' | url }}" alt="オフィス" class="hero-img" />
+      <h3>アイデア</h3>
+      <p>
+      </p>
+    </div>
+    <div class="services-grid-item add-card">
+      <img src="{{ '/assets/img/top-hero.png' | url }}" alt="オフィス" class="hero-img" />
+      <h3>MVP開発</h3>
+      <p>
+      </p>
+    </div>
+    <div class="services-grid-item add-card">
+      <img src="{{ '/assets/img/top-hero.png' | url }}" alt="オフィス" class="hero-img" />
+      <h3>仮説検証</h3>
+      <p>
+      </p>
+    </div>
+  </div>
+</section>-->
+
 <section class="posts-layout">
-    <!--<h1 class="posts-layout-section-title">ポートフォリオ</h1>-->
+    <h1 class="posts-layout-section-title">プロダクト</h1>
 
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 30)) -%}
+    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 50)) -%}
         <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
