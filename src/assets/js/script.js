@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('リンクのコピーに失敗しました:', err);
             alert(
               'リンクのコピーに失敗しました。手動でコピーしてください。\n' +
-                articleUrl
+                articleUrl,
             );
           });
       });
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadMoreButton = document.getElementById('load-more-button');
 
   const initialItems = 12;
-  const itemsPerLoad = 3;
+  const itemsPerLoad = 12;
 
   let currentlyVisibleItems = initialItems;
 

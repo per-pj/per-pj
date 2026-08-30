@@ -1,12 +1,12 @@
 ---
 layout: layouts/base.njk
-title: per-pj - ポートフォリオ
-meta_description: per-pj のポートフォリオサイトの作品一覧ページです。
+title: Kazu
+meta_description: Kazu
 ---
 
 {% block content %}
   <div class="posts-layout">
-    <!--<h1 class="posts-layout-section-title">Works</h1>-->
+    <h1 class="posts-layout-section-title">プロダクト</h1>
     <div class="posts-layout-grid" id="portfolio-grid">
       {% for item in collections.works %}
         <div class="posts-layout-grid-item  portfolio-item">
@@ -31,7 +31,7 @@ meta_description: per-pj のポートフォリオサイトの作品一覧ペー�
       {% endfor %}
     </div>
 
-    {% if collections.works.length > 6 %}
+   {% if collections.works.length > 6 %}
       <button id="load-more-button" style="display: block; margin: 20px auto;">もっと見る</button>
     {% endif %}
 

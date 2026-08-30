@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
 
   // slug フィルタ
   eleventyConfig.addFilter('slug', (str) =>
-    slugify(str, { lower: true, remove: /[*+~.()'"!:@]/g })
+    slugify(str, { lower: true, remove: /[*+~.()'"!:@]/g }),
   );
   console.log('Added slug filter');
 
@@ -44,7 +44,7 @@ module.exports = function (eleventyConfig) {
     (collectionApi) =>
       collectionApi
         .getFilteredByGlob('./src/works/_posts/*.md')
-        .sort((a, b) => b.date - a.date) // ← 新しい順にソート
+        .sort((a, b) => b.date - a.date), // ← 新しい順にソート
   );
   console.log("Added 'works' collection");
 

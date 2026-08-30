@@ -29,7 +29,7 @@
 .logo-text {
   font-size: 1.2rem;
   color: var(--color-text-primary);
-  font-family: roboto, sans-serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-weight: var(--text-bold);
 }
 
@@ -57,7 +57,7 @@
   transition: all 0.1s ease;
 }
 .nav-menu li a:hover {
-  border-bottom: 2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-black);
   padding-bottom: 0.5rem;
 }
 

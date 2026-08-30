@@ -23,10 +23,13 @@ h3,
   line-height: 1.05;
 }
 
+p {
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+}
+
 :root {
-  /* layout */
-  --spacing-sides: var(--spacing-300);
-  --spacing-sides-responsive: var(--spacing-100);
+  /* ===== Primitive tokens（生の値。基本さわらない） ===== */
   /* space */
   --spacing-400: 4rem;
   --spacing-300: 3rem;
@@ -34,31 +37,54 @@ h3,
   --spacing-150: 1.5rem;
   --spacing-100: 1rem;
   --spacing-50: 0.5rem;
+
   /* color */
-  --color-bg-primary: #ffffff;
-  --color-bg-contact: #f6f3e8;
-  --color-bg-secondary: #fdfaf5;
-  --color-border: #e2e2e2;
-  --color-copyright: #7d7d7d;
-  --color-black: #111;
+  --color-cream: #fcfaf5;
   --color-white: #fff;
-  --color-text-primary: #111;
-  --color-text-secondary: #666;
+  --color-black: #000;
+  --color-black-light: #333;
+  --color-gray-light: #7d7d7d;
+
   /* weight */
   --weight-normal: 400;
   --text-bold: 700;
+
   /* border-radius */
   --border-radius-btn: 0.3rem;
   --border-radius-primary: 0.5rem;
   --border-radius-secondary: 0.5rem;
+
   /* title */
   --title-h1: 3rem;
   --title-h2: 2.5rem;
   --title-h3: 2rem;
   --title-h4: 1.5rem;
+
   /* text */
   --text-hero: 3.2rem;
   --text-big: 1.2rem;
   --text-normal: 1rem;
   --text-small: 0.8rem;
+
+  /* ===== Semantic tokens（実際にコンポーネントで使う） ===== */
+  /* color-bg */
+  --color-bg-primary: var(--color-cream);
+  --color-bg-contact: var(--color-cream);
+
+  /* color-text */
+  --color-copyright: var(--color-gray-light);
+  --color-text-primary: var(--color-black);
+  --color-text-secondary: var(--color-black-light);
+
+  /* color-border */
+  --color-border: #e2e2e2;
+
+  /* color-btn */
+  --color-btn-bg-primary: var(--color-black);
+  --color-btn-bg-secondary: var(--color-white);
+  --color-btn-hover: var(--color-gray-light);
+
+  /* layout */
+  --spacing-sides: var(--spacing-300);
+  --spacing-sides-responsive: var(--spacing-100);
 }

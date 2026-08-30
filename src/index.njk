@@ -1,30 +1,30 @@
 ---
 layout: layouts/base.njk
-title: ポートフォリオ - per-pj
-meta_description: per-pj のポートフォリオサイトのトップページです。
+title: Kazu
+meta_description: Kazu
 ---
 
 <section class="container-primary">
   <div class="content-primary">
-    <h1 class="hero-title">Exploring ideas. Building businesses.</h1>
-    <p class="hero-desc">事業機会を見つけ、戦略を描き、プロダクトと体験をつくる。</p>
+    <h1 class="hero-title">アイデアを探求する。ビジネスを構築する。</h1>
+    <p class="hero-desc">事業機会を発見し、戦略を描き、プロダクトと体験を作る。</p>
     <button class="btn-primary">
-      <a href="{{ '/about/' | url }}">もっと詳しく</a>
+      <a href="{{ '/contact/' | url }}">無料で相談する</a>
     </button>
     <img src="{{ '/assets/img/top-hero.jpg' | url }}" alt="オフィス" class="hero-img" />
   </div>
 </section>
 
-<section class="container-primary">
+<!--<section class="container-primary">
   <div class="content-primary">
   <h1 class="posts-layout-section-title">私について</h1>
-    <p class="intro-desc">起業家、プロダクトデザイナー として、10年以上、新規事業を作り続けています。</p>
+    <p class="intro-desc">起業家、プロダクトデザイナー として、10年以上、新規事業開発に取り組んでいます。</p>
   </div>
-</section>
+</section>-->
 
 <!--<section class="container-secondary">
   <div class="section-content">
-    <h1 class="posts-layout-section-title">What I Do</h1>
+    <h1 class="posts-layout-section-title">何をするのか</h1>
     <p class="intro-desc">起業家、プロダクトデザイナー として、10年以上、新規事業を作り続けています。</p>
   </div>
   <div class="services-grid">
@@ -50,10 +50,10 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
 </section>-->
 
 <section class="posts-layout">
-    <h1 class="posts-layout-section-title">プロダクト</h1>
+    <h1 class="posts-layout-section-title">ポートフォリオ</h1>
 
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 50)) -%}
+    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 9)) -%}
         <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
@@ -71,9 +71,9 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
         <p>作品がひとつも見つかりませんでした。</p>{%- endfor -%}
     </div>
 
-    <!--<div class="see-all-button-container" style="text-align: center;">
-      <button class="btn-primary"><a href="{{ '/works/' | url }}">全て表示</a></button>
-    </div>-->
+    <div class="see-all-button-container" style="text-align: center;">
+      <button class="btn-secondary"><a href="{{ '/works/' | url }}">もっと見る</a></button>
+    </div>
 </section>
 
 <!--
@@ -103,7 +103,7 @@ meta_description: per-pj のポートフォリオサイトのトップページ�
     </div>
 
     <div class="see-all-button-container" style="text-align: center;">
-      <button class="btn-primary"><a href="{{ '/blog/' | url }}">全て表示</a></button>
+      <button class="btn-secondary"><a href="{{ '/blog/' | url }}">全て表示</a></button>
     </div>
 </section>
 -->
