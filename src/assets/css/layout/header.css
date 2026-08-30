@@ -2,7 +2,7 @@
 .header {
   width: 100%;
   background-color: var(--color-bg-primary);
-  padding: 1.2rem var(--spacing-sides);
+  padding: 1.2rem var(--layout-padding-inline);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +12,7 @@
   z-index: 10;
   box-sizing: border-box;
   margin-top: 0;
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid var(--color-border-subtle);
 }
 
 /* ロゴ */
@@ -29,8 +29,9 @@
 .logo-text {
   font-size: 1.2rem;
   color: var(--color-text-primary);
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: var(--text-bold);
+  font-family: var(--font-family-serif);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
 }
 
 /* メニュー */
@@ -53,11 +54,13 @@
 .nav-menu li a {
   font-size: 0.9rem;
   color: var(--color-text-primary);
+  line-height: var(--line-height-ui);
+  letter-spacing: var(--letter-spacing-ui);
   text-decoration: none;
   transition: all 0.1s ease;
 }
 .nav-menu li a:hover {
-  border-bottom: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-text-primary);
   padding-bottom: 0.5rem;
 }
 
@@ -78,9 +81,9 @@
 .toggle-menu span {
   width: 24px;
   height: 3px;
-  background-color: #222;
-  color: #222;
-  border-radius: 1px;
+  background-color: var(--color-control);
+  color: var(--color-control);
+  border-radius: var(--radius-xs);
   display: block;
   transition: all 0.3s ease;
 }

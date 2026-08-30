@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 4.5rem 0 0 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-sans);
   background-color: var(--color-bg-primary);
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   color: var(--color-text-primary);
-  font-weight: var(--weight-normal);
-  letter-spacing: normal;
-  line-height: normal;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-normal);
+  line-height: var(--line-height-body);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,74 +17,88 @@ h1,
 h2,
 h3,
 .display {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
+  font-family: var(--font-family-serif);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-heading);
 }
 
 p {
-  line-height: 1.55;
-  letter-spacing: -0.02em;
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
 }
 
 :root {
-  /* ===== Primitive tokens（生の値。基本さわらない） ===== */
-  /* space */
-  --spacing-400: 4rem;
-  --spacing-300: 3rem;
-  --spacing-200: 2rem;
-  --spacing-150: 1.5rem;
-  --spacing-100: 1rem;
-  --spacing-50: 0.5rem;
+  /* Primitive tokens: raw values only. */
+  --space-100: 1rem;
+  --space-200: 2rem;
+  --space-300: 3rem;
+  --space-400: 4rem;
 
-  /* color */
   --color-cream: #fcfaf5;
   --color-white: #fff;
   --color-black: #000;
-  --color-black-light: #333;
-  --color-gray-light: #7d7d7d;
+  --color-black-hover: #111;
+  --color-charcoal: #222;
+  --color-gray-dark: #333;
+  --color-gray: #414141;
+  --color-gray-hover: #555;
+  --color-gray-scrollbar: #505050;
+  --color-gray-muted: #999;
+  --color-gray-light: #dfdfdf;
+  --color-gray-border: #e2e2e2;
+  --color-gray-input: #e7e7e7;
+  --color-gray-subtle: #f3f3f3;
 
-  /* weight */
-  --weight-normal: 400;
-  --text-bold: 700;
+  --font-family-sans: Arial, Helvetica, sans-serif;
+  --font-family-serif: Georgia, 'Times New Roman', serif;
+  --font-size-body: 1rem;
+  --font-size-heading-4: 1.5rem;
+  --font-size-heading-3: 2rem;
+  --font-size-heading-2: 2.5rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --letter-spacing-normal: normal;
+  --letter-spacing-heading: -0.01em;
+  --letter-spacing-body: 0.01em;
+  --letter-spacing-ui: 0.02em;
+  --line-height-heading: 1.2;
+  --line-height-body: 1.7;
+  --line-height-ui: 1.4;
+  --line-height-caption: 1.5;
 
-  /* border-radius */
-  --border-radius-btn: 0.3rem;
-  --border-radius-primary: 0.5rem;
-  --border-radius-secondary: 0.5rem;
+  --radius-xs: 1px;
+  --radius-compact: 4px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-xl: 30px;
+  --radius-round: 50%;
 
-  /* title */
-  --title-h1: 3rem;
-  --title-h2: 2.5rem;
-  --title-h3: 2rem;
-  --title-h4: 1.5rem;
-
-  /* text */
-  --text-hero: 3.2rem;
-  --text-big: 1.2rem;
-  --text-normal: 1rem;
-  --text-small: 0.8rem;
-
-  /* ===== Semantic tokens（実際にコンポーネントで使う） ===== */
-  /* color-bg */
+  /* Semantic tokens: values used by UI roles. */
   --color-bg-primary: var(--color-cream);
-  --color-bg-contact: var(--color-cream);
+  --color-bg-surface: var(--color-white);
+  --color-bg-inverse: var(--color-black);
+  --color-bg-inverse-hover: var(--color-black-hover);
+  --color-bg-control-hover: var(--color-gray-hover);
 
-  /* color-text */
-  --color-copyright: var(--color-gray-light);
   --color-text-primary: var(--color-black);
-  --color-text-secondary: var(--color-black-light);
+  --color-text-secondary: var(--color-gray-dark);
+  --color-text-muted: var(--color-gray);
+  --color-text-subtle: var(--color-gray-muted);
+  --color-text-inverse: var(--color-white);
+  --color-text-footer: var(--color-gray-light);
+  --color-control: var(--color-charcoal);
 
-  /* color-border */
-  --color-border: #e2e2e2;
+  --color-border-default: var(--color-gray-border);
+  --color-border-field: var(--color-gray-input);
+  --color-border-subtle: var(--color-gray-subtle);
+  --color-border-strong: var(--color-charcoal);
+  --color-border-inverse: var(--color-white);
+  --color-scrollbar: var(--color-gray-scrollbar);
 
-  /* color-btn */
-  --color-btn-bg-primary: var(--color-black);
-  --color-btn-bg-secondary: var(--color-white);
-  --color-btn-hover: var(--color-gray-light);
+  --shadow-surface: 0 0 10px rgb(0 0 0 / 10%);
 
-  /* layout */
-  --spacing-sides: var(--spacing-300);
-  --spacing-sides-responsive: var(--spacing-100);
+  --layout-padding-inline: var(--space-300);
+  --layout-padding-inline-compact: var(--space-100);
 }

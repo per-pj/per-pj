@@ -1,8 +1,8 @@
 /* レイアウト */
 .footer {
   width: 100%;
-  padding: 2rem var(--spacing-sides);
-  background-color: var(--color-black);
+  padding: var(--space-200) var(--layout-padding-inline);
+  background-color: var(--color-bg-inverse);
   margin: 0;
   box-sizing: border-box;
 }
@@ -43,15 +43,17 @@
 
 .footer-menu li a {
   text-decoration: none;
-  font-size: 0.8rem;
-  color: var(--color-white);
+  font-size: 0.875rem;
+  color: var(--color-text-inverse);
   margin: 0 1rem 0 0;
   display: block;
+  line-height: var(--line-height-ui);
+  letter-spacing: var(--letter-spacing-ui);
   transition: 0.1s ease-in-out;
 }
 
 .footer-menu li a:hover {
-  color: #dfdfdf;
+  color: var(--color-text-footer);
 }
 
 .social-links {
@@ -60,14 +62,18 @@
   text-align: left;
 }
 
+.social-links:not(:has(.social-link)) {
+  display: none;
+}
+
 .social-link {
   width: 1.5rem;
   height: auto;
   margin: 0 0.5rem;
   transition: opacity 0.1s ease-in-out;
-  background-color: var(--color-white);
+  background-color: var(--color-bg-surface);
   padding: 10px;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
 }
 
 .social-link:hover {
@@ -75,24 +81,51 @@
 }
 
 .copyright {
-  font-size: 0.7rem;
-  color: #dfdfdf;
+  font-size: 0.75rem;
+  color: var(--color-text-footer);
   padding-top: 2rem;
-  border-top: 1px solid #505050;
+  border-top: 1px solid var(--color-scrollbar);
   margin-top: 2rem;
+  line-height: var(--line-height-caption);
+  letter-spacing: var(--letter-spacing-ui);
 }
 
 /* レスポンシブ対応 */
 @media (max-width: 767px) {
   .footer-flex {
     flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .footer-item {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
   }
 
   .footer-menu {
     flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
   }
 
   .footer-menu li a {
-    margin: 0 0 1rem 0;
+    margin: 0;
+  }
+
+  .footer .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0;
+  }
+
+  .social-link {
+    margin: 0;
+  }
+
+  .copyright {
+    overflow-wrap: anywhere;
   }
 }

@@ -9,7 +9,7 @@ meta_description: Kazu
     <h1 class="hero-title">アイデアを探求する。ビジネスを構築する。</h1>
     <p class="hero-desc">事業機会を発見し、戦略を描き、プロダクトと体験を作る。</p>
     <button class="btn-primary">
-      <a href="{{ '/works/' | url }}">実績を見る</a>
+      <a href="{{ '/works/' | url }}">まずは事例を見る</a>
     </button>
     <img src="{{ '/assets/img/top-hero.jpg' | url }}" alt="オフィス" class="hero-img" />
   </div>
@@ -53,7 +53,7 @@ meta_description: Kazu
     <h1 class="posts-layout-section-title">ポートフォリオ</h1>
 
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 9)) -%}
+    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 6)) -%}
         <div class="posts-layout-grid-item">
           <a href="{{ item.url | url }}">
             <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
@@ -72,7 +72,7 @@ meta_description: Kazu
     </div>
 
     <div class="see-all-button-container" style="text-align: center;">
-      <button class="btn-secondary"><a href="{{ '/works/' | url }}">もっと見る</a></button>
+      <button class="btn-primary"><a href="{{ '/works/' | url }}">もっと詳しく</a></button>
     </div>
 </section>
 

@@ -1,6 +1,6 @@
 /* layout */
 .recommended {
-  padding: var(--spacing-sides);
+  padding: var(--layout-padding-inline);
   background-color: var(--color-bg-primary);
 }
 
@@ -21,7 +21,7 @@
   height: auto;
   display: block;
   margin-bottom: 0;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
 }
 
 .recommended-content {
@@ -32,9 +32,9 @@
 
 /* text */
 .recommended-section-title {
-  font-size: var(--title-h2);
-  font-weight: var(--weight-normal);
-  color: var(--color-black-primary);
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
   margin-bottom: 1rem;
 }
 
@@ -46,7 +46,7 @@
 
 .recommended-title {
   font-size: 1.5rem;
-  font-weight: var(--weight-normal);
+  font-weight: var(--font-weight-regular);
   margin: 0.5rem 0 0 0;
 }
 
@@ -57,12 +57,12 @@
 
 /* tag */
 .recommended-tag {
-  background-color: var(--color-tag-primary);
+  background-color: transparent;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
   font-size: 0.8rem;
-  color: var(--color-black-primary);
-  font-weight: 500;
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
 }
 
 /* responsive */

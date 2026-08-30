@@ -1,7 +1,7 @@
 /* layout */
 .credit-container {
   width: 100%;
-  padding: 3rem;
+  padding: var(--space-300);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -12,8 +12,8 @@
   width: 60%;
   max-width: 800px;
   height: auto;
-  border-top: 1px solid #f3f3f3;
-  border-bottom: 1px solid #f3f3f3;
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -29,8 +29,8 @@
 .credit-info img {
   width: 5rem;
   height: auto;
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-round);
   margin: 0;
   display: block;
   flex-shrink: 0;
@@ -43,7 +43,7 @@
 /* text */
 .credit-details h3 {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: var(--font-weight-regular);
   margin: 0 0 0.5rem 0;
 }
 

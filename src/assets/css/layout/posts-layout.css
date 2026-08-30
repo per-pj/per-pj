@@ -1,7 +1,7 @@
 /* コンテナ */
 .posts-layout {
   width: 100%;
-  padding: var(--spacing-300);
+  padding: var(--space-300);
   box-sizing: border-box;
   margin: 0;
 }
@@ -9,22 +9,22 @@
 /* テキスト */
 .posts-layout-section-title {
   font-size: 2.5rem;
-  font-weight: var(--weight-normal);
+  font-weight: var(--font-weight-regular);
   margin-bottom: 2rem;
   text-align: left;
 }
 
 .posts-layout-title {
   font-size: 1.3rem;
-  font-weight: normal;
-  color: var(--color-black);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
   margin: 0 0 0.2rem 0;
   text-decoration: none;
 }
 
 .posts-layout-desc {
   font-size: 15px;
-  color: #333;
+  color: var(--color-text-secondary);
 }
 
 /* hover */
@@ -48,7 +48,7 @@
   align-self: start;
   transition: transform 0.1s ease-in-out;
   margin-bottom: 0.5rem;
-  border-radius: 6px;
+  border-radius: var(--radius-compact);
 }
 
 .posts-layout-grid-item a {
@@ -58,7 +58,7 @@
 
 .posts-layout-grid-item:hover {
   transform: translateY(-10px);
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: var(--shadow-surface); */
 }
 
 .posts-layout-grid-img {
@@ -80,7 +80,7 @@
 
 .tag {
   font-size: 1rem;
-  color: var(--color-black);
+  color: var(--color-text-primary);
   display: inline-block;
 }
 
@@ -110,16 +110,16 @@
   text-decoration: none;
   background-color: var(--color-bg-primary);
   padding: 10px 15px;
-  border: 1px solid var(--color-black);
-  border-radius: 4px;
-  color: var(--color-black);
+  border: 1px solid var(--color-text-primary);
+  border-radius: var(--radius-compact);
+  color: var(--color-text-primary);
   cursor: pointer;
 }
 
 .pagination a.active {
-  background-color: var(--color-black);
-  border: 1px solid var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-bg-inverse);
+  border: 1px solid var(--color-text-primary);
+  color: var(--color-text-inverse);
   pointer-events: none;
   cursor: default;
 }
@@ -127,6 +127,6 @@
 .pagination li.disabled span {
   background-color: var(--color-bg-primary);
   padding: 5px 10px;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-default);
   border-radius: 3px;
 }
