@@ -25,8 +25,8 @@
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  background: #505050;
-  border-radius: 4px;
+  background: var(--color-scrollbar);
+  border-radius: var(--radius-compact);
 }
 
 @media (max-width: 768px) {
