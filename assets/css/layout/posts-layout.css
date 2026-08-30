@@ -42,7 +42,7 @@
 }
 
 .posts-layout-grid-item {
-  background: #ffffff;
+  background: var(--color-bg-primary);
   text-align: left;
   overflow: hidden;
   align-self: start;
@@ -58,7 +58,7 @@
 
 .posts-layout-grid-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .posts-layout-grid-img {
