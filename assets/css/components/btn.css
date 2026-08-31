@@ -84,3 +84,8 @@
 #back-to-top:hover {
   background-color: var(--color-bg-control-hover);
 }
+
+#load-more-button {
+  display: flex;
+  margin: 2.5rem auto 0;
+}

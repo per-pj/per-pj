@@ -113,25 +113,6 @@
   padding: 0 0 0 2rem;
 }
 
-/* シェアボタン */
-.share-link-text {
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  border: 2px solid var(--color-border-strong);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: var(--font-weight-regular);
-  margin-top: 2rem;
-  text-align: center;
-  cursor: pointer;
-}
-
-.share-link-text:hover {
-  opacity: 0.8;
-}
-
 /* レスポンシブ */
 @media (max-width: 768px) {
   .post-detail-hero-container {

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kazu"
+      content="Kazuへのお問い合わせ。"
     />
-    <title>Contact - Kazu</title>
+    <title>お問い合わせ - Kazu</title>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-910PNS9N5T"
@@ -37,9 +37,7 @@
     <link rel="stylesheet" href="/per-pj/assets/css/components/add-contact.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/scrollbar.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/recommended.css" />
-    <link rel="stylesheet" href="/per-pj/assets/css/components/credit.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/base/responsive.css" />
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -47,34 +45,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
     
   </head>
+  <script>document.documentElement.classList.add('js');</script>
   <body>
     
 <header class="header">
   <div class="logo">
-    <a href="/per-pj/" class="logo-text" aria-label="Home">Kazu</a>
+    <a href="/per-pj/" class="logo-text" aria-label="トップページ">Kazu</a>
   </div>
 
-  <button class="toggle-menu">
+  <button class="toggle-menu" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-navigation">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav class="nav">
+  <nav class="nav" id="primary-navigation" aria-label="メインナビゲーション">
     <ul class="nav-menu">
       <li><a href="/per-pj/about/">私について</a></li>
       <li><a href="/per-pj/services/">できること</a></li>
-      <li><a href="/per-pj/works/">事例</a></li>
-      <!--<li><a href="/per-pj/blog/">ブログ</a></li>-->
-      <li><a href="/per-pj/contact/">お問い合わせ</a></li>
+      <li><a href="/per-pj/works/">作品</a></li>
+      <li class="nav-contact"><a href="/per-pj/contact/" aria-current="page">お問い合わせ</a></li>
     </ul>
   </nav>
 </header>
@@ -84,7 +76,7 @@
       
 <div class="form-container">
   <div class="form-content">
-    <span class="section-eyebrow">Contact</span>
+    <span class="section-eyebrow">お問い合わせ</span>
     <h2 class="form-title">お問い合わせフォーム</h2>
     <p class="form-desc">いつでもお気軽にご連絡ください</p>
     <form action="https://formspree.io/f/mzzelpwq" method="POST">
@@ -116,22 +108,10 @@
     <ul class="footer-menu">
       <li><a href="/per-pj/about/">私について</a></li>
       <li><a href="/per-pj/services/">できること</a></li>
-      <li><a href="/per-pj/works/">事例</a></li>
-      <!--<li><a href="/per-pj/blog/">ブログ</a></li>-->
+      <li><a href="/per-pj/works/">作品</a></li>
       <li><a href="/per-pj/contact/">お問い合わせ</a></li>
     </ul>
   </nav>
-  <div class="footer-item social-links">
-    <!-- <a href="https://www.behance.net/per-pj" target="_blank">
-      <img class="social-link" src="/per-pj/assets/img/behance.svg" alt="Behance">
-    </a>
-    <a href="https://github.com/per-pj" target="_blank">
-      <img class="social-link" src="/per-pj/assets/img/github.svg" alt="GitHub">
-    </a> -->
-    <!-- <a href="https://linktr.ee/sk335_" target="_blank">
-      <img class="social-link" src="/per-pj/assets/img/linktree.svg" alt="Linktree">
-    </a> -->
-  </div>
  </div>
  <p class="copyright">&copy; 2026 Kazu All Rights Reserved.</p>
 </footer>

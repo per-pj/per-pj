@@ -37,9 +37,7 @@
     <link rel="stylesheet" href="/per-pj/assets/css/components/add-contact.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/scrollbar.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/components/recommended.css" />
-    <link rel="stylesheet" href="/per-pj/assets/css/components/credit.css" />
     <link rel="stylesheet" href="/per-pj/assets/css/base/responsive.css" />
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -47,34 +45,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
     
   </head>
+  <script>document.documentElement.classList.add('js');</script>
   <body>
     
 <header class="header">
   <div class="logo">
-    <a href="/per-pj/" class="logo-text" aria-label="Home">Kazu</a>
+    <a href="/per-pj/" class="logo-text" aria-label="トップページ">Kazu</a>
   </div>
 
-  <button class="toggle-menu">
+  <button class="toggle-menu" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-navigation">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav class="nav">
+  <nav class="nav" id="primary-navigation" aria-label="メインナビゲーション">
     <ul class="nav-menu">
       <li><a href="/per-pj/about/">私について</a></li>
       <li><a href="/per-pj/services/">できること</a></li>
-      <li><a href="/per-pj/works/">事例</a></li>
-      <!--<li><a href="/per-pj/blog/">ブログ</a></li>-->
-      <li><a href="/per-pj/contact/">お問い合わせ</a></li>
+      <li><a href="/per-pj/works/" aria-current="page">作品</a></li>
+      <li class="nav-contact"><a href="/per-pj/contact/">お問い合わせ</a></li>
     </ul>
   </nav>
 </header>
@@ -90,8 +82,7 @@
       
     </div>
     <h1 class="post-detail-hero-title">Proath</h1>
-    <p class="post-detail-hero-desc">プロのコーチによる有料のプライベートレッスン。</p>
-    <!--<p class="share-link-text copy-trigger">URLをコピー</p>-->
+    <p class="post-detail-hero-desc">プロのコーチから有料の個人レッスンを受けられるサービス。</p>
     <img src="/per-pj/assets/img/product/proath.jpg" alt="Proath" class="post-detail-hero-img" />
   </div>
 </section>
@@ -101,28 +92,6 @@
     
   </div>
 </section>
-
-<!--<section class="container-primary">
-  <p class="share-link-text copy-trigger">URLをコピー</p>
-</section>-->
-
-<!--<section class="credit-container">
-  <div class="credit-content">
-    <div class="credit-info">
-      <img
-        src="/per-pj/assets/img/profile.jpg"
-        alt="プロフィール用のイラスト画像"
-      />
-      <div class="credit-details">
-        <h3>Kazu</h3>
-        <p></p>
-      </div>
-    </div>
-    <button class="btn-primary">
-      <a href="#">お問い合わせ</a>
-    </button>
-  </div>
-</section>-->
 
 
 
@@ -213,7 +182,6 @@
 
 
   <section class="recommended">
-    <!--<h2 class="recommended-section-title">関連</h2>-->
     <div class="scrollbar">
       
         <a href="/per-pj/works/moai/" class="recommended-item">
@@ -224,7 +192,7 @@
   <div class="recommended-content">
     <h3 class="recommended-title">Moai</h3>
     
-      <p class="recommended-desc">友人と共同の口座を作成し、毎月一定金額を貯蓄。</p>
+      <p class="recommended-desc">友人と共同口座を作り、毎月一定額を貯蓄できるアプリ。</p>
     
   </div>
 </a>
@@ -238,7 +206,7 @@
   <div class="recommended-content">
     <h3 class="recommended-title">Datahub</h3>
     
-      <p class="recommended-desc">センサーデータを安全に販売・購入できる取引所。</p>
+      <p class="recommended-desc">センサーデータを安全に売買できる取引所。</p>
     
   </div>
 </a>
@@ -252,7 +220,7 @@
   <div class="recommended-content">
     <h3 class="recommended-title">Modan</h3>
     
-      <p class="recommended-desc">ブランドを成長させたい企業と最適なインフルエンサーをマッチング。</p>
+      <p class="recommended-desc">企業とインフルエンサーをつなぐマッチングプラットフォーム。</p>
     
   </div>
 </a>
@@ -280,7 +248,7 @@
   <div class="recommended-content">
     <h3 class="recommended-title">Proath</h3>
     
-      <p class="recommended-desc">プロのコーチによる有料のプライベートレッスン。</p>
+      <p class="recommended-desc">プロのコーチから有料の個人レッスンを受けられるサービス。</p>
     
   </div>
 </a>
@@ -294,7 +262,7 @@
   <div class="recommended-content">
     <h3 class="recommended-title">Kommon</h3>
     
-      <p class="recommended-desc">部活動の指導を外部のコーチに委託できます。</p>
+      <p class="recommended-desc">部活動の指導を外部コーチに委託できるサービス。</p>
     
   </div>
 </a>
@@ -306,16 +274,15 @@
 
 
 
-
     </main>
 
     
       <div class="add-contact-container">
   <div class="add-contact-content">
-    <span class="section-eyebrow">Contact</span>
+    <span class="section-eyebrow">お問い合わせ</span>
     <h2 class="contact-title">何かお手伝いが必要ですか？</h2>
     <p class="contact-desc">いつでもお気軽にご連絡ください</p>
-    <button class="btn-primary"><a href="/per-pj/contact/">連絡する</a></button>
+    <a class="btn-primary" href="/per-pj/contact/">連絡する</a>
   </div>
 </div>
 
@@ -328,22 +295,10 @@
     <ul class="footer-menu">
       <li><a href="/per-pj/about/">私について</a></li>
       <li><a href="/per-pj/services/">できること</a></li>
-      <li><a href="/per-pj/works/">事例</a></li>
-      <!--<li><a href="/per-pj/blog/">ブログ</a></li>-->
+      <li><a href="/per-pj/works/">作品</a></li>
       <li><a href="/per-pj/contact/">お問い合わせ</a></li>
     </ul>
   </nav>
-  <div class="footer-item social-links">
-    <!-- <a href="https://www.behance.net/per-pj" target="_blank">
-      <img class="social-link" src="/per-pj/assets/img/behance.svg" alt="Behance">
-    </a>
-    <a href="https://github.com/per-pj" target="_blank">
-      <img class="social-link" src="/per-pj/assets/img/github.svg" alt="GitHub">
-    </a> -->
-    <!-- <a href="https://linktr.ee/sk335_" target="_blank">
-      <img class="social-link" src="/per-pj/assets/img/linktree.svg" alt="Linktree">
-    </a> -->
-  </div>
  </div>
  <p class="copyright">&copy; 2026 Kazu All Rights Reserved.</p>
 </footer>
