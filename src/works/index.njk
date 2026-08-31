@@ -1,30 +1,22 @@
 ---
 layout: layouts/base.njk
-title: Works - Kazu
-meta_description: Kazu
+title: 作品 - Kazu
+meta_description: Kazuがこれまでに手がけた事業とプロダクト。
 ---
 
 {% block content %}
   <div class="posts-layout">
     <div class="posts-layout-heading">
-      <span class="section-eyebrow">Works</span>
-      <h1 class="posts-layout-section-title">事例</h1>
-      <p class="posts-layout-section-desc">これまでに手がけた主なプロジェクトやプロダクトをご紹介します。</p>
+      <span class="section-eyebrow hero-reveal">作品</span>
+      <h1 class="posts-layout-section-title hero-reveal">これまでにつくったもの</h1>
+      <p class="posts-layout-section-desc hero-reveal">事業やプロダクトとして考え、形にしてきたものです。</p>
     </div>
     <div class="posts-layout-grid" id="portfolio-grid">
       {% for item in collections.works %}
-        <div class="posts-layout-grid-item  portfolio-item">
+        <div class="posts-layout-grid-item portfolio-item" data-reveal>
           <a href="{{ item.url | url }}">
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
+            <div class="posts-layout-image-wrap"><img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" /></div>
             <div class="card-content">
-              <!-- <div class="posts-layout-tags">
-                {% for tag in item.data.tags %}
-                  {% if tag != "work" %}
-                    <span class="tag">{{ tag }}</span>
-                  {% endif %}
-                {% endfor %}
-              </div> -->
-
               <h2 class="posts-layout-title">{{ item.data.title }}</h2>
               <p class="posts-layout-desc">{{ item.data.description }}</p>
             </div>
@@ -36,8 +28,8 @@ meta_description: Kazu
     </div>
 
    {% if collections.works.length > 6 %}
-      <button id="load-more-button" style="display: block; margin: 20px auto;">View More</button>
-t    {% endif %}
+      <button id="load-more-button">さらに表示</button>
+    {% endif %}
 
   </div>
 {% endblock %}

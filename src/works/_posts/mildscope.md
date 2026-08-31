@@ -1,6 +1,6 @@
 ---
 title: 'Mildscope'
-description: 'AIでパーソナライズされた効率的な情報収集ツール。'
+description: 'AIで情報収集をパーソナライズするツール。'
 tags: ['work', '情報収集', 'AI']
 thumbnail: /assets/img/product/mildscope.jpg
 layout: layouts/work-detail.njk

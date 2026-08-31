@@ -1,6 +1,6 @@
 ---
 title: 'Comm'
-description: '好きなことでつながるコミュニティ作成アプリ。'
+description: '好きなことをきっかけにコミュニティを作れるアプリ。'
 tags: ['work', 'コミュニティ']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk

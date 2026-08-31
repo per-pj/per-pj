@@ -1,177 +1,39 @@
-.hero-title {
-  font-size: clamp(2rem, 4.5vw, 2.75rem);
-  font-weight: var(--font-weight-regular);
-  margin-top: 0.5rem;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0;
-  text-align: center;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
-}
-
-.hero-desc {
-  font-size: 1.05rem;
-  color: var(--color-text-muted);
-  line-height: var(--line-height-body);
-  margin: 0.5rem auto 1.5rem;
-  max-width: 40rem;
-  text-align: center;
-}
-
-.hero-img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-lg);
-  display: block;
-  margin-top: 3.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.25rem;
-  margin-top: 0.5rem;
-}
-
-.hero-actions .btn-primary {
-  margin-top: 0;
-}
-
-.hero-text-link {
-  color: var(--color-text-primary);
-  text-underline-offset: 0.2em;
-}
-
-.hero-text-link:hover {
-  text-decoration-thickness: 2px;
-}
-
-.home-about {
-  padding-top: var(--space-400);
-  padding-bottom: var(--space-400);
-}
-
-.home-section-title {
-  font-size: clamp(1.8rem, 3.5vw, 2.25rem);
-  font-weight: var(--font-weight-regular);
-  margin-bottom: 0.5rem;
-  text-align: center;
-  letter-spacing: -0.015em;
-}
-
-.home-section-desc {
-  max-width: 42rem;
-  font-size: 1.05rem;
-  color: var(--color-text-muted);
-  line-height: var(--line-height-body);
-  margin: 0.5rem auto 0;
-  text-align: center;
-}
-
-.home-what-i-do {
-  padding-top: var(--space-400);
-  padding-bottom: var(--space-400);
-}
-
-.section-content.home-section-heading {
-  align-items: center;
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.home-section-heading .home-section-desc {
-  width: 100%;
-  text-align: center;
-  margin: 0.5rem auto 0;
-}
-
-.home-process {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.home-process-item {
-  position: relative;
-  min-height: 14rem;
-  padding: 2.25rem 1.75rem;
-  border: 1px solid var(--color-border-default);
-  background-color: var(--color-bg-surface);
-  border-radius: var(--radius-lg);
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-.home-process-number {
-  display: block;
-  margin-bottom: 1.5rem;
-  color: var(--color-text-subtle);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-align: left;
-}
-
-.home-process-item h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  letter-spacing: -0.01em;
-  text-align: left;
-}
-
-.home-process-item p {
-  color: var(--color-text-muted);
-  font-size: 0.92rem;
-  line-height: 1.7;
-  margin: 0;
-  text-align: left;
-}
-
-.home-section-link-container {
-  text-align: center;
-  margin-top: 2.5rem;
-}
-
+.home-hero { min-height: min(70vh, 46rem); padding-top: 7rem; padding-bottom: 7rem; }
+.home-hero .content-primary { max-width: 72rem; }
+.home-hero .hero-title { font-size: clamp(2.5rem, 6vw, 4.8rem); line-height: 1.18; max-width: 56rem; }
+.home-hero .hero-desc { max-width: 38rem; }
+.home-about { padding-top: 7rem; padding-bottom: 7rem; }
+.profile-feature { max-width: 68rem; display: grid; grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr); gap: clamp(3rem, 8vw, 7rem); align-items: center; text-align: left; }
+.profile-feature-photo { width: 100%; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-lg); }
+.profile-feature-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.profile-feature-body { max-width: 31rem; }
+.profile-feature-body .section-eyebrow { text-align: left; }
+.profile-feature-name { margin: 0.5rem 0 0; font-size: clamp(2.6rem, 5vw, 4rem); }
+.profile-feature-role { margin: 0.4rem 0 2rem; color: var(--color-text-subtle); font-size: 0.9rem; letter-spacing: 0.06em; }
+.profile-feature-desc { margin: 0 0 2rem; color: var(--color-text-secondary); font-size: 1.05rem; }
+.profile-links { display: flex; align-items: center; gap: 0.75rem; margin: -0.4rem 0 2rem; }
+.profile-links a { width: 2.5rem; height: 2.5rem; display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; border: 1px solid var(--color-border-default); border-radius: var(--radius-round); color: var(--color-text-primary); text-decoration: none; transition: color 180ms ease, border-color 180ms ease, transform 180ms ease; }
+.profile-links a:hover { color: var(--color-text-muted); border-color: var(--color-text-subtle); transform: translateY(-2px); }
+.home-what-i-do { padding: 7rem var(--layout-padding-inline); }
+.section-content.home-section-heading { align-items: center; margin-bottom: 3.5rem; text-align: center; }
+.home-section-title { font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin: 0 0 0.5rem; }
+.home-section-desc { max-width: 42rem; color: var(--color-text-muted); margin: 0 auto; }
+.home-process { max-width: 68rem; margin: 0 auto; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--color-border-default); }
+.home-process-item { padding: 2.25rem 2rem 2rem 0; min-height: 13rem; border-bottom: 1px solid var(--color-border-default); }
+.home-process-item + .home-process-item { padding-left: 2rem; border-left: 1px solid var(--color-border-default); }
+.home-process-number { display: block; margin-bottom: 2rem; color: var(--color-text-subtle); font-size: 0.75rem; letter-spacing: 0.12em; }
+.home-process-item h3 { margin: 0 0 0.5rem; font: 600 1.2rem var(--font-family-sans); }
+.home-process-item p { margin: 0; color: var(--color-text-muted); font-size: 0.92rem; }
+.home-section-link-container, .see-all-button-container { text-align: center; margin-top: 2.75rem; }
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 1.85rem;
-  }
-
-  .hero-img {
-    margin-top: 2.5rem;
-  }
-
-  .home-about,
-  .home-what-i-do {
-    padding-top: var(--space-300);
-    padding-bottom: var(--space-300);
-  }
-
-  .home-section-title {
-    font-size: 1.75rem;
-  }
-
-  .home-process {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .home-process-item {
-    min-height: 0;
-    padding: 1.75rem 1.25rem;
-  }
-
-  .home-process-number {
-    margin-bottom: 1rem;
-  }
+  .home-hero { min-height: 58vh; padding-top: 5rem; padding-bottom: 5rem; }
+  .home-hero .hero-title { font-size: clamp(2.1rem, 10vw, 3rem); }
+  .home-about { padding: 4.5rem 1.25rem; }
+  .profile-feature { grid-template-columns: 1fr; gap: 2.25rem; }
+  .profile-feature-photo { width: min(82vw, 24rem); aspect-ratio: 4 / 5; }
+  .profile-feature-name { font-size: 2.6rem; }
+  .home-what-i-do { padding: 4.5rem 1.25rem; }
+  .home-process { grid-template-columns: 1fr; }
+  .home-process-item, .home-process-item + .home-process-item { min-height: 0; padding: 1.75rem 0; border-left: 0; }
+  .home-process-number { margin-bottom: 1rem; }
 }

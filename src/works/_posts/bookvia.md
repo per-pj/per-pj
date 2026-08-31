@@ -1,6 +1,6 @@
 ---
 title: 'Bookvia'
-description: 'クリエイターへの発注・ブッキングを効率化するスキル販売ストア。'
+description: 'クリエイターのスキルを販売・ブッキングできるストア。'
 tags: ['work', 'コミュニティ', '売買']
 thumbnail: /assets/img/product/bookvia.jpg
 layout: layouts/work-detail.njk

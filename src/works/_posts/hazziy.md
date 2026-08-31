@@ -1,6 +1,6 @@
 ---
 title: 'Hazziy'
-description: '短時間で投稿が消えるテキストベースで安全なソーシャルメディア。'
+description: '投稿が短時間で消えるテキストベースのソーシャルメディア。'
 tags: ['work', 'コミュニケーション', 'SNS']
 thumbnail: /assets/img/product/hazziy.jpg
 layout: layouts/work-detail.njk

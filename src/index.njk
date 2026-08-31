@@ -1,136 +1,38 @@
 ---
 layout: layouts/base.njk
 title: Kazu
-meta_description: Kazu
+meta_description: 新規事業とプロダクトを考え、デザインし、形にするKazuのポートフォリオ。
 ---
 
-<section class="container-primary">
-  <div class="content-primary">
-    <span class="section-eyebrow">Portfolio</span>
-    <h1 class="hero-title">アイデアを探求し、ビジネスを構築する。</h1>
-    <p class="hero-desc">事業機会を発見し、戦略を描き、プロダクトと体験を作る。</p>
-    <div class="hero-actions">
-      <button class="btn-primary">
-        <a href="{{ '/contact/' | url }}">連絡する</a>
-      </button>
-    </div>
-    <img src="{{ '/assets/img/top-hero.jpg' | url }}" alt="オフィス" class="hero-img" />
-  </div>
-</section>
+<section class="container-primary home-hero"><div class="content-primary">
+  <span class="section-eyebrow hero-reveal">ポートフォリオ</span>
+  <h1 class="hero-title hero-reveal">新規事業を考える。<br />プロダクトをつくる。</h1>
+  <p class="hero-desc hero-reveal">企画からデザイン、開発まで。アイデアを考えるだけで終わらせず、使える形にして改善します。</p>
+  <div class="hero-actions hero-reveal"><a class="btn-primary" href="{{ '/contact/' | url }}">連絡する</a></div>
+</div></section>
 
-<section class="container-primary home-about">
-  <div class="content-primary">
-    <span class="section-eyebrow">Who I Am</span>
-    <h2 class="home-section-title">私について</h2>
-    <div class="profile-card">
-      <div class="profile-card-cover-wrapper">
-        <img src="{{ '/assets/img/cover.png' | url }}" alt="カバー画像" class="profile-card-cover" />
-      </div>
-      <div class="profile-card-content">
-        <div class="profile-card-avatar-wrapper">
-          <img src="{{ '/assets/img/profile.jpg' | url }}" alt="プロフィール画像" class="profile-card-avatar" />
-        </div>
-        <h3 class="profile-card-name">Kazu</h3>
-        <p class="profile-card-role">ᴇɴᴛʀᴇᴘʀᴇɴᴇᴜʀ / ᴘʀᴏᴅᴜᴄᴛ ᴅᴇꜱɪɢɴᴇʀ</p>
-        <div class="profile-card-actions">
-          <button class="btn-primary">
-            <a href="{{ '/about/' | url }}">もっと詳しく</a>
-          </button>
-        </div>
-      </div>
-    </div>
+<section class="container-primary home-about" data-reveal><div class="content-primary profile-feature">
+  <div class="profile-feature-photo"><img src="{{ '/assets/img/profile.jpg' | url }}" alt="Kazuのプロフィール写真" /></div>
+  <div class="profile-feature-body">
+    <span class="section-eyebrow">私について</span><h2 class="profile-feature-name">Kazu</h2>
+    <p class="profile-feature-role">起業家／プロダクトデザイナー</p>
+    <p class="profile-feature-desc">新しい事業やプロダクトを考え、デザインし、実際に手を動かして形にしています。つくって終わりではなく、事実を見ながら改善を続けます。</p>
+    {% include "profile-links.njk" %}
+    <a class="text-link" href="{{ '/about/' | url }}">私について詳しく見る</a>
   </div>
-</section>
+</div></section>
 
-<section class="container-secondary home-what-i-do">
-  <div class="section-content home-section-heading">
-    <span class="section-eyebrow">What I Do</span>
-    <h2 class="home-section-title">できること</h2>
-    <p class="home-section-desc">アイデアを考え、形にし、市場で確かめる。新しい事業やプロダクトを、次の一手へとつなげます。</p>
-  </div>
-
+<section class="container-secondary home-what-i-do" data-reveal>
+  <div class="section-content home-section-heading"><span class="section-eyebrow">できること</span><h2 class="home-section-title">考えて、つくって、改善する。</h2><p class="home-section-desc">新しい事業やプロダクトを、アイデアの整理から実際に使える状態まで進めます。</p></div>
   <ol class="home-process">
-    <li class="home-process-item">
-      <span class="home-process-number">01</span>
-      <h3>アイデア</h3>
-      <p>課題や機会を見つけ、誰にどのような価値を届けるのかを考え、アイデアを具体化します。</p>
-    </li>
-    <li class="home-process-item">
-      <span class="home-process-number">02</span>
-      <h3>ビルド</h3>
-      <p>プロトタイプやMVPをつくり、アイデアを実際に触れ、使える状態まで素早く形にします。</p>
-    </li>
-    <li class="home-process-item">
-      <span class="home-process-number">03</span>
-      <h3>仮説検証</h3>
-      <p>ユーザーの反応や利用状況、テストマーケティングを通じて仮説を確かめ、次の改善につなげます。</p>
-    </li>
-  </ol>
-
-  <div class="home-section-link-container">
-    <a class="home-cta" href="{{ '/services/' | url }}">もっと詳しく</a>
-  </div>
+    <li class="home-process-item" data-reveal><span class="home-process-number">01</span><h3>考える</h3><p>課題や機会を見つけ、誰に何を届けるのかを整理します。</p></li>
+    <li class="home-process-item" data-reveal><span class="home-process-number">02</span><h3>つくる</h3><p>企画をデザインと開発につなげ、触れて使える形にします。</p></li>
+    <li class="home-process-item" data-reveal><span class="home-process-number">03</span><h3>改善する</h3><p>数字やユーザーの行動を見て、つくったものを磨き続けます。</p></li>
+  </ol><div class="home-section-link-container"><a class="text-link" href="{{ '/services/' | url }}">扱う範囲を見る</a></div>
 </section>
 
-<section class="posts-layout">
-    <div class="posts-layout-heading">
-      <span class="section-eyebrow">Works</span>
-      <h1 class="posts-layout-section-title">事例</h1>
-      <p class="posts-layout-section-desc">これまでに手がけた主なプロジェクトやプロダクトをご紹介します。</p>
-    </div>
-
-    {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 6)) -%}
-        <div class="posts-layout-grid-item">
-          <a href="{{ item.url | url }}">
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
-            <div class="card-content">
-
-             {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-             <!-- <div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "work" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div> -->
-
-             <h2 class="posts-layout-title">{{ item.data.title }}</h2>
-             <p class="posts-layout-desc">{{ item.data.description }}</p>
-            </div>
-          </a>
-        </div>{%- else -%}
-        {# .slice() メソッドの結果が空の場合はここが表示されますが、通常は表示されないはずです #}
-        <p>作品がひとつも見つかりませんでした。</p>{%- endfor -%}
-    </div>
-
-    <div class="see-all-button-container" style="text-align: center;">
-      <a class="home-cta" href="{{ '/works/' | url }}">もっと詳しく</a>
-    </div>
+<section class="posts-layout" data-reveal>
+  <div class="posts-layout-heading"><span class="section-eyebrow">作品</span><h2 class="posts-layout-section-title">これまでにつくったもの</h2><p class="posts-layout-section-desc">事業やプロダクトとして考え、形にしてきたものです。</p></div>
+  <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 6)) -%}<div class="posts-layout-grid-item" data-reveal><a href="{{ item.url | url }}"><div class="posts-layout-image-wrap"><img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" /></div><div class="card-content"><h3 class="posts-layout-title">{{ item.data.title }}</h3><p class="posts-layout-desc">{{ item.data.description }}</p></div></a></div>{%- else -%}<p>作品がひとつも見つかりませんでした。</p>{%- endfor -%}</div>
+  <div class="see-all-button-container"><a class="text-link" href="{{ '/works/' | url }}">すべての作品を見る</a></div>
 </section>
-
-<!--
-<section class="posts-layout">
-    <h1 class="posts-layout-section-title">ブログ</h1>
-    {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-    <div class="posts-layout-grid">{%- for item in (collections.blog.slice(0, 3)) -%}
-        <div class="posts-layout-grid-item">
-          <a href="{{ item.url | url }}">
-            {% if item.data.thumbnail %}
-            <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" />
-            {% endif %}
-            <div class="card-content">
-
-              {# タグ表示部分の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
-              <div class="posts-layout-tags">{%- for tag in item.data.tags -%}{%- if tag != "blog" -%}<span class="tag">{{ tag }}</span>{%- endif -%}{%- endfor -%}</div>
-
-              <h3 class="posts-layout-title">{{ item.data.title }}</h3>
-              {% if item.data.description %}
-              <p class="posts-layout-desc">{{ item.data.description }}</p>
-              {% endif %}
-            </div>
-          </a>
-        </div>{%- else -%}
-        {# .slice() メソッドの結果が空の場合はここが表示されますが、通常は表示されないはずです #}
-        <p>ブログ記事がひとつも見つかりませんでした。</p>{%- endfor -%}
-    </div>
-
-    <div class="see-all-button-container" style="text-align: center;">
-      <button class="btn-secondary"><a href="{{ '/blog/' | url }}">全て表示</a></button>
-    </div>
-</section>
--->

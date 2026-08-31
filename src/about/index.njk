@@ -1,28 +1,23 @@
 ---
 layout: layouts/base.njk
-title: Kazu
-meta_description: Kazu
+title: 私について - Kazu
+meta_description: Kazuのプロフィールと、事業やプロダクトをつくるときの判断原則。
 ---
 
-<section class="container-primary">
-  <div class="content-primary">
-    <span class="section-eyebrow">Who I Am</span>
-    <div class="profile-card">
-      <div class="profile-card-cover-wrapper">
-        <img src="{{ '/assets/img/cover.png' | url }}" alt="カバー画像" class="profile-card-cover" />
-      </div>
-      <div class="profile-card-content">
-        <div class="profile-card-avatar-wrapper">
-          <img src="{{ '/assets/img/profile.jpg' | url }}" alt="プロフィール画像" class="profile-card-avatar" />
-        </div>
-        <h1 class="profile-card-name">Kazu</h1>
-        <p class="profile-card-role">ᴇɴᴛʀᴇᴘʀᴇɴᴇᴜʀ / ᴘʀᴏᴅᴜᴄᴛ ᴅᴇꜱɪɢɴᴇʀ</p>
-        <div class="profile-card-actions">
-          <button class="btn-primary">
-            <a href="{{ '/contact/' | url }}">メッセージを送る</a>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="about-hero">
+  <div class="about-hero-photo hero-reveal"><img src="{{ '/assets/img/profile.jpg' | url }}" alt="Kazuのプロフィール写真" /></div>
+  <div class="about-hero-body"><span class="section-eyebrow hero-reveal">私について</span><h1 class="about-name hero-reveal">Kazu</h1><p class="about-role hero-reveal">起業家／プロダクトデザイナー</p><p class="about-lead hero-reveal">新しい事業やプロダクトを考え、デザインし、実際に手を動かして形にしています。アイデアだけで終わらせず、一度完成させ、使われ方を見ながら改善を続けることを大切にしています。</p>{% include "profile-links.njk" %}<a class="text-link hero-reveal" href="{{ '/works/' | url }}">これまでの作品を見る</a></div>
+</section>
+
+<section class="principles" data-reveal>
+  <div class="principles-heading"><span class="section-eyebrow">考え方</span><h2>何を基準に考えるか</h2><p>新規事業やプロダクトをつくるときに、立ち返る判断原則です。</p></div>
+  <ol class="principles-list">
+    <li data-reveal><span>01</span><div><h3>ビジョン</h3><p>プロダクトには、まず「どこへ向かうのか」が必要。目の前の機能や施策だけではなく、目指す状態から考える。</p></div></li>
+    <li data-reveal><span>02</span><div><h3>ファクト</h3><p>思い込みだけで判断しない。数字、ユーザーの行動、実際に起きていることを見る。</p></div></li>
+    <li data-reveal><span>03</span><div><h3>スピード</h3><p>考え続けて止まるより、まず動く。</p></div></li>
+    <li data-reveal><span>04</span><div><h3>シンプル</h3><p>複雑にするより、本当に必要なものに絞る。</p></div></li>
+    <li data-reveal><span>05</span><div><h3>まず終わらせる</h3><p>最初から完璧を目指すより、一度最後まで形にする。</p></div></li>
+    <li data-reveal><span>06</span><div><h3>改善</h3><p>最初から正解を作ろうとせず、作ったものを見ながら良くしていく。</p></div></li>
+    <li data-reveal><span>07</span><div><h3>継続</h3><p>一度作って終わりにせず、続けながら磨いていく。</p></div></li>
+  </ol>
 </section>

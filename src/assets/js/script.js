@@ -1,42 +1,24 @@
 import { setupNavToggle } from './modules/navToggle.js';
-import { setupTabs } from './modules/tab.js';
 import { setupBackToTop } from './modules/backToTop.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-  setupTabs();
+  setupNavToggle();
   setupBackToTop();
-});
 
-// share
-document.addEventListener('DOMContentLoaded', function () {
-  const copyLinkElements = document.querySelectorAll('.copy-trigger');
+  requestAnimationFrame(() => document.documentElement.classList.add('is-ready'));
 
-  if (copyLinkElements.length > 0) {
-    copyLinkElements.forEach(function (copyLinkElement) {
-      copyLinkElement.addEventListener('click', function () {
-        const articleUrl = window.location.href;
-
-        navigator.clipboard
-          .writeText(articleUrl)
-          .then(() => {
-            console.log('記事のリンクをコピーしました！');
-
-            const originalText = copyLinkElement.textContent;
-            copyLinkElement.textContent = 'リンクをコピーしました🎉';
-
-            setTimeout(() => {
-              copyLinkElement.textContent = originalText;
-            }, 2000);
-          })
-          .catch((err) => {
-            console.error('リンクのコピーに失敗しました:', err);
-            alert(
-              'リンクのコピーに失敗しました。手動でコピーしてください。\n' +
-                articleUrl,
-            );
-          });
+  const revealItems = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
       });
-    });
+    }, { threshold: 0.12, rootMargin: '0px 0px -24px' });
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
   }
 });
 
@@ -81,17 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-});
-
-// faq
-document.querySelectorAll('.faq-question').forEach((item) => {
-  item.addEventListener('click', () => {
-    const answer = item.nextElementSibling;
-    const toggle = item.querySelector('.toggle');
-
-    answer.classList.toggle('open');
-    item.parentNode.classList.toggle('open');
-
-    toggle.textContent = answer.classList.contains('open') ? '×' : '+';
-  });
 });

@@ -1,6 +1,6 @@
 ---
 title: 'Vocalable'
-description: '音楽に特化したスキルマッチングプラットフォーム'
+description: '音楽に特化したスキルマッチングプラットフォーム。'
 tags: ['work', '音楽', 'C2C']
 thumbnail: /assets/img/product/vocalable.jpg
 layout: layouts/work-detail.njk

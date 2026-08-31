@@ -1,6 +1,6 @@
 ---
 title: 'Shabel'
-description: 'フリマのように知識を動画やビデオ通話で簡単に売買できるアプリ。'
+description: '動画やビデオ通話を通じて知識を売買できるアプリ。'
 tags: ['work', 'シェアリングエコノミー']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk

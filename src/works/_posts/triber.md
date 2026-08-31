@@ -1,6 +1,6 @@
 ---
 title: 'Triber'
-description: 'シェアイベントスペースと会員コミュニティ'
+description: 'シェアイベントスペースと会員コミュニティを組み合わせたサービス。'
 tags: ['work', '体験', 'オフライン']
 thumbnail: /assets/img/product/triber.jpg
 layout: layouts/work-detail.njk

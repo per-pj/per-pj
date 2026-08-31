@@ -1,22 +1,21 @@
 {# src/includes/header.njk #}
 <header class="header">
   <div class="logo">
-    <a href="{{ '/' | url }}" class="logo-text" aria-label="Home">Kazu</a>
+    <a href="{{ '/' | url }}" class="logo-text" aria-label="トップページ">Kazu</a>
   </div>
 
-  <button class="toggle-menu">
+  <button class="toggle-menu" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-navigation">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav class="nav">
+  <nav class="nav" id="primary-navigation" aria-label="メインナビゲーション">
     <ul class="nav-menu">
-      <li><a href="{{ '/about/' | url }}">私について</a></li>
-      <li><a href="{{ '/services/' | url }}">できること</a></li>
-      <li><a href="{{ '/works/' | url }}">事例</a></li>
-      <!--<li><a href="{{ '/blog/' | url }}">ブログ</a></li>-->
-      <li><a href="{{ '/contact/' | url }}">お問い合わせ</a></li>
+      <li><a href="{{ '/about/' | url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>私について</a></li>
+      <li><a href="{{ '/services/' | url }}"{% if page.url == '/services/' %} aria-current="page"{% endif %}>できること</a></li>
+      <li><a href="{{ '/works/' | url }}"{% if page.url and page.url.startsWith('/works/') %} aria-current="page"{% endif %}>作品</a></li>
+      <li class="nav-contact"><a href="{{ '/contact/' | url }}"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>お問い合わせ</a></li>
     </ul>
   </nav>
 </header>

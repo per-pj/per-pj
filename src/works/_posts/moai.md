@@ -1,6 +1,6 @@
 ---
 title: 'Moai'
-description: '友人と共同の口座を作成し、毎月一定金額を貯蓄。'
+description: '友人と共同口座を作り、毎月一定額を貯蓄できるアプリ。'
 tags: ['work', 'フィンテック']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk

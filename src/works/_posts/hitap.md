@@ -1,6 +1,6 @@
 ---
 title: 'Hitap'
-description: 'リンクを共有してAIでスケジュール調整'
+description: '共有リンクからAIで日程を調整できるサービス。'
 tags: ['work', 'AI', '音楽']
 thumbnail: /assets/img/product/hitap.jpg
 layout: layouts/work-detail.njk

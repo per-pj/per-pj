@@ -1,6 +1,6 @@
 ---
 title: 'Modan'
-description: 'ブランドを成長させたい企業と最適なインフルエンサーをマッチング。'
+description: '企業とインフルエンサーをつなぐマッチングプラットフォーム。'
 tags: ['work', 'マーケティング']
 thumbnail: /assets/img/product/modan.jpg
 layout: layouts/work-detail.njk

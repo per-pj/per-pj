@@ -11,7 +11,6 @@ layout: layouts/base.njk
     </div>
     <h1 class="post-detail-hero-title">{{ title }}</h1>
     <p class="post-detail-hero-desc">{{ description }}</p>
-    <!--<p class="share-link-text copy-trigger">URLをコピー</p>-->
     <img src="{{ thumbnail | url }}" alt="{{ title }}" class="post-detail-hero-img" />
   </div>
 </section>
@@ -21,28 +20,6 @@ layout: layouts/base.njk
     {{ content | safe }}
   </div>
 </section>
-
-<!--<section class="container-primary">
-  <p class="share-link-text copy-trigger">URLをコピー</p>
-</section>-->
-
-<!--<section class="credit-container">
-  <div class="credit-content">
-    <div class="credit-info">
-      <img
-        src="{{ '/assets/img/profile.jpg' | url }}"
-        alt="プロフィール用のイラスト画像"
-      />
-      <div class="credit-details">
-        <h3>Kazu</h3>
-        <p></p>
-      </div>
-    </div>
-    <button class="btn-primary">
-      <a href="#">お問い合わせ</a>
-    </button>
-  </div>
-</section>-->
 
 {% set recommendedSlugs = recommended or [] %}
 {% set filteredItems = [] %}
@@ -57,7 +34,6 @@ layout: layouts/base.njk
 
 {% if recommendedItems.length %}
   <section class="recommended">
-    <!--<h2 class="recommended-section-title">関連</h2>-->
     <div class="scrollbar">
       {% for item in recommendedItems %}
         {% include "layouts/recommended-detail.njk" %}
@@ -65,6 +41,5 @@ layout: layouts/base.njk
     </div>
   </section>
 {% endif %}
-
 
 

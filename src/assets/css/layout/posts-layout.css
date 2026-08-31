@@ -63,7 +63,7 @@
 .posts-layout-grid-item {
   background: transparent;
   text-align: left;
-  overflow: hidden;
+  overflow: visible;
   align-self: start;
   transition: transform 0.2s ease;
   margin-bottom: 0.5rem;
@@ -80,74 +80,23 @@
   transform: translateY(-4px);
 }
 
+.posts-layout-image-wrap { overflow: hidden; border-radius: var(--radius-md); background: var(--color-gray-subtle); }
+
 .posts-layout-grid-img {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border-radius: var(--radius-md);
   display: block;
+  transition: transform 420ms ease;
 }
+
+.posts-layout-grid-item:hover .posts-layout-grid-img { transform: scale(1.025); }
 
 .card-content {
   padding: 0.5rem 0.25rem 1rem;
 }
 
-/* 記事一覧のタグ */
-.posts-layout-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tag {
-  font-size: 1rem;
-  color: var(--color-text-primary);
-  display: inline-block;
-}
-
-/* ブログページのページネーション */
 .posts-layout-grid-item.hidden {
   display: none;
-}
-
-.pagination {
-  margin: 4rem 0 2rem 0;
-  text-align: center;
-}
-
-.pagination ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-}
-
-.pagination li {
-  display: inline-block;
-  margin: 0 0.3rem;
-}
-
-.pagination a {
-  text-decoration: none;
-  background-color: var(--color-bg-primary);
-  padding: 10px 15px;
-  border: 1px solid var(--color-text-primary);
-  border-radius: var(--radius-compact);
-  color: var(--color-text-primary);
-  cursor: pointer;
-}
-
-.pagination a.active {
-  background-color: var(--color-bg-inverse);
-  border: 1px solid var(--color-text-primary);
-  color: var(--color-text-inverse);
-  pointer-events: none;
-  cursor: default;
-}
-
-.pagination li.disabled span {
-  background-color: var(--color-bg-primary);
-  padding: 5px 10px;
-  border: 1px solid var(--color-border-default);
-  border-radius: 3px;
 }

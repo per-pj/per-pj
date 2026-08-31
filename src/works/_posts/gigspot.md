@@ -1,6 +1,6 @@
 ---
 title: 'Gigspot'
-description: '多忙なギグワーカーを対象とした月額制の休憩スペース。'
+description: 'ギグワーカーのための月額制休憩スペース。'
 tags: ['work', 'ギグワーカー', '不動産']
 thumbnail: /assets/img/product/gigspot.jpg
 layout: layouts/work-detail.njk
