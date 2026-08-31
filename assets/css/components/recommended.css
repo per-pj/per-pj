@@ -36,6 +36,7 @@
   font-weight: var(--font-weight-regular);
   color: var(--color-text-primary);
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .recommended-title,
