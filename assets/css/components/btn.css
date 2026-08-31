@@ -13,20 +13,21 @@
   justify-content: center;
   background-color: var(--color-bg-inverse);
   color: var(--color-text-inverse);
-  padding: 0.8rem 1.2rem;
+  padding: 0.75rem 1.4rem;
   border: none;
   box-shadow: none;
   border-radius: var(--radius-xl);
-  font-size: 0.9rem;
-  font-weight: var(--font-weight-regular);
+  font-size: 0.88rem;
+  font-weight: var(--font-weight-medium);
   letter-spacing: var(--letter-spacing-ui);
   line-height: var(--line-height-ui);
   text-decoration: none;
   cursor: pointer;
   outline: none;
   transition:
-    transform 0.1s ease,
-    background-color 0.1s ease;
+    transform 0.15s ease,
+    background-color 0.15s ease,
+    opacity 0.15s ease;
 }
 
 .btn-primary,
@@ -43,15 +44,15 @@
 .home-cta:hover,
 #load-more-button:hover {
   background-color: var(--color-bg-inverse-hover);
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 
 .btn-primary a,
 .btn-secondary a,
 .home-cta a {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--color-text-inverse);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-medium);
   letter-spacing: var(--letter-spacing-ui);
   line-height: var(--line-height-ui);
   text-decoration: none;

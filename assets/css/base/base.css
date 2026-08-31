@@ -21,6 +21,7 @@ h3,
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-heading);
+  color: var(--color-text-primary);
 }
 
 p {
@@ -32,46 +33,50 @@ p {
   /* Primitive tokens: raw values only. */
   --space-100: 1rem;
   --space-200: 2rem;
-  --space-300: 3rem;
-  --space-400: 4rem;
+  --space-300: 3.5rem;
+  --space-400: 5rem;
 
   --color-cream: #fcfaf5;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-black-hover: #111;
-  --color-charcoal: #222;
-  --color-gray-dark: #333;
-  --color-gray: #414141;
-  --color-gray-hover: #555;
+  --color-white: #ffffff;
+  --color-black: #141414;
+  --color-black-hover: #262626;
+  --color-charcoal: #222222;
+  --color-gray-dark: #383838;
+  --color-gray: #5c5c5c;
+  --color-gray-hover: #484848;
   --color-gray-scrollbar: #505050;
-  --color-gray-muted: #999;
-  --color-gray-light: #dfdfdf;
-  --color-gray-border: #e2e2e2;
-  --color-gray-input: #e7e7e7;
-  --color-gray-subtle: #f3f3f3;
+  --color-gray-muted: #858076;
+  --color-gray-light: #dfdbd2;
+  --color-gray-border: #e6e3dc;
+  --color-gray-input: #ebe8e1;
+  --color-gray-subtle: #f2efe9;
 
-  --font-family-sans: Arial, Helvetica, sans-serif;
-  --font-family-serif: Georgia, 'Times New Roman', serif;
+  --font-family-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+  --font-family-serif:
+    Georgia, 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', serif;
   --font-size-body: 1rem;
-  --font-size-heading-4: 1.5rem;
-  --font-size-heading-3: 2rem;
-  --font-size-heading-2: 2.5rem;
+  --font-size-heading-4: 1.35rem;
+  --font-size-heading-3: 1.75rem;
+  --font-size-heading-2: 2.25rem;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700;
-  --letter-spacing-normal: normal;
-  --letter-spacing-heading: -0.01em;
-  --letter-spacing-body: 0.01em;
-  --letter-spacing-ui: 0.02em;
-  --line-height-heading: 1.2;
-  --line-height-body: 1.7;
+  --font-weight-bold: 600;
+  --letter-spacing-normal: 0.01em;
+  --letter-spacing-heading: -0.015em;
+  --letter-spacing-body: 0.015em;
+  --letter-spacing-ui: 0.03em;
+  --line-height-heading: 1.25;
+  --line-height-body: 1.75;
   --line-height-ui: 1.4;
   --line-height-caption: 1.5;
 
-  --radius-xs: 1px;
-  --radius-compact: 4px;
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
+  --radius-xs: 2px;
+  --radius-compact: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
   --radius-xl: 30px;
   --radius-round: 50%;
 
@@ -97,8 +102,8 @@ p {
   --color-border-inverse: var(--color-white);
   --color-scrollbar: var(--color-gray-scrollbar);
 
-  --shadow-surface: 0 0 10px rgb(0 0 0 / 10%);
+  --shadow-surface: 0 4px 20px rgba(0, 0, 0, 0.04);
 
   --layout-padding-inline: var(--space-300);
-  --layout-padding-inline-compact: var(--space-100);
+  --layout-padding-inline-compact: 1.25rem;
 }

@@ -2,7 +2,7 @@
 .container-primary {
   width: 100%;
   height: auto;
-  padding: var(--space-300);
+  padding: var(--space-400) var(--layout-padding-inline);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +11,9 @@
 
 .content-primary {
   width: 100%;
+  max-width: 58rem;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,4 +33,17 @@
   border-radius: var(--radius-md);
   width: 100%;
   box-sizing: border-box;
+}
+
+/* セクション上部の小さな英語テキスト (アイブロウ) */
+.section-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  margin-bottom: 0.6rem;
+  text-align: center;
+  line-height: 1;
 }
