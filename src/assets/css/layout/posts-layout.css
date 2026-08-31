@@ -1,74 +1,95 @@
 /* コンテナ */
 .posts-layout {
   width: 100%;
-  padding: var(--space-300);
+  padding: var(--space-400) var(--layout-padding-inline);
   box-sizing: border-box;
   margin: 0;
 }
 
 /* テキスト */
+.posts-layout-heading {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
 .posts-layout-section-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.25rem);
   font-weight: var(--font-weight-regular);
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+
+.posts-layout-section-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: var(--line-height-body);
+  max-width: 42rem;
+  margin: 0.5rem auto 0;
   text-align: center;
 }
 
 .posts-layout-title {
-  font-size: 1.3rem;
-  font-weight: var(--font-weight-regular);
+  font-size: 1.15rem;
+  font-weight: 600;
   color: var(--color-text-primary);
-  margin: 0 0 0.2rem 0;
+  margin: 0.6rem 0 0.3rem 0;
   text-decoration: none;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
 .posts-layout-desc {
-  font-size: 15px;
-  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* hover */
 .posts-layout-grid-item a:hover .posts-layout-title {
-  text-decoration: underline;
+  color: var(--color-text-secondary);
 }
 
 /* レイアウト・カードデザイン */
 .posts-layout-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.75rem;
   grid-auto-flow: row dense;
   align-items: start;
 }
 
 .posts-layout-grid-item {
-  background: var(--color-bg-primary);
+  background: transparent;
   text-align: left;
   overflow: hidden;
   align-self: start;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.2s ease;
   margin-bottom: 0.5rem;
-  border-radius: var(--radius-compact);
+  border-radius: var(--radius-md);
 }
 
 .posts-layout-grid-item a {
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 
 .posts-layout-grid-item:hover {
-  transform: translateY(-10px);
-  /* box-shadow: var(--shadow-surface); */
+  transform: translateY(-4px);
 }
 
 .posts-layout-grid-img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-md);
   display: block;
 }
 
 .card-content {
-  padding: 0.8rem 2.2rem 1.5rem 0.8rem;
+  padding: 0.5rem 0.25rem 1rem;
 }
 
 /* 記事一覧のタグ */

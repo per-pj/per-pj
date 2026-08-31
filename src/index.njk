@@ -6,7 +6,8 @@ meta_description: Kazu
 
 <section class="container-primary">
   <div class="content-primary">
-    <h1 class="hero-title">アイデアを探求する。ビジネスを構築する。</h1>
+    <span class="section-eyebrow">Portfolio</span>
+    <h1 class="hero-title">アイデアを探求し、ビジネスを構築する。</h1>
     <p class="hero-desc">事業機会を発見し、戦略を描き、プロダクトと体験を作る。</p>
     <div class="hero-actions">
       <button class="btn-primary">
@@ -19,15 +20,31 @@ meta_description: Kazu
 
 <section class="container-primary home-about">
   <div class="content-primary">
+    <span class="section-eyebrow">Who I Am</span>
     <h2 class="home-section-title">私について</h2>
-    <p class="home-section-desc">起業家、プロダクトデザイナー。10年以上、新規事業、プロダクト立ち上げに取り組んでいます。
-</p>
-    <a class="home-cta" href="{{ '/about/' | url }}">もっと詳しく</a>
+    <div class="profile-card">
+      <div class="profile-card-cover-wrapper">
+        <img src="{{ '/assets/img/cover.png' | url }}" alt="カバー画像" class="profile-card-cover" />
+      </div>
+      <div class="profile-card-content">
+        <div class="profile-card-avatar-wrapper">
+          <img src="{{ '/assets/img/profile.jpg' | url }}" alt="プロフィール画像" class="profile-card-avatar" />
+        </div>
+        <h3 class="profile-card-name">Kazu</h3>
+        <p class="profile-card-role">ᴇɴᴛʀᴇᴘʀᴇɴᴇᴜʀ / ᴘʀᴏᴅᴜᴄᴛ ᴅᴇꜱɪɢɴᴇʀ</p>
+        <div class="profile-card-actions">
+          <button class="btn-primary">
+            <a href="{{ '/about/' | url }}">もっと詳しく</a>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="container-secondary home-what-i-do">
   <div class="section-content home-section-heading">
+    <span class="section-eyebrow">What I Do</span>
     <h2 class="home-section-title">できること</h2>
     <p class="home-section-desc">アイデアを考え、形にし、市場で確かめる。新しい事業やプロダクトを、次の一手へとつなげます。</p>
   </div>
@@ -56,7 +73,11 @@ meta_description: Kazu
 </section>
 
 <section class="posts-layout">
-    <h1 class="posts-layout-section-title">事例</h1>
+    <div class="posts-layout-heading">
+      <span class="section-eyebrow">Works</span>
+      <h1 class="posts-layout-section-title">事例</h1>
+      <p class="posts-layout-section-desc">これまでに手がけた主なプロジェクトやプロダクトをご紹介します。</p>
+    </div>
 
     {# posts-layout-grid コンテナ内の不要な空白を削除 - NunjucksのWhitespace Controlを使用 #}
     <div class="posts-layout-grid">{%- for item in (collections.works.slice(0, 6)) -%}
