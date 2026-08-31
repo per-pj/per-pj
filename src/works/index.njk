@@ -1,12 +1,12 @@
 ---
 layout: layouts/base.njk
-title: Kazu
+title: Works - Kazu
 meta_description: Kazu
 ---
 
 {% block content %}
   <div class="posts-layout">
-    <h1 class="posts-layout-section-title">ポートフォリオ</h1>
+    <h1 class="posts-layout-section-title">Works</h1>
     <div class="posts-layout-grid" id="portfolio-grid">
       {% for item in collections.works %}
         <div class="posts-layout-grid-item  portfolio-item">
@@ -32,8 +32,8 @@ meta_description: Kazu
     </div>
 
    {% if collections.works.length > 6 %}
-      <button id="load-more-button" style="display: block; margin: 20px auto;">もっと見る</button>
-    {% endif %}
+      <button id="load-more-button" style="display: block; margin: 20px auto;">View More</button>
+t    {% endif %}
 
   </div>
 {% endblock %}

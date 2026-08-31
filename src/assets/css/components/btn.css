@@ -1,74 +1,60 @@
-/* primary */
-.btn-primary {
+/* ==========================================================================
+   Buttons
+   統一ボタンスタイル: 黒色背景 / 白色文字 / 枠線なし / 影なし
+   ========================================================================== */
+
+/* primary & secondary & CTA & load-more */
+.btn-primary,
+.btn-secondary,
+.home-cta,
+#load-more-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--color-bg-inverse);
+  color: var(--color-text-inverse);
   padding: 0.8rem 1.2rem;
   border: none;
+  box-shadow: none;
   border-radius: var(--radius-xl);
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-ui);
+  line-height: var(--line-height-ui);
+  text-decoration: none;
   cursor: pointer;
+  outline: none;
   transition:
     transform 0.1s ease,
     background-color 0.1s ease;
-  margin-top: 1rem;
-  box-shadow: var(--shadow-surface);
 }
 
-.btn-primary:hover {
+.btn-primary,
+.btn-secondary {
+  margin-top: 1rem;
+}
+
+.home-cta {
+  margin-top: 1.25rem;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.home-cta:hover,
+#load-more-button:hover {
   background-color: var(--color-bg-inverse-hover);
   transform: scale(1.1);
 }
 
-.btn-primary a {
+.btn-primary a,
+.btn-secondary a,
+.home-cta a {
   font-size: 0.9rem;
   color: var(--color-text-inverse);
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--letter-spacing-ui);
   line-height: var(--line-height-ui);
   text-decoration: none;
-}
-/* secondary */
-.btn-secondary {
-  background-color: var(--color-bg-primary);
-  padding: 0.8rem 1.2rem;
-  border: 1px solid var(--color-text-primary);
-  border-radius: var(--radius-xl);
-  cursor: pointer;
-  transition:
-    transform 0.1s ease,
-    background-color 0.1s ease;
-  margin-top: 1rem;
-}
-
-.btn-secondary:hover {
-  transform: scale(1.1);
-}
-
-.btn-secondary a {
-  font-size: 0.9rem;
-  color: var(--color-text-primary);
-  font-weight: var(--font-weight-regular);
-  letter-spacing: var(--letter-spacing-ui);
-  line-height: var(--line-height-ui);
-  text-decoration: none;
-}
-
-#load-more-button {
-  background-color: var(--color-bg-primary);
-  padding: 0.8rem 1.2rem;
-  font-size: 0.9rem;
-  font-weight: var(--font-weight-regular);
-  color: var(--color-text-primary);
-  line-height: var(--line-height-ui);
-  letter-spacing: var(--letter-spacing-ui);
-  border: 1px solid var(--color-text-primary);
-  border-radius: var(--radius-xl);
-  cursor: pointer;
-  transition:
-    transform 0.1s ease,
-    background-color 0.1s ease;
-}
-
-#load-more-button:hover {
-  transform: scale(1.1);
 }
 
 /* === back-to-top === */
@@ -88,6 +74,7 @@
   right: 20px;
   z-index: 999;
   border: none;
+  box-shadow: none;
   outline: none;
   cursor: pointer;
   transition: background-color 0.1s ease;

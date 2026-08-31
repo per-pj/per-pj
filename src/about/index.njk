@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
-title: プロフィール - per-pj
-meta_description: per-pj のポートフォリオサイトのプロフィールページです。
+title: Kazu
+meta_description: Kazu
 ---
 
 <section class="container-primary">
@@ -10,35 +10,12 @@ meta_description: per-pj のポートフォリオサイトのプロフィール�
       <img src="{{ '/assets/img/profile.jpg' | url }}" alt="プロフィール画像" class="about-img" />
     </div>
     <div class="about-item">
-      <h2 class="about-title">per-pj</h2>
-      <p class="about-desc">スタートアップの代表取締役</p>
+      <h2 class="about-title">Kazu</h2>
+      <p class="about-desc">ᴇɴᴛʀᴇᴘʀᴇɴᴇᴜʀ / ᴘʀᴏᴅᴜᴄᴛ ᴅᴇꜱɪɢɴᴇʀ</p>
       <button class="btn-primary" style="margin: 1rem 0 0 0">
         <a href="{{ '/contact/' | url }}"
-          >お問い合わせ</a>
+          >メッセージ</a>
       </button>
-    </div>
-  </div>
-</section>
-
-<section class="tabs-container">
-  <div class="tabs">
-    <button class="tab-link active" data-tab="history">略歴</button>
-    <button class="tab-link" data-tab="skills">スキル</button>
-    <button class="tab-link" data-tab="tools">ツール</button>
-  </div>
-  <div class="tab-content active" id="history">
-    <div class="tab-content-container">
-     {{ "about/history.md" | mdFile | safe }}
-    </div>
-  </div>
-  <div class="tab-content" id="skills">
-    <div class="tab-content-container">
-     {{ "about/skills.md"  | mdFile | safe }}
-    </div>
-  </div>
-  <div class="tab-content" id="tools">
-    <div class="tab-content-container">
-     {{ "about/tools.md"   | mdFile | safe }}
     </div>
   </div>
 </section>
