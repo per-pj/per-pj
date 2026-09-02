@@ -1,9 +1,11 @@
 import { setupNavToggle } from './modules/navToggle.js';
 import { setupBackToTop } from './modules/backToTop.js';
+import { setupNextProjects } from './modules/nextProjects.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   setupNavToggle();
   setupBackToTop();
+  setupNextProjects();
 
   requestAnimationFrame(() => document.documentElement.classList.add('is-ready'));
 
