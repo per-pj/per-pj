@@ -58,9 +58,8 @@
   .footer { padding: var(--space-300) var(--layout-padding-inline-compact) var(--space-200); }
   .footer-flex { align-items: flex-start; }
   .footer-item { width: 100%; }
-  .footer-menu { width: 100%; flex-direction: column; align-items: flex-start; gap: 0; }
-  .footer-menu li { width: 100%; border-bottom: 1px solid var(--color-scrollbar); }
-  .footer-menu li:first-child { border-top: 1px solid var(--color-scrollbar); }
-  .footer-menu li a { padding: var(--space-100) 0; }
-  .copyright { margin-top: var(--space-200); padding-top: var(--space-100); overflow-wrap: anywhere; }
+  .footer-menu { width: 100%; flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+  .footer-menu li { width: 100%; }
+  .footer-menu li a { padding: 0.55rem 0; }
+  .copyright { margin-top: 2.5rem; padding-top: 0; border-top: 0; overflow-wrap: anywhere; }
 }
