@@ -8,14 +8,7 @@ export function setupNextProjects() {
   if (items.length === 0) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const getPositions = () => {
-    const paddingStart = Number.parseFloat(getComputedStyle(track).paddingLeft) || 0;
-    const trackStart = track.getBoundingClientRect().left;
-    return items.map((item) => Math.max(
-      0,
-      item.getBoundingClientRect().left - trackStart + track.scrollLeft - paddingStart,
-    ));
-  };
+  const getPositions = () => items.map((item) => item.offsetLeft);
   const getCurrentIndex = (positions) => positions.reduce((closest, position, index) => (
     Math.abs(position - track.scrollLeft) < Math.abs(positions[closest] - track.scrollLeft)
       ? index
