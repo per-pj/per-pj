@@ -6,7 +6,7 @@
 .services-section-heading h2, .services-method h2, .services-works h2 { margin: 0; font-size: clamp(2.1rem, 4vw, 3.2rem); }
 .services-section-heading p { max-width: 34rem; margin: 0; color: var(--color-text-muted); }
 .services-section-heading--split { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; }
-.services-kicker, .services-group-number { display: block; margin-bottom: 0.8rem; color: var(--color-text-subtle); font-size: 0.72rem; line-height: 1.4; letter-spacing: 0.14em; }
+.services-kicker { display: block; margin-bottom: 0.8rem; color: var(--color-text-subtle); font-size: 0.72rem; line-height: 1.4; letter-spacing: 0.14em; }
 
 .services-process-list { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--color-border-default); border-bottom: 1px solid var(--color-border-default); }
 .services-process-list li { min-width: 0; padding: 2rem 1.25rem 2.25rem; }
@@ -19,13 +19,12 @@
 .services-activities { padding: 8rem max(var(--layout-padding-inline), calc((100vw - 74rem) / 2 + var(--layout-padding-inline))); background: var(--color-gray-subtle); }
 .services-section-heading--side { display: grid; grid-template-columns: minmax(18rem, 0.9fr) minmax(20rem, 1.1fr); gap: clamp(4rem, 10vw, 9rem); align-items: end; }
 .services-activity-groups { border-top: 1px solid var(--color-border-default); }
-.services-activity-groups section { display: grid; grid-template-columns: 3rem minmax(13rem, 0.75fr) minmax(22rem, 1.25fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; padding: 2.6rem 0; border-bottom: 1px solid var(--color-border-default); }
-.services-activity-groups .services-group-number { margin: 0; padding-top: 0.25rem; }
-.services-activity-groups h3 { margin: 0; font: 600 1.12rem var(--font-family-sans); }
-.services-activity-detail p { margin: 0 0 1.2rem; color: var(--color-text-muted); font-size: 0.92rem; }
-.services-activity-groups ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.4rem 1.25rem; margin: 0; padding: 0; list-style: none; }
-.services-activity-groups li { position: relative; padding-left: 0.7rem; color: var(--color-text-secondary); font-size: 0.84rem; line-height: 1.6; }
-.services-activity-groups li::before { content: ''; position: absolute; top: 0.72em; left: 0; width: 3px; height: 3px; border-radius: 50%; background: var(--color-text-subtle); }
+.services-activity-groups > section { display: grid; grid-template-columns: minmax(13rem, 0.65fr) minmax(28rem, 1.35fr); gap: clamp(2.5rem, 7vw, 7rem); align-items: start; padding: 3.2rem 0; border-bottom: 1px solid var(--color-border-default); }
+.services-activity-groups > section > h3 { margin: 0; font: 600 1.2rem var(--font-family-sans); }
+.services-capabilities { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 2.5rem; }
+.services-capabilities article { min-width: 0; }
+.services-capabilities h4 { margin: 0 0 0.45rem; color: var(--color-text-primary); font: 600 0.98rem/1.45 var(--font-family-sans); letter-spacing: 0; }
+.services-capabilities p { margin: 0; color: var(--color-text-muted); font-size: 0.84rem; line-height: 1.7; }
 
 .services-method { max-width: 74rem; margin: 0 auto; padding: 8rem var(--layout-padding-inline); display: grid; grid-template-columns: minmax(19rem, 0.8fr) minmax(24rem, 1.2fr); gap: clamp(4rem, 10vw, 9rem); }
 .services-method-intro { align-self: start; position: sticky; top: 7rem; }
@@ -36,7 +35,7 @@
 .services-method-list h3 { margin: 0 0 0.45rem; font: 600 1.08rem var(--font-family-sans); }
 .services-method-list p { margin: 0; color: var(--color-text-muted); font-size: 0.92rem; }
 
-.services-outputs { max-width: none; padding-right: max(var(--layout-padding-inline), calc((100vw - 74rem) / 2 + var(--layout-padding-inline))); padding-left: max(var(--layout-padding-inline), calc((100vw - 74rem) / 2 + var(--layout-padding-inline))); background: var(--color-bg-surface); }
+.services-outputs { max-width: none; border-top: 0; padding-right: max(var(--layout-padding-inline), calc((100vw - 74rem) / 2 + var(--layout-padding-inline))); padding-left: max(var(--layout-padding-inline), calc((100vw - 74rem) / 2 + var(--layout-padding-inline))); background: var(--color-bg-surface); }
 .services-output-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--color-border-default); }
 .services-output-list li { padding: 1.4rem 1rem 1.4rem 0; border-bottom: 1px solid var(--color-border-default); font-size: 0.94rem; }
 .services-output-list span { display: block; margin-bottom: 0.65rem; color: var(--color-text-subtle); font-size: 0.7rem; letter-spacing: 0.12em; }
@@ -57,8 +56,8 @@
   .services-process-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .services-process-list li:nth-child(4) { border-left: 0; }
   .services-process-list li:nth-child(n + 4) { border-top: 1px solid var(--color-border-default); }
-  .services-activity-groups section { grid-template-columns: 2.5rem minmax(11rem, 0.7fr) minmax(0, 1.3fr); gap: 1.5rem; }
-  .services-activity-groups ul { grid-template-columns: 1fr; }
+  .services-activity-groups > section { grid-template-columns: minmax(11rem, 0.55fr) minmax(0, 1.45fr); gap: 2rem; }
+  .services-capabilities { gap: 1.75rem; }
   .services-method { grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr); gap: 3rem; }
   .services-works { grid-template-columns: minmax(15rem, 0.7fr) minmax(20rem, 1.3fr); gap: 3rem; }
 }
@@ -74,10 +73,10 @@
   .services-process-list h3 { min-height: 0; margin: 0; }
   .services-process-list p { margin-top: -0.2rem; }
   .services-activities { padding: 5.5rem 1.25rem; }
-  .services-activity-groups section { grid-template-columns: 2rem minmax(0, 1fr); gap: 0.75rem; padding: 2rem 0; }
-  .services-activity-groups h3, .services-activity-detail { grid-column: 2; }
-  .services-activity-detail p { margin-top: 0.75rem; }
-  .services-activity-groups ul { grid-template-columns: 1fr; }
+  .services-activity-groups > section { grid-template-columns: 1fr; gap: 1.75rem; padding: 2.5rem 0; }
+  .services-capabilities { grid-template-columns: 1fr; gap: 0; }
+  .services-capabilities article { padding: 1.15rem 0; border-top: 1px solid var(--color-border-default); }
+  .services-capabilities article:first-child { padding-top: 0; border-top: 0; }
   .services-method { padding: 5.5rem 1.25rem; grid-template-columns: 1fr; gap: 3rem; }
   .services-method-intro, .services-works-heading { position: static; }
   .services-method-list li { padding: 1.65rem 0; }

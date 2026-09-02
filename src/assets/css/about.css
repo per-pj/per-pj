@@ -7,7 +7,8 @@
 .about-role { margin: 0.35rem 0 2.25rem; color: var(--color-text-subtle); letter-spacing: 0.06em; font-size: 0.9rem; }
 .about-lead { margin: 0 0 2rem; color: var(--color-text-secondary); font-size: 1.08rem; }
 .about-hero-body .profile-links { margin-bottom: 2rem; }
-.principles { max-width: 74rem; margin: 0 auto; padding: 7rem var(--layout-padding-inline); border-top: 1px solid var(--color-border-default); }
+.principles { position: relative; max-width: 74rem; margin: 0 auto; padding: 7rem var(--layout-padding-inline); }
+.principles::before { content: ''; position: absolute; top: 0; right: var(--layout-padding-inline); left: var(--layout-padding-inline); height: 1px; background: var(--color-border-default); }
 .principles-heading { max-width: 40rem; margin-bottom: 4rem; }
 .principles-heading .section-eyebrow { text-align: left; }
 .principles-heading h2 { margin: 0.75rem 0; font-size: clamp(2rem, 4vw, 3rem); }
@@ -17,12 +18,30 @@
 .principles-list li > span { color: var(--color-text-subtle); font-size: 0.75rem; letter-spacing: 0.1em; padding-top: 0.3rem; }
 .principles-list h3 { font: 600 1.12rem var(--font-family-sans); margin: 0 0 0.5rem; }
 .principles-list p { color: var(--color-text-muted); font-size: 0.94rem; margin: 0; }
+.about-services { padding: 7.5rem max(var(--layout-padding-inline), calc((100vw - 74rem) / 2 + var(--layout-padding-inline))); display: grid; grid-template-columns: minmax(20rem, 0.9fr) minmax(24rem, 1.1fr); gap: clamp(4rem, 10vw, 9rem); align-items: center; background: var(--color-bg-surface); }
+.about-services-intro { max-width: 32rem; }
+.about-services-intro .section-eyebrow { margin-bottom: 0.8rem; text-align: left; }
+.about-services-intro h2 { margin: 0; font-size: clamp(2.2rem, 4vw, 3.4rem); }
+.about-services-intro p { margin: 1.25rem 0 2rem; color: var(--color-text-muted); }
+.about-services-preview { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--color-border-default); }
+.about-services-preview li { padding: 1.35rem 1rem 1.35rem 0; border-bottom: 1px solid var(--color-border-default); color: var(--color-text-primary); font-size: 0.95rem; }
+.about-services-preview span { display: block; margin-bottom: 0.55rem; color: var(--color-text-subtle); font-size: 0.7rem; letter-spacing: 0.12em; }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-services { grid-template-columns: minmax(15rem, 0.9fr) minmax(20rem, 1.1fr); gap: 3rem; }
+}
 @media (max-width: 768px) {
   .about-hero { padding: 4rem 1.25rem 5rem; grid-template-columns: 1fr; gap: 2.5rem; }
   .about-hero-photo { width: 100%; max-width: 24rem; justify-self: center; }
   .about-name { font-size: 3rem; }
   .principles { padding: 5rem 1.25rem; }
+  .principles::before { right: 1.25rem; left: 1.25rem; }
   .principles-heading { margin-bottom: 3rem; }
   .principles-list { grid-template-columns: 1fr; }
   .principles-list li { padding: 1.75rem 0; }
+  .about-services { padding: 5.5rem 1.25rem; grid-template-columns: 1fr; gap: 3rem; }
+  .about-services-intro h2 { font-size: clamp(2rem, 10vw, 2.7rem); }
+}
+
+@media (max-width: 390px) {
+  .about-services-preview { grid-template-columns: 1fr; }
 }

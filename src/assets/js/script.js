@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const portfolioItems = document.querySelectorAll('.portfolio-item');
   const loadMoreButton = document.getElementById('load-more-button');
 
-  const initialItems = 12;
-  const itemsPerLoad = 12;
+  const initialItems = 15;
+  const itemsPerLoad = 15;
 
   let currentlyVisibleItems = initialItems;
 
