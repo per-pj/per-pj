@@ -2,14 +2,13 @@
 layout: layouts/base.njk
 ---
 
-{% set nextItem = collections.works | nextWork(page.url) %}
+{% set primaryTag = tags | primaryWorkTag %}
+{% set nextItems = collections.works | nextWorks(page.url, 5) %}
 
 <article class="work-detail">
   <header class="post-detail-hero-container">
     <div class="post-detail-hero-content">
-      {% if tags %}<ul class="post-detail-hero-tags" aria-label="カテゴリー">
-        {% for tag in tags %}{% if tag != "work" %}<li>{{ tag }}</li>{% endif %}{% endfor %}
-      </ul>{% endif %}
+      {% if primaryTag %}<p class="post-detail-hero-tag">{{ primaryTag }}</p>{% endif %}
       <h1 class="post-detail-hero-title">{{ title }}</h1>
       {% if description %}<p class="post-detail-hero-desc">{{ description }}</p>{% endif %}
     </div>
@@ -24,17 +23,27 @@ layout: layouts/base.njk
     <a class="text-link" href="{{ '/works/' | url }}">作品一覧を見る</a>
   </nav>
 
-  {% if nextItem %}<section class="next-project" aria-labelledby="next-project-title">
-    <a href="{{ nextItem.url | url }}" class="next-project-link">
-      <div class="next-project-copy">
-        <span class="next-project-label">次の作品</span>
-        <h2 id="next-project-title">{{ nextItem.data.title }}</h2>
-        {% if nextItem.data.description %}<p>{{ nextItem.data.description }}</p>{% endif %}
-        <span class="next-project-action" aria-hidden="true">次へ <span>→</span></span>
+  {% if nextItems.length %}<section class="next-project" aria-labelledby="next-project-heading">
+    <div class="next-project-header">
+      <div><span class="next-project-label">次の作品</span><h2 id="next-project-heading">続けて作品を見る</h2></div>
+      <div class="next-project-controls" aria-label="作品ナビゲーション">
+        <button type="button" data-project-previous aria-label="前の作品を表示">←</button>
+        <button type="button" data-project-next aria-label="次の作品を表示">→</button>
       </div>
-      {% set nextImage = nextItem.data.thumbnail or nextItem.data.image %}
-      {% if nextImage %}<div class="next-project-media"><img src="{{ nextImage | url }}" alt="" /></div>{% endif %}
-    </a>
+    </div>
+    <div class="next-project-track" data-project-track tabindex="0" aria-label="次の作品一覧">
+      {% for item in nextItems %}<article class="next-project-item">
+        <a href="{{ item.url | url }}" class="next-project-link">
+          <div class="next-project-copy">
+            {% if loop.first %}<span class="next-project-first">次に見る</span>{% endif %}
+            <h3>{{ item.data.title }}</h3>
+            {% if item.data.description %}<p>{{ item.data.description }}</p>{% endif %}
+            <span class="next-project-action" aria-hidden="true">作品を見る <span>→</span></span>
+          </div>
+          {% set itemImage = item.data.thumbnail or item.data.image %}
+          {% if itemImage %}<div class="next-project-media"><img src="{{ itemImage | url }}" alt="{{ item.data.title }}" /></div>{% endif %}
+        </a>
+      </article>{% endfor %}
+    </div>
   </section>{% endif %}
 </article>
-
