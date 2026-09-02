@@ -48,6 +48,14 @@ module.exports = function (eleventyConfig) {
   );
   console.log("Added 'works' collection");
 
+  // 作品一覧と同じ順番で次の作品を返し、末尾では先頭へ循環する
+  eleventyConfig.addFilter('nextWork', (works, currentUrl) => {
+    if (!Array.isArray(works) || works.length === 0) return null;
+    const currentIndex = works.findIndex((item) => item.url === currentUrl);
+    if (currentIndex < 0) return null;
+    return works[(currentIndex + 1) % works.length];
+  });
+
   // 設定オブジェクト
   const config = {
     dir: {
