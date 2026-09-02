@@ -30,7 +30,7 @@
   .home-hero .hero-title { font-size: clamp(2.1rem, 10vw, 3rem); }
   .home-about { padding: 4.5rem 1.25rem; }
   .profile-feature { grid-template-columns: 1fr; gap: 2.25rem; }
-  .profile-feature-photo { width: min(82vw, 24rem); aspect-ratio: 4 / 5; }
+  .profile-feature-photo { width: 100%; max-width: 24rem; aspect-ratio: 4 / 5; justify-self: center; }
   .profile-feature-name { font-size: 2.6rem; }
   .home-what-i-do { padding: 4.5rem 1.25rem; }
   .home-process { grid-template-columns: 1fr; }
