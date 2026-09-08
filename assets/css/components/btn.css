@@ -33,9 +33,22 @@
 }
 
 .btn-primary:hover,
-.load-more-button:hover {
+.btn-primary:active,
+.load-more-button:hover,
+.load-more-button:active {
   background-color: var(--color-bg-inverse-hover);
   transform: scale(1.04);
+}
+
+.btn-primary:link,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus-visible,
+.load-more-button:hover,
+.load-more-button:active,
+.load-more-button:focus-visible {
+  color: var(--color-text-inverse);
 }
 
 .btn-primary:focus-visible,
@@ -44,6 +57,9 @@
   outline: 2px solid var(--color-text-primary);
   outline-offset: 3px;
 }
+
+#back-to-top:active,
+.load-more-button:active { color: var(--color-text-inverse); }
 
 .load-more-button[hidden] { display: none; }
 
@@ -79,8 +95,10 @@
   transition: background-color 0.1s ease;
 }
 
-#back-to-top:hover {
+#back-to-top:hover,
+#back-to-top:active {
   background-color: var(--color-bg-control-hover);
+  color: var(--color-text-inverse);
 }
 
 .load-more-button {

@@ -74,4 +74,16 @@
 
 .form-content button[type='submit']:hover {
   background-color: var(--color-bg-inverse-hover);
+  color: var(--color-text-inverse);
+}
+
+.form-content button[type='submit']:active {
+  background-color: var(--color-bg-inverse-hover);
+  color: var(--color-text-inverse);
+}
+
+.form-content button[type='submit']:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 3px;
+  color: var(--color-text-inverse);
 }

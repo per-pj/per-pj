@@ -9,7 +9,7 @@
 .footer-flex,
 .copyright {
   width: 100%;
-  max-width: 74rem;
+  max-width: var(--layout-max);
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
