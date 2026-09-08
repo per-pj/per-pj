@@ -43,12 +43,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
   </head>
   <script>document.documentElement.classList.add('js');</script>
   <body>
-    
-<header class="header">
+    <header class="header">
   <div class="logo">
     <a href="/per-pj/" class="logo-text" aria-label="トップページ">Kazu</a>
   </div>
@@ -85,7 +83,45 @@
     <div class="post-detail-hero-media"><img src="/per-pj/assets/img/cs.png" alt="Moai" class="post-detail-hero-img" /></div>
   </header>
 
-  
+  <section class="post-detail-content-container">
+    <div class="post-detail-content"><h2>顧客の課題</h2>
+<ul>
+<li>友人と共通の目的に向けてお金を貯める際、個別の管理では積立状況や約束を共有しにくい。</li>
+</ul>
+<h2>アーリー・アダプター</h2>
+<ul>
+<li>旅行や共同の活動などに向け、友人と毎月少しずつ資金を準備したい人。</li>
+</ul>
+<h2>価値提案</h2>
+<ul>
+<li>共同口座と定期的な貯蓄を通じて、共通の目的に向けた資金づくりを進める場をつくる。</li>
+</ul>
+<h2>ソリューション</h2>
+<ul>
+<li>友人と共同口座を作り、毎月一定額を貯蓄できるアプリ。</li>
+</ul>
+<h2>チャネル</h2>
+<ul>
+<li>友人間の招待、SNSでの共有、利用目的に近いコミュニティを通じて届ける。</li>
+</ul>
+<h2>収益の流れ</h2>
+<ul>
+<li>決済・送金に付随する手数料、または追加機能の利用料金を収益源として検討する。</li>
+</ul>
+<h2>コスト構造</h2>
+<ul>
+<li>プロダクトの開発・運用、決済基盤、セキュリティ、問い合わせ対応が主なコストになる。</li>
+</ul>
+<h2>主要指標</h2>
+<ul>
+<li>利用グループ数、取引件数、取引額、目的達成率、継続率を追う。</li>
+</ul>
+<h2>インサイト</h2>
+<ul>
+<li>資金管理への信頼、メンバー間の合意、途中退出や計画変更への対応が、この事業を考えるうえでの論点です。</li>
+</ul>
+</div>
+  </section>
 
   <nav class="work-detail-index-link" aria-label="作品一覧へ戻る">
     <a class="text-link" href="/per-pj/works/">作品一覧を見る</a>
@@ -103,9 +139,20 @@
       <div class="next-project-viewport" data-project-track tabindex="0" aria-label="次の作品一覧">
         <div class="next-project-track">
           <article class="next-project-item">
-            <a href="/per-pj/works/fromspot/" class="next-project-link">
+            <a href="/per-pj/works/fastpay/" class="next-project-link">
               <div class="next-project-copy">
                 <span class="next-project-first">次に見る</span>
+                <h3>Fastpay</h3>
+                <p>予定やプランを友人に共有し、寄付を募れるアプリ。</p>
+                <span class="next-project-action" aria-hidden="true">作品を見る <span>→</span></span>
+              </div>
+              
+              <div class="next-project-media"><img src="/per-pj/assets/img/cs.png" alt="Fastpay" /></div>
+            </a>
+          </article><article class="next-project-item">
+            <a href="/per-pj/works/fromspot/" class="next-project-link">
+              <div class="next-project-copy">
+                
                 <h3>Fromspot</h3>
                 <p>フリーランスのためのコワーキングスペース付きシェアハウス。</p>
                 <span class="next-project-action" aria-hidden="true">作品を見る <span>→</span></span>
@@ -125,18 +172,7 @@
               <div class="next-project-media"><img src="/per-pj/assets/img/product/goodeats.jpg" alt="GoodEats" /></div>
             </a>
           </article><article class="next-project-item">
-            <a href="/per-pj/works/fastpay/" class="next-project-link">
-              <div class="next-project-copy">
-                
-                <h3>Fastpay</h3>
-                <p>予定やプランを友人に共有し、寄付を募れるアプリ。</p>
-                <span class="next-project-action" aria-hidden="true">作品を見る <span>→</span></span>
-              </div>
-              
-              <div class="next-project-media"><img src="/per-pj/assets/img/cs.png" alt="Fastpay" /></div>
-            </a>
-          </article><article class="next-project-item">
-            <a href="/per-pj/works/kitchHub/" class="next-project-link">
+            <a href="/per-pj/works/kitchhub/" class="next-project-link">
               <div class="next-project-copy">
                 
                 <h3>KitchHub</h3>
@@ -171,15 +207,14 @@
   <div class="add-contact-content">
     <span class="section-eyebrow">お問い合わせ</span>
     <h2 class="contact-title">何かお手伝いが必要ですか？</h2>
-    <p class="contact-desc">いつでもお気軽にご連絡ください</p>
+    <p class="contact-desc">いつでもお気軽にご連絡ください。</p>
     <a class="btn-primary" href="/per-pj/contact/">連絡する</a>
   </div>
 </div>
 
     
 
-    
-<footer class="footer">
+    <footer class="footer">
  <div class="footer-flex">
   <nav class="footer-item" aria-label="主要なリンク">
     <ul class="footer-menu">
@@ -194,9 +229,8 @@
 </footer>
 
 
-    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <button id="back-to-top" type="button" aria-label="ページ上部へ戻る"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
 
     <script type="module" src="/per-pj/assets/js/script.js"></script>
-    
   </body>
 </html>

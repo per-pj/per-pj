@@ -22,10 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   } else {
     revealItems.forEach((item) => item.classList.add('is-visible'));
   }
-});
 
-// load-more
-document.addEventListener('DOMContentLoaded', () => {
   const portfolioItems = document.querySelectorAll('.portfolio-item');
   const loadMoreButton = document.getElementById('load-more-button');
 
@@ -38,11 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = initialItems; i < portfolioItems.length; i++) {
       portfolioItems[i].classList.add('hidden');
     }
-  } else {
-    if (loadMoreButton) {
-      loadMoreButton.style.display = 'none';
-    }
-  }
+  } else if (loadMoreButton) loadMoreButton.style.display = 'none';
 
   if (loadMoreButton) {
     loadMoreButton.addEventListener('click', () => {
