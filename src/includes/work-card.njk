@@ -1,4 +1,4 @@
-<article class="posts-layout-grid-item{% if interactiveCards %} portfolio-item{% endif %}"{% if interactiveCards %} data-market="{{ item.data.market }}" data-release-date="{{ item.data.releaseDate }}"{% endif %}>
+<article class="posts-layout-grid-item{% if interactiveCards %} portfolio-item{% endif %}" data-reveal{% if interactiveCards %} data-market="{{ item.data.market }}" data-release-date="{{ item.data.releaseDate }}"{% endif %}>
   <a href="{{ item.url | url }}">
     <div class="posts-layout-image-wrap">
       <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" loading="lazy" />

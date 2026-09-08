@@ -16,7 +16,7 @@
 .profile-links a:hover { color: var(--color-text-muted); border-color: var(--color-text-muted); transform: translateY(-2px); }
 .home-what-i-do { padding: var(--space-section) var(--layout-inset); }
 .section-content.home-section-heading { align-items: center; margin-bottom: var(--space-heading); text-align: center; }
-.home-section-title { font-size: var(--font-size-section); margin: 0 0 0.5rem; }
+.home-section-title { margin: 0 0 0.5rem; }
 .home-section-desc { max-width: var(--layout-reading); color: var(--color-text-muted); margin: 0 auto; }
 .home-process { max-width: var(--layout-max); margin: 0 auto; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--color-border-default); }
 .home-process-item { padding: 2.25rem 2rem 2rem 0; min-height: 13rem; border-bottom: 1px solid var(--color-border-default); }
