@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'addleap'
 date: 2017-09-01
+releaseDate: '2017-09'
+market: '人材'
 ---
 
 ## 顧客の課題

@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'triber'
 date: 2018-11-01
+releaseDate: '2018-11'
+market: '暮らし'
 ---
 
 ## 顧客の課題

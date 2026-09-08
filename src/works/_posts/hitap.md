@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'hitap'
 date: 2025-10-01
+releaseDate: '2025-10'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

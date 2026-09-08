@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'modan'
 date: 2017-01-01
+releaseDate: '2017-01'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

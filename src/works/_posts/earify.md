@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'earify'
 date: 2024-10-01
+releaseDate: '2024-10'
+market: 'エンターテインメント'
 ---
 
 ## 顧客の課題

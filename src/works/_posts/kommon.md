@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'kommon'
 date: 2016-04-01
+releaseDate: '2016-04'
+market: 'スポーツ'
 ---
 
 ## 顧客の課題

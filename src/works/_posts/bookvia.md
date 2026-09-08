@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'bookvia'
 date: 2019-03-01
+releaseDate: '2019-03'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

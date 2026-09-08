@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'gigspot'
 date: 2022-04-01
+releaseDate: '2022-04'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

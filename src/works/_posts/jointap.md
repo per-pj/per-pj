@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'jointap'
 date: 2025-04-01
+releaseDate: '2025-04'
+market: '人材'
 ---
 
 ## 顧客の課題

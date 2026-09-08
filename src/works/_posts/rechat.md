@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'rechat'
 date: 2022-10-01
+releaseDate: '2022-10'
+market: '人材'
 ---
 
 ## 顧客の課題

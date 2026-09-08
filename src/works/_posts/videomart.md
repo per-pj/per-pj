@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'videomart'
 date: 2016-11-01
+releaseDate: '2016-11'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

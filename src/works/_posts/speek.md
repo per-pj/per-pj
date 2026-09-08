@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'speek'
 date: 2020-07-01
+releaseDate: '2020-07'
+market: 'コミュニケーション'
 ---
 
 ## 顧客の課題

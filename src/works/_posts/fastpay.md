@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fastpay'
 date: 2018-07-01
+releaseDate: '2018-07'
+market: '金融'
 ---
 
 ## 顧客の課題

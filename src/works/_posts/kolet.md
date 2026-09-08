@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'kolet'
 date: 2019-07-01
+releaseDate: '2019-07'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

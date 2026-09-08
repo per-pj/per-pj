@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'mildscope'
 date: 2023-04-01
+releaseDate: '2023-04'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

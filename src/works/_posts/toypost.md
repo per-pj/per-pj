@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'toypost'
 date: 2026-04-01
+releaseDate: '2026-04'
+market: 'コミュニケーション'
 ---
 
 ## 顧客の課題

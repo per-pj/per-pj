@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fromspot'
 date: 2018-05-01
+releaseDate: '2018-05'
+market: '暮らし'
 ---
 
 ## 顧客の課題

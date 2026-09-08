@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'moai'
 date: 2018-09-01
+releaseDate: '2018-09'
+market: '金融'
 ---
 
 ## 顧客の課題

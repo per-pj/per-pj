@@ -10,24 +10,45 @@ meta_description: Kazuがこれまでに手がけた事業とプロダクト。
       <h1 class="posts-layout-section-title hero-reveal">これまでにつくったもの</h1>
       <p class="posts-layout-section-desc hero-reveal">事業やプロダクトとして考え、形にしてきたものです。</p>
     </div>
+    {% set markets = collections.works | marketTags %}
+    <div class="works-controls" aria-label="作品の絞り込みと並び替え">
+      <div class="works-filter" role="group" aria-label="市場で絞り込む">
+        <div class="works-filter-scroll">
+          <button type="button" class="works-filter-button is-active" data-market-filter="all" aria-pressed="true" aria-controls="portfolio-grid">すべて</button>
+          {% for market in markets %}<button type="button" class="works-filter-button" data-market-filter="{{ market }}" aria-pressed="false" aria-controls="portfolio-grid">{{ market }}</button>{% endfor %}
+        </div>
+      </div>
+      <label class="works-sort">
+        <span>並び順</span>
+        <select data-works-sort aria-controls="portfolio-grid">
+          <option value="newest">新しい順</option>
+          <option value="oldest">古い順</option>
+        </select>
+      </label>
+    </div>
+    <p class="works-result-status" data-works-status aria-live="polite"></p>
     <div class="posts-layout-grid" id="portfolio-grid">
       {% for item in collections.works %}
-        <div class="posts-layout-grid-item portfolio-item" data-reveal>
+        <article class="posts-layout-grid-item portfolio-item" data-market="{{ item.data.market }}" data-release-date="{{ item.data.releaseDate }}" data-reveal>
           <a href="{{ item.url | url }}">
             <div class="posts-layout-image-wrap"><img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" /></div>
             <div class="card-content">
               <h2 class="posts-layout-title">{{ item.data.title }}</h2>
               <p class="posts-layout-desc">{{ item.data.description | withoutTrailingPeriod }}</p>
+              <div class="posts-layout-meta">
+                <span class="market-tag">{{ item.data.market }}</span>
+                <time class="release-date" datetime="{{ item.data.releaseDate }}">{{ item.data.releaseDate | formatReleaseDate }}</time>
+              </div>
             </div>
           </a>
-        </div>
+        </article>
       {% else %}
         <p>作品がひとつも見つかりませんでした。</p>
       {% endfor %}
     </div>
 
-   {% if collections.works.length > 15 %}
-      <button id="load-more-button">さらに表示</button>
+   {% if collections.works.length > 9 %}
+      <button id="load-more-button" type="button" aria-controls="portfolio-grid">さらに読み込む</button>
     {% endif %}
 
 </div>

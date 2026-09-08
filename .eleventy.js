@@ -6,8 +6,35 @@ module.exports = function (eleventyConfig) {
     (collectionApi) =>
       collectionApi
         .getFilteredByGlob('./src/works/_posts/*.md')
-        .sort((a, b) => b.date - a.date),
+        .sort((a, b) =>
+          String(b.data.releaseDate || '').localeCompare(
+            String(a.data.releaseDate || ''),
+          ),
+        ),
   );
+
+  eleventyConfig.addFilter('marketTags', (works = []) => {
+    const order = [
+      'エンターテインメント',
+      'コミュニケーション',
+      'ビジネス',
+      '人材',
+      '暮らし',
+      'スポーツ',
+      '金融',
+    ];
+    const available = new Set(works.map((item) => item.data.market).filter(Boolean));
+    return order.filter((market) => available.has(market));
+  });
+
+  eleventyConfig.addFilter('formatReleaseDate', (value = '') => {
+    const match = String(value).match(/^(\d{4})-(\d{2})(?:-(\d{2}))?$/);
+    if (!match) return '時期未詳';
+    const [, year, month, day] = match;
+    return day
+      ? `${year}年${Number(month)}月${Number(day)}日`
+      : `${year}年${Number(month)}月`;
+  });
 
   // 作品一覧と同じ順番で次の作品群を返し、末尾では先頭へ循環する
   eleventyConfig.addFilter('nextWorks', (works, currentUrl, count = 5) => {
@@ -19,18 +46,6 @@ module.exports = function (eleventyConfig) {
       { length: itemCount },
       (_, offset) => works[(currentIndex + offset + 1) % works.length],
     );
-  });
-
-  // 汎用的な work を除き、作品内容を端的に示す既存タグを1件選ぶ
-  eleventyConfig.addFilter('primaryWorkTag', (tags = []) => {
-    const candidates = tags.filter((tag) => tag !== 'work');
-    const priority = [
-      'AI', 'SNS', '音楽', '音声', '動画', '旅行', '不動産',
-      'ヘルスケア', '採用', 'スポーツ', 'フィンテック', 'コミュニティ',
-      'シェアリングエコノミー', 'マッチング', 'マーケティング',
-      'コミュニケーション', '教育機関', '人材', 'C2C', 'B向け',
-    ];
-    return priority.find((tag) => candidates.includes(tag)) || candidates[0] || null;
   });
 
   eleventyConfig.addFilter('withoutTrailingPeriod', (value = '') =>

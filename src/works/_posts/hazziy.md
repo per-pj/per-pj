@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'hazziy'
 date: 2021-04-01
+releaseDate: '2021-04'
+market: 'コミュニケーション'
 ---
 
 ## 顧客の課題

@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'proath'
 date: 2016-06-01
+releaseDate: '2016-06'
+market: 'スポーツ'
 ---
 
 ## 顧客の課題

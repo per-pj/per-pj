@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'humantrip'
 date: 2023-10-01
+releaseDate: '2023-10'
+market: '暮らし'
 ---
 
 ## 顧客の課題

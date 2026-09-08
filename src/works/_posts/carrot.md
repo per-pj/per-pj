@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'carrot'
 date: 2024-04-01
+releaseDate: '2024-04'
+market: 'エンターテインメント'
 ---
 
 ## 顧客の課題

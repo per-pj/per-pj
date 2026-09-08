@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'awe'
 date: 2017-03-01
+releaseDate: '2017-03'
+market: 'コミュニケーション'
 ---
 
 ## 顧客の課題

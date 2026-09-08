@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'fitpocket'
 date: 2016-08-01
+releaseDate: '2016-08'
+market: 'スポーツ'
 ---
 
 ## 顧客の課題

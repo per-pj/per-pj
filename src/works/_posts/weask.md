@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'weask'
 date: 2017-04-01
+releaseDate: '2017-04'
+market: 'コミュニケーション'
 ---
 
 ## 顧客の課題

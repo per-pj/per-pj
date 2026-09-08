@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'shabel'
 date: 2017-02-01
+releaseDate: '2017-02'
+market: 'ビジネス'
 ---
 
 ## 顧客の課題

@@ -7,6 +7,8 @@ layout: layouts/work-detail.njk
 permalink: '/works/{{ slug }}/'
 slug: 'comm'
 date: 2017-06-01
+releaseDate: '2017-06'
+market: 'コミュニケーション'
 ---
 
 ## 顧客の課題

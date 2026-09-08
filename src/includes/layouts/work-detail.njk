@@ -2,13 +2,15 @@
 layout: layouts/base.njk
 ---
 
-{% set primaryTag = tags | primaryWorkTag %}
 {% set nextItems = collections.works | nextWorks(page.url, 5) %}
 
 <article class="work-detail">
   <header class="post-detail-hero-container">
     <div class="post-detail-hero-content">
-      {% if primaryTag %}<p class="post-detail-hero-tag">{{ primaryTag }}</p>{% endif %}
+      <div class="post-detail-hero-meta">
+        {% if releaseDate %}<time datetime="{{ releaseDate }}">{{ releaseDate | formatReleaseDate }}</time>{% endif %}
+        {% if market %}<span class="market-tag">{{ market }}</span>{% endif %}
+      </div>
       <h1 class="post-detail-hero-title">{{ title }}</h1>
       {% if description %}<p class="post-detail-hero-desc">{{ description }}</p>{% endif %}
     </div>
