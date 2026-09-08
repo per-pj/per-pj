@@ -1,11 +1,13 @@
 import { setupNavToggle } from './modules/navToggle.js';
 import { setupBackToTop } from './modules/backToTop.js';
 import { setupNextProjects } from './modules/nextProjects.js';
+import { setupWorksControls } from './modules/worksControls.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   setupNavToggle();
   setupBackToTop();
   setupNextProjects();
+  setupWorksControls();
 
   requestAnimationFrame(() => document.documentElement.classList.add('is-ready'));
 
@@ -23,39 +25,4 @@ window.addEventListener('DOMContentLoaded', () => {
     revealItems.forEach((item) => item.classList.add('is-visible'));
   }
 
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
-  const loadMoreButton = document.getElementById('load-more-button');
-
-  const initialItems = 15;
-  const itemsPerLoad = 15;
-
-  let currentlyVisibleItems = initialItems;
-
-  if (portfolioItems.length > initialItems) {
-    for (let i = initialItems; i < portfolioItems.length; i++) {
-      portfolioItems[i].classList.add('hidden');
-    }
-  } else if (loadMoreButton) loadMoreButton.style.display = 'none';
-
-  if (loadMoreButton) {
-    loadMoreButton.addEventListener('click', () => {
-      const nextStartIndex = currentlyVisibleItems;
-
-      const nextEndIndex = currentlyVisibleItems + itemsPerLoad;
-
-      for (
-        let i = nextStartIndex;
-        i < nextEndIndex && i < portfolioItems.length;
-        i++
-      ) {
-        portfolioItems[i].classList.remove('hidden');
-      }
-
-      currentlyVisibleItems = nextEndIndex;
-
-      if (currentlyVisibleItems >= portfolioItems.length) {
-        loadMoreButton.style.display = 'none';
-      }
-    });
-  }
 });

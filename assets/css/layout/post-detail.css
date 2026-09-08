@@ -2,7 +2,7 @@
 
 .post-detail-hero-container { max-width: 74rem; margin: 0 auto; padding: 7rem var(--layout-padding-inline) 5rem; box-sizing: border-box; }
 .post-detail-hero-content { max-width: 54rem; margin: 0 auto 3.5rem; text-align: center; }
-.post-detail-hero-tag { margin: 0 0 1.5rem; color: var(--color-text-subtle); font-size: 0.75rem; line-height: var(--line-height-ui); letter-spacing: var(--letter-spacing-ui); }
+.post-detail-hero-meta { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin: 0 0 1.5rem; color: var(--color-text-subtle); font-size: 0.75rem; line-height: var(--line-height-ui); }
 .post-detail-hero-title { margin: 0; font-size: clamp(3rem, 7vw, 5.8rem); font-weight: var(--font-weight-regular); overflow-wrap: anywhere; }
 .post-detail-hero-desc { max-width: 42rem; margin: 1.25rem auto 0; color: var(--color-text-muted); font-size: clamp(1.05rem, 2vw, 1.3rem); }
 .post-detail-hero-media { max-width: 58rem; margin: 0 auto; overflow: hidden; border-radius: var(--radius-lg); background: var(--color-gray-subtle); }
