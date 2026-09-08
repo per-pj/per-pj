@@ -8,7 +8,7 @@ permalink: '/works/{{ slug }}/'
 slug: 'carrot'
 date: 2024-04-01
 releaseDate: '2024-04'
-market: 'エンターテインメント'
+market: 'エンタメ'
 ---
 
 ## 顧客の課題

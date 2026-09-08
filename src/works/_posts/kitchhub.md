@@ -8,7 +8,7 @@ permalink: '/works/{{ slug }}/'
 slug: 'kitchhub'
 date: 2018-01-01
 releaseDate: '2018-01'
-market: '暮らし'
+market: 'ライフスタイル'
 ---
 
 ## 顧客の課題

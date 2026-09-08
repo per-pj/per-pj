@@ -4,7 +4,7 @@ title: 作品 - Kazu
 meta_description: Kazuがこれまでに手がけた事業とプロダクト。
 ---
 
-<div class="posts-layout">
+<div class="posts-layout" data-works-list>
     <div class="posts-layout-heading">
       <span class="section-eyebrow hero-reveal">作品</span>
       <h1 class="posts-layout-section-title hero-reveal">これまでにつくったもの</h1>
@@ -27,7 +27,7 @@ meta_description: Kazuがこれまでに手がけた事業とプロダクト。
       </label>
     </div>
     <p class="works-result-status" data-works-status aria-live="polite"></p>
-    <div class="posts-layout-grid" id="portfolio-grid">
+    <div class="posts-layout-grid" id="portfolio-grid" data-works-grid>
       {% for item in collections.works %}
         <article class="posts-layout-grid-item portfolio-item" data-market="{{ item.data.market }}" data-release-date="{{ item.data.releaseDate }}" data-reveal>
           <a href="{{ item.url | url }}">
@@ -36,8 +36,8 @@ meta_description: Kazuがこれまでに手がけた事業とプロダクト。
               <h2 class="posts-layout-title">{{ item.data.title }}</h2>
               <p class="posts-layout-desc">{{ item.data.description | withoutTrailingPeriod }}</p>
               <div class="posts-layout-meta">
-                <span class="market-tag">{{ item.data.market }}</span>
                 <time class="release-date" datetime="{{ item.data.releaseDate }}">{{ item.data.releaseDate | formatReleaseDate }}</time>
+                <span class="market-tag">{{ item.data.market }}</span>
               </div>
             </div>
           </a>
@@ -48,7 +48,7 @@ meta_description: Kazuがこれまでに手がけた事業とプロダクト。
     </div>
 
    {% if collections.works.length > 9 %}
-      <button id="load-more-button" type="button" aria-controls="portfolio-grid">さらに読み込む</button>
+      <button class="load-more-button" type="button" data-load-more aria-controls="portfolio-grid">さらに読み込む</button>
     {% endif %}
 
 </div>

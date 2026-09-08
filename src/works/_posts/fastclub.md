@@ -8,7 +8,7 @@ permalink: '/works/{{ slug }}/'
 slug: 'fastclub'
 date: 2019-01-01
 releaseDate: '2019-01'
-market: 'エンターテインメント'
+market: 'エンタメ'
 ---
 
 ## 顧客の課題

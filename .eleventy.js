@@ -15,11 +15,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('marketTags', (works = []) => {
     const order = [
-      'エンターテインメント',
+      'エンタメ',
       'コミュニケーション',
       'ビジネス',
       '人材',
-      '暮らし',
+      'ライフスタイル',
       'スポーツ',
       '金融',
     ];

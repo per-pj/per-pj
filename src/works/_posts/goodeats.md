@@ -8,7 +8,7 @@ permalink: '/works/{{ slug }}/'
 slug: 'goodeats'
 date: 2018-03-01
 releaseDate: '2018-03'
-market: '暮らし'
+market: 'ライフスタイル'
 ---
 
 ## 顧客の課題

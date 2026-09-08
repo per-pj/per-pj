@@ -8,7 +8,7 @@ permalink: '/works/{{ slug }}/'
 slug: 'triber'
 date: 2018-11-01
 releaseDate: '2018-11'
-market: '暮らし'
+market: 'ライフスタイル'
 ---
 
 ## 顧客の課題

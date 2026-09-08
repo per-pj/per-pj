@@ -5,7 +5,7 @@
 
 /* primary & secondary & CTA & load-more */
 .btn-primary,
-#load-more-button {
+.load-more-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -33,19 +33,19 @@
 }
 
 .btn-primary:hover,
-#load-more-button:hover {
+.load-more-button:hover {
   background-color: var(--color-bg-inverse-hover);
   transform: scale(1.04);
 }
 
 .btn-primary:focus-visible,
-#load-more-button:focus-visible,
+.load-more-button:focus-visible,
 #back-to-top:focus-visible {
   outline: 2px solid var(--color-text-primary);
   outline-offset: 3px;
 }
 
-#load-more-button[hidden] { display: none; }
+.load-more-button[hidden] { display: none; }
 
 .btn-primary a {
   font-size: 0.88rem;
@@ -83,7 +83,7 @@
   background-color: var(--color-bg-control-hover);
 }
 
-#load-more-button {
+.load-more-button {
   display: flex;
   margin: 2.5rem auto 0;
 }

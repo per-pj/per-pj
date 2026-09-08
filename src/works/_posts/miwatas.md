@@ -8,7 +8,7 @@ permalink: '/works/{{ slug }}/'
 slug: 'miwatas'
 date: 2016-09-01
 releaseDate: '2016-09'
-market: '暮らし'
+market: 'ライフスタイル'
 ---
 
 ## 顧客の課題

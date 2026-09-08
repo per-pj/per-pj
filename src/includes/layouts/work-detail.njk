@@ -39,7 +39,6 @@ layout: layouts/base.njk
           {% for item in nextItems %}<article class="next-project-item">
             <a href="{{ item.url | url }}" class="next-project-link">
               <div class="next-project-copy">
-                {% if loop.first %}<span class="next-project-first">次に見る</span>{% endif %}
                 <h3>{{ item.data.title }}</h3>
                 {% if item.data.description %}<p>{{ item.data.description }}</p>{% endif %}
                 <span class="next-project-action" aria-hidden="true">作品を見る <span>→</span></span>

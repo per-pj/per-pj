@@ -55,19 +55,23 @@
 
 .nav-menu li a {
   font-size: 0.9rem;
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   line-height: var(--line-height-ui);
   letter-spacing: var(--letter-spacing-ui);
   text-decoration: none;
   padding-bottom: 0.25rem;
-  border-bottom: 1px solid transparent;
-  transition: border-color 180ms ease, color 180ms ease;
+  border-bottom: 0;
+  transition: color 180ms ease;
 }
 .nav-menu li a:hover {
-  border-bottom-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
 }
 
-.nav-menu li a[aria-current='page'] { border-bottom-color: var(--color-text-primary); }
+.nav-menu li a[aria-current='page'] { color: var(--color-text-primary); font-weight: var(--font-weight-medium); }
+.nav-menu li a:focus-visible { outline: 2px solid var(--color-text-primary); outline-offset: 3px; }
 
 .nav-menu .nav-contact { margin-left: 1.75rem; }
 .nav-menu .nav-contact a {
@@ -78,7 +82,7 @@
   color: var(--color-text-inverse);
   transition: background-color 180ms ease, transform 180ms ease;
 }
-.nav-menu .nav-contact a:hover { border-bottom-color: var(--color-bg-inverse); background: var(--color-bg-inverse-hover); transform: translateY(-1px); }
+.nav-menu .nav-contact a:hover { background: var(--color-bg-inverse-hover); text-decoration: none; transform: translateY(-1px); }
 
 /* トグルメニュー */
 .toggle-menu {

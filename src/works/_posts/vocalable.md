@@ -8,7 +8,7 @@ permalink: '/works/{{ slug }}/'
 slug: 'vocalable'
 date: 2020-01-01
 releaseDate: '2020-01'
-market: 'エンターテインメント'
+market: 'エンタメ'
 ---
 
 ## 顧客の課題
