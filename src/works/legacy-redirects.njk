@@ -1,0 +1,23 @@
+---
+pagination:
+  data: legacyWorks
+  size: 1
+  alias: legacyWork
+legacyWorks:
+  - old: biikvia
+    current: bookvia
+permalink: '/works/{{ legacyWork.old }}/index.html'
+eleventyExcludeFromCollections: true
+---
+{% set destination = '/works/' + legacyWork.current + '/' %}
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url={{ destination | url }}" />
+    <title>作品ページへ移動</title>
+  </head>
+  <body><p>作品ページのURLが変わりました。<a href="{{ destination | url }}">作品を見る</a></p></body>
+</html>

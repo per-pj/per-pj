@@ -43,7 +43,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    {% block page_css %}{% endblock %}
   </head>
   <script>document.documentElement.classList.add('js');</script>
   <body>
@@ -59,9 +58,8 @@
 
     {% include "footer.njk" %}
 
-    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <button id="back-to-top" type="button" aria-label="ページ上部へ戻る"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
 
     <script type="module" src="{{ '/assets/js/script.js' | url }}"></script>
-    {% block page_js %}{% endblock %}
   </body>
 </html>

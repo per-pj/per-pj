@@ -4,8 +4,7 @@ title: 作品 - Kazu
 meta_description: Kazuがこれまでに手がけた事業とプロダクト。
 ---
 
-{% block content %}
-  <div class="posts-layout">
+<div class="posts-layout">
     <div class="posts-layout-heading">
       <span class="section-eyebrow hero-reveal">作品</span>
       <h1 class="posts-layout-section-title hero-reveal">これまでにつくったもの</h1>
@@ -18,7 +17,7 @@ meta_description: Kazuがこれまでに手がけた事業とプロダクト。
             <div class="posts-layout-image-wrap"><img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" /></div>
             <div class="card-content">
               <h2 class="posts-layout-title">{{ item.data.title }}</h2>
-              <p class="posts-layout-desc">{{ item.data.description }}</p>
+              <p class="posts-layout-desc">{{ item.data.description | withoutTrailingPeriod }}</p>
             </div>
           </a>
         </div>
@@ -27,9 +26,8 @@ meta_description: Kazuがこれまでに手がけた事業とプロダクト。
       {% endfor %}
     </div>
 
-   {% if collections.works.length > 6 %}
+   {% if collections.works.length > 15 %}
       <button id="load-more-button">さらに表示</button>
     {% endif %}
 
-  </div>
-{% endblock %}
+</div>
