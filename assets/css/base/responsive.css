@@ -1,47 +1,4 @@
+/* Shared safe area only; page layouts own their responsive rules. */
 @media (max-width: 768px) {
-  body {
-    padding: calc(4.5rem + env(safe-area-inset-top, 0px)) 0 0;
-  }
-
-  /* top */
-  .container-primary {
-    padding: 3rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 2.4rem;
-  }
-
-  /* posts-layout */
-  .posts-layout {
-    padding: var(--space-300) var(--layout-padding-inline-compact);
-  }
-
-  .posts-layout-grid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-  }
-
-  .posts-layout h1 {
-    font-size: 2rem;
-  }
-
-  /* services */
-  .container-secondary {
-    padding: 3rem 1rem;
-  }
-
-  .form-container {
-    padding: 3rem 1rem;
-    width: 100%;
-  }
-
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* grid */
-  .posts-layout-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
+  body { padding-top: calc(4.5rem + env(safe-area-inset-top, 0px)); }
 }

@@ -3,7 +3,7 @@
   width: 100%;
   background-color: var(--color-bg-primary);
   min-height: 4.5rem;
-  padding: 0.75rem var(--layout-padding-inline);
+  padding: 0.75rem var(--layout-inset);
   display: flex;
   justify-content: space-between;
   align-items: center;

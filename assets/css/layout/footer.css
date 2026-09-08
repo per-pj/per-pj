@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding: var(--space-300) var(--layout-padding-inline) var(--space-200);
+  padding: var(--space-300) var(--layout-inset) var(--space-200);
   margin: 0;
   box-sizing: border-box;
   background-color: var(--color-bg-inverse);
