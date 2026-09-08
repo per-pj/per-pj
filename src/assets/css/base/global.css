@@ -2,7 +2,7 @@
 .container-primary {
   width: 100%;
   height: auto;
-  padding: var(--space-400) var(--layout-padding-inline);
+  padding: var(--space-section) var(--layout-inset);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,13 +22,16 @@
   box-sizing: border-box;
 }
 
+.hero-title { font-size: var(--font-size-page); }
+.hero-desc { font-size: var(--font-size-body); color: var(--color-text-muted); margin-top: 1rem; }
+
 /* セクション上部の小さな英語テキスト (アイブロウ) */
 .section-eyebrow {
   display: block;
-  font-size: 0.75rem;
+  font-size: var(--font-size-caption);
   font-weight: var(--font-weight-medium);
   letter-spacing: 0.16em;
-  color: var(--color-text-subtle);
+  color: var(--color-text-muted);
   margin-bottom: 0.6rem;
   text-align: center;
   line-height: 1;

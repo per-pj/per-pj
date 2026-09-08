@@ -1,0 +1,15 @@
+<article class="posts-layout-grid-item{% if interactiveCards %} portfolio-item{% endif %}"{% if interactiveCards %} data-market="{{ item.data.market }}" data-release-date="{{ item.data.releaseDate }}"{% endif %}>
+  <a href="{{ item.url | url }}">
+    <div class="posts-layout-image-wrap">
+      <img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" loading="lazy" />
+    </div>
+    <div class="card-content">
+      {% if cardHeadingLevel == 3 %}<h3 class="posts-layout-title">{{ item.data.title }}</h3>{% else %}<h2 class="posts-layout-title">{{ item.data.title }}</h2>{% endif %}
+      <p class="posts-layout-desc">{{ item.data.description | withoutTrailingPeriod }}</p>
+      <div class="posts-layout-meta">
+        <time class="release-date" datetime="{{ item.data.releaseDate }}">{{ item.data.releaseDate | formatReleaseMonth }}</time>
+        <span class="market-tag">{{ item.data.market }}</span>
+      </div>
+    </div>
+  </a>
+</article>

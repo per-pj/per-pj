@@ -36,6 +36,11 @@ module.exports = function (eleventyConfig) {
       : `${year}年${Number(month)}月`;
   });
 
+  eleventyConfig.addFilter('formatReleaseMonth', (value = '') => {
+    const match = String(value).match(/^(\d{4})-(\d{2})(?:-\d{2})?$/);
+    return match ? `${match[1]}年${Number(match[2])}月` : '時期未詳';
+  });
+
   // 作品一覧と同じ順番で次の作品群を返し、末尾では先頭へ循環する
   eleventyConfig.addFilter('nextWorks', (works, currentUrl, count = 5) => {
     if (!Array.isArray(works) || works.length < 2) return [];

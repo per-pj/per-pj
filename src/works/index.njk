@@ -27,21 +27,11 @@ meta_description: Kazuがこれまでに手がけた事業とプロダクト。
       </label>
     </div>
     <p class="works-result-status" data-works-status aria-live="polite"></p>
+    {% set cardHeadingLevel = 2 %}
+    {% set interactiveCards = true %}
     <div class="posts-layout-grid" id="portfolio-grid" data-works-grid>
       {% for item in collections.works %}
-        <article class="posts-layout-grid-item portfolio-item" data-market="{{ item.data.market }}" data-release-date="{{ item.data.releaseDate }}" data-reveal>
-          <a href="{{ item.url | url }}">
-            <div class="posts-layout-image-wrap"><img src="{{ item.data.thumbnail | url }}" alt="{{ item.data.title }}" class="posts-layout-grid-img" /></div>
-            <div class="card-content">
-              <h2 class="posts-layout-title">{{ item.data.title }}</h2>
-              <p class="posts-layout-desc">{{ item.data.description | withoutTrailingPeriod }}</p>
-              <div class="posts-layout-meta">
-                <time class="release-date" datetime="{{ item.data.releaseDate }}">{{ item.data.releaseDate | formatReleaseDate }}</time>
-                <span class="market-tag">{{ item.data.market }}</span>
-              </div>
-            </div>
-          </a>
-        </article>
+        {% include "work-card.njk" %}
       {% else %}
         <p>作品がひとつも見つかりませんでした。</p>
       {% endfor %}

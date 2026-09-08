@@ -1,8 +1,9 @@
 /* コンテナ */
 .form-container {
-  width: 68vw;
+  width: 100%;
+  max-width: var(--layout-max);
   height: auto;
-  padding: var(--space-300);
+  padding: var(--space-section) var(--layout-padding-inline);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,17 +13,13 @@
 
 .form-content {
   width: 100%;
-  max-width: 500px;
-  background-color: var(--color-bg-surface);
-  padding: 3rem 2rem 3rem 2rem;
-  border: 1px solid var(--color-border-default);
-  border-radius: var(--radius-md);
+  max-width: var(--layout-reading);
 }
 
 /* テキスト */
 .form-title {
-  font-size: 2.3rem;
-  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-regular);
   color: var(--color-text-primary);
   text-align: center;
   margin-bottom: 1rem;
@@ -30,9 +27,9 @@
 
 .form-desc {
   font-size: var(--font-size-body);
-  color: var(--color-text-primary);
+  color: var(--color-text-muted);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-heading);
 }
 
 /* フォーム内コンテンツ */
@@ -46,12 +43,11 @@
 .form-content input[type='email'],
 .form-content textarea {
   width: 100%;
-  width: calc(100% - 12px);
   background-color: var(--color-bg-surface);
   padding: 0.5rem;
   border: 1px solid var(--color-border-field);
   border-radius: var(--radius-sm);
-  font-size: 0.9rem;
+  font: inherit;
   margin-bottom: 1rem;
   box-sizing: border-box;
 }
@@ -59,7 +55,7 @@
 .form-content textarea {
   width: 100%;
   min-height: 10rem;
-  resize: none;
+  resize: vertical;
 }
 
 .form-content button[type='submit'] {
