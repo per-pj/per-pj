@@ -101,9 +101,9 @@ p {
   --color-bg-control-hover: var(--color-gray-hover);
 
   --color-text-primary: var(--color-black);
-  --color-text-secondary: var(--color-gray-dark);
-  --color-text-muted: var(--color-gray);
-  --color-text-subtle: var(--color-gray-muted);
+  --color-text-secondary: var(--color-black);
+  --color-text-muted: var(--color-black);
+  --color-text-subtle: var(--color-black);
   --color-text-inverse: var(--color-white);
   --color-text-footer: var(--color-gray-light);
   --color-control: var(--color-charcoal);

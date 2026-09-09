@@ -23,7 +23,7 @@
 .home-process-item + .home-process-item { padding-left: 2rem; border-left: 1px solid var(--color-border-default); }
 .home-process-number { display: block; margin-bottom: 2rem; color: var(--color-text-muted); font-size: var(--font-size-caption); letter-spacing: 0.12em; }
 .home-process-item h3 { margin: 0 0 0.5rem; font: var(--font-weight-medium) var(--font-size-card-title)/var(--line-height-heading) var(--font-family-sans); }
-.home-process-item p { margin: 0; color: var(--color-text-muted); font-size: var(--font-size-body); }
+.home-process-item p { margin: 0; color: var(--color-text-muted); font-size: var(--font-size-caption); }
 .home-section-link-container, .see-all-button-container { text-align: center; margin-top: 2.75rem; }
 @media (max-width: 768px) {
   .home-hero { min-height: 58vh;  }
