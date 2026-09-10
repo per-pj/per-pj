@@ -7,6 +7,12 @@
 .about-role { margin: 0.35rem 0 2.25rem; color: var(--color-text-muted); letter-spacing: 0.06em; font-size: var(--font-size-caption); }
 .about-lead { margin: 0 0 2rem; color: var(--color-text-secondary); font-size: var(--font-size-body); }
 .about-hero-body .profile-links { margin-bottom: 2rem; }
+.about-stats { max-width: var(--layout-max); margin: 0 auto; padding: 0 var(--layout-padding-inline); box-sizing: border-box; }
+.about-stats dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; border-top: 1px solid var(--color-border-default); border-bottom: 1px solid var(--color-border-default); }
+.about-stats dl > div { min-width: 0; padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1rem, 3vw, 2.5rem); text-align: center; }
+.about-stats dl > div + div { border-left: 1px solid var(--color-border-default); }
+.about-stats dt { font-family: var(--font-family-serif); font-size: clamp(3.75rem, 7vw, 6.5rem); line-height: 0.9; letter-spacing: -0.04em; }
+.about-stats dd { margin: 1.15rem 0 0; color: var(--color-text-muted); font-size: var(--font-size-caption); font-weight: var(--font-weight-medium); letter-spacing: 0.08em; }
 .principles { position: relative; box-sizing: border-box; max-width: var(--layout-max); margin: 0 auto; padding: var(--space-section) var(--layout-padding-inline); }
 .principles::before { content: ''; position: absolute; top: 0; right: var(--layout-padding-inline); left: var(--layout-padding-inline); height: 1px; background: var(--color-border-default); }
 .principles-heading { max-width: var(--layout-reading); margin-bottom: var(--space-heading); }
@@ -35,6 +41,9 @@
   .principles-list { grid-template-columns: 1fr; }
   .principles-list li { padding: 1.75rem 0; }
   .about-services { grid-template-columns: 1fr; gap: 3rem; }
+  .about-stats dl > div { padding: 2.5rem 0.5rem; }
+  .about-stats dt { font-size: clamp(3rem, 15vw, 4.5rem); }
+  .about-stats dd { margin-top: 0.85rem; font-size: 0.75rem; }
 }
 
 @media (max-width: 390px) {

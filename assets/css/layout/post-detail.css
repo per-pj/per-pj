@@ -5,7 +5,7 @@
 .post-detail-hero-meta { display: flex; align-items: baseline; justify-content: center; gap: 0.9rem; margin: 0 0 1.4rem; color: var(--color-text-muted); font-size: var(--font-size-caption); line-height: var(--line-height-ui); }
 .post-detail-hero-title { margin: 0; font-size: var(--font-size-page); font-weight: var(--font-weight-regular); overflow-wrap: anywhere; }
 .post-detail-hero-desc { max-width: var(--layout-reading); margin: 1.1rem auto 0; color: var(--color-text-muted); font-size: var(--font-size-body); line-height: var(--line-height-body); }
-.post-detail-hero-media { max-width: var(--layout-media); margin: 0 auto; overflow: hidden; border-radius: var(--radius-lg); background: var(--color-gray-subtle); }
+.post-detail-hero-media { max-width: 48rem; margin: 0 auto; overflow: hidden; border-radius: var(--radius-lg); background: var(--color-gray-subtle); }
 .post-detail-hero-img { display: block; width: 100%; height: auto; }
 
 .post-detail-content-container { max-width: var(--layout-max); margin: 0 auto; padding: var(--space-heading) var(--layout-padding-inline) var(--space-section); box-sizing: border-box; }

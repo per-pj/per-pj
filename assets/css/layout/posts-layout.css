@@ -142,3 +142,33 @@
   .works-filter-scroll { margin-right: calc(-1 * var(--layout-padding-inline-compact)); padding-right: var(--layout-padding-inline-compact); }
   .works-sort { justify-content: space-between; }
 }
+
+/* Image-led shared portfolio card */
+.posts-layout-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-grid); }
+.posts-layout-grid-item { overflow: hidden; }
+.posts-layout-image-wrap { position: relative; overflow: hidden; border-radius: var(--radius-md); }
+.posts-layout-image-wrap::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.34) 38%, rgba(0, 0, 0, 0.03) 68%); opacity: 0.92; transition: opacity 260ms ease; }
+.posts-layout-grid-img { transition: transform 420ms ease; }
+.card-content { position: absolute; z-index: 1; right: clamp(1rem, 2vw, 1.5rem); bottom: clamp(0.8rem, 1.5vw, 1.25rem); left: clamp(0.8rem, 1.5vw, 1.25rem); padding: 0; color: var(--color-text-inverse); transition: transform 260ms ease; }
+.posts-layout-title { margin: 0 0 0.35rem; color: var(--color-text-inverse); font-size: var(--font-size-work-title); }
+.posts-layout-desc { max-width: 34rem; margin: 0; padding: 0; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: rgba(255, 255, 255, 0.9); line-height: 1.55; }
+.posts-layout-meta { margin-top: 0.45rem; color: rgba(255, 255, 255, 0.78); }
+.posts-layout-meta .market-tag, .posts-layout-meta .release-date { color: inherit; }
+.posts-layout-grid-item a:hover .posts-layout-title { color: var(--color-text-inverse); }
+.posts-layout-grid-item a:hover .posts-layout-grid-img, .posts-layout-grid-item a:focus-visible .posts-layout-grid-img { transform: scale(1.025); }
+.posts-layout-grid-item a:hover .posts-layout-image-wrap::after, .posts-layout-grid-item a:focus-visible .posts-layout-image-wrap::after { opacity: 1; }
+.posts-layout-grid-item a:hover .card-content, .posts-layout-grid-item a:focus-visible .card-content { transform: translateY(-0.2rem); }
+@media (max-width: 1024px) {
+  .posts-layout-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  .posts-layout-grid { grid-template-columns: minmax(0, 1fr); }
+  .posts-layout-grid-img { aspect-ratio: 4 / 3; }
+  .posts-layout-title { font-size: 1.35rem; }
+  .posts-layout-desc, .posts-layout-meta { font-size: 0.78rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .posts-layout-grid-img, .posts-layout-image-wrap::after, .card-content { transition: none; }
+}
