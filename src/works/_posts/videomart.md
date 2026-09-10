@@ -1,6 +1,7 @@
 ---
 title: 'VideoMart'
-description: 'ビデオ通話でプロの専門家に相談できるプラットフォーム。'
+description: 'ビデオ通話でプロの専門家になんでも相談'
+cardDescription: 'ビデオ通話で専門家になんでも相談'
 tags: ['work', 'シェアリングエコノミー']
 thumbnail: /assets/img/product/videomart.jpg
 layout: layouts/work-detail.njk

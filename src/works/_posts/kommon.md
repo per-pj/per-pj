@@ -1,6 +1,7 @@
 ---
 title: 'Kommon'
 description: '部活動の指導を外部コーチに委託できるサービス。'
+cardDescription: '部活動と外部コーチをつなぐ指導サービス'
 tags: ['work', 'スポーツ', '教育機関']
 thumbnail: /assets/img/product/kommon.jpg
 layout: layouts/work-detail.njk

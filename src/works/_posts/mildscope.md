@@ -1,6 +1,7 @@
 ---
 title: 'Mildscope'
 description: 'AIで情報収集をパーソナライズするツール。'
+cardDescription: 'AIで情報収集をパーソナライズ'
 tags: ['work', '情報収集', 'AI']
 thumbnail: /assets/img/product/mildscope.jpg
 layout: layouts/work-detail.njk

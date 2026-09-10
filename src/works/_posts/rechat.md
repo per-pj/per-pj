@@ -1,6 +1,7 @@
 ---
 title: 'Rechat'
 description: '起業家のセカンドキャリアをチャットで支援する転職サービス。'
+cardDescription: '起業家の次のキャリアを支える転職支援'
 tags: ['work', '採用', 'セカンドキャリア']
 thumbnail: /assets/img/product/rechat.jpg
 layout: layouts/work-detail.njk

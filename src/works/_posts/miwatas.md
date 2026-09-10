@@ -1,6 +1,7 @@
 ---
 title: 'Miwatas'
 description: '360度カメラの撮影・編集で不動産物件のオンライン内覧を実現するサービス。'
+cardDescription: '360度映像で不動産をオンライン内覧'
 tags: ['work', '不動産', 'オンライン内覧']
 thumbnail: /assets/img/product/miwatas.jpg
 layout: layouts/work-detail.njk

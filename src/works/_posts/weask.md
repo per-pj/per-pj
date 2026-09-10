@@ -1,6 +1,7 @@
 ---
 title: 'WeAsk'
 description: '専門家や著名人に有料で質問できる動画ソーシャルメディア。'
+cardDescription: '専門家や著名人に質問できる動画SNS'
 tags: ['work', '有料Q&A', '動画']
 thumbnail: /assets/img/product/weask.jpg
 layout: layouts/work-detail.njk

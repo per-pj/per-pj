@@ -1,6 +1,7 @@
 ---
 title: 'Comm'
 description: '好きなことをきっかけにコミュニティを作れるアプリ。'
+cardDescription: '好きなことからつながるコミュニティ'
 tags: ['work', 'コミュニティ']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk

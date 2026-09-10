@@ -1,6 +1,7 @@
 ---
 title: 'Toypost'
 description: 'AIが写真フォルダから自動で投稿を作成するソーシャルメディア。'
+cardDescription: '写真からAIが投稿を自動生成するSNS'
 tags: ['work', 'AI', 'SNS']
 thumbnail: /assets/img/product/toypost.jpg
 layout: layouts/work-detail.njk

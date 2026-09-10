@@ -1,6 +1,7 @@
 ---
 title: 'Kolet'
 description: 'フリーランスやクリエイターの有料コンテンツ配信・収益化ツール。'
+cardDescription: 'クリエイター向けコンテンツ配信・収益化ツール'
 tags: ['work', 'コミュニティ', '収益化']
 thumbnail: /assets/img/product/kolet.jpg
 layout: layouts/work-detail.njk

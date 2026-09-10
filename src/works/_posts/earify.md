@@ -1,6 +1,7 @@
 ---
 title: 'Earify'
 description: 'AIが生成する音声コンテンツの配信サービス。'
+cardDescription: 'AI生成音声コンテンツの配信サービス'
 tags: ['work', 'AI', '音声']
 thumbnail: /assets/img/product/earify.jpg
 layout: layouts/work-detail.njk

@@ -1,6 +1,7 @@
 ---
 title: 'Humantrip'
 description: 'ローカルガイドによる体験を共有するプラットフォーム。'
+cardDescription: 'ローカルガイドの体験共有プラットフォーム'
 tags: ['work', '旅行', 'C2C']
 thumbnail: /assets/img/product/humantrip.jpg
 layout: layouts/work-detail.njk

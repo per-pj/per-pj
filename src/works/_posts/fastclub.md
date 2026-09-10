@@ -1,6 +1,7 @@
 ---
 title: 'Fastclub'
 description: '音楽イベントの作成・管理・閲覧・決済ができるSNS。'
+cardDescription: '音楽イベントの告知・管理・決済SNS'
 tags: ['work', '音楽', 'SNS', 'イベント']
 thumbnail: /assets/img/product/fastclub.jpg
 layout: layouts/work-detail.njk

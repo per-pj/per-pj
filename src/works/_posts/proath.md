@@ -1,6 +1,7 @@
 ---
 title: 'Proath'
 description: 'プロのコーチから有料の個人レッスンを受けられるサービス。'
+cardDescription: 'プロコーチの個人レッスン予約'
 tags: ['work', 'スポーツ']
 thumbnail: /assets/img/product/proath.jpg
 layout: layouts/work-detail.njk

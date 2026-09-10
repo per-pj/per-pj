@@ -1,6 +1,7 @@
 ---
 title: 'Bookvia'
 description: 'クリエイターのスキルを販売・ブッキングできるストア。'
+cardDescription: 'クリエイターのスキル販売・予約ページ'
 tags: ['work', 'スキル販売', '予約']
 thumbnail: /assets/img/product/bookvia.jpg
 layout: layouts/work-detail.njk

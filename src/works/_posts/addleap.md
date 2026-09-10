@@ -1,6 +1,7 @@
 ---
 title: 'AddLeap'
 description: '留学中の就活生と企業の採用担当者をつなぐ採用プラットフォーム。'
+cardDescription: '留学生と企業をつなぐ採用プラットフォーム'
 tags: ['work', '採用', 'マッチング']
 thumbnail: /assets/img/product/addleap.jpg
 layout: layouts/work-detail.njk

@@ -1,6 +1,7 @@
 ---
 title: 'Hitap'
 description: '共有リンクからAIで日程を調整できるサービス。'
+cardDescription: '共有リンクからAIで日程調整'
 tags: ['work', 'AI', '日程調整']
 thumbnail: /assets/img/product/hitap.jpg
 layout: layouts/work-detail.njk

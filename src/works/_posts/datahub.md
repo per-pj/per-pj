@@ -1,6 +1,7 @@
 ---
 title: 'Datahub'
 description: 'センサーデータを安全に売買できる取引所。'
+cardDescription: 'センサーデータを安全に売買する取引所'
 tags: ['work', 'B向け']
 thumbnail: /assets/img/product/datahub.jpg
 layout: layouts/work-detail.njk

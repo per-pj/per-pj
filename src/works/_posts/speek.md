@@ -1,6 +1,7 @@
 ---
 title: 'Speek'
 description: '音声チャットに特化した若年層向けコミュニケーションアプリ。'
+cardDescription: '若年層向け音声チャットアプリ'
 tags: ['work', 'コミュニケーション', '音声']
 thumbnail: /assets/img/product/speek.jpg
 layout: layouts/work-detail.njk

@@ -1,6 +1,7 @@
 ---
 title: 'Modan'
 description: '企業とインフルエンサーをつなぐマッチングプラットフォーム。'
+cardDescription: '企業とインフルエンサーのマッチング'
 tags: ['work', 'マーケティング']
 thumbnail: /assets/img/product/modan.jpg
 layout: layouts/work-detail.njk

@@ -1,6 +1,7 @@
 ---
 title: 'KitchHub'
-description: '地域で利用できる月額制のシェアキッチンスペース。'
+description: '地域に根付く月額制のシェアキッチン'
+cardDescription: '地域に根付く月額制のシェアキッチン'
 tags: ['work', 'コミュニティ', 'シェアキッチン']
 thumbnail: /assets/img/product/kitch.jpg
 layout: layouts/work-detail.njk

@@ -1,6 +1,7 @@
 ---
 title: 'GoodEats'
 description: '栄養士が考えたヘルシーな社食を届けるサービス。'
+cardDescription: '栄養士監修のヘルシーな社食デリバリー'
 tags: ['work', 'ヘルスケア', '福利厚生']
 thumbnail: /assets/img/product/goodeats.jpg
 layout: layouts/work-detail.njk

@@ -1,6 +1,7 @@
 ---
 title: 'Triber'
 description: 'シェアイベントスペースと会員コミュニティを組み合わせたサービス。'
+cardDescription: 'イベントスペースと会員コミュニティ'
 tags: ['work', 'コミュニティ', 'イベント']
 thumbnail: /assets/img/product/triber.jpg
 layout: layouts/work-detail.njk

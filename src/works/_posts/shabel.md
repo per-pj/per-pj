@@ -1,6 +1,7 @@
 ---
 title: 'Shabel'
 description: '動画やビデオ通話を通じて知識を売買できるアプリ。'
+cardDescription: '動画や通話で知識を売買するアプリ'
 tags: ['work', 'シェアリングエコノミー']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk

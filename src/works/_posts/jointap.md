@@ -1,6 +1,7 @@
 ---
 title: 'Jointap'
 description: 'AIでテック人材の採用プロセスを効率化するサービス。'
+cardDescription: 'AIでテック人材の採用を効率化'
 tags: ['work', 'AI', '採用']
 thumbnail: /assets/img/product/jointap.jpg
 layout: layouts/work-detail.njk

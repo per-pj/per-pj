@@ -1,6 +1,7 @@
 ---
 title: 'Carrot.ai'
 description: 'AIが生成した音楽を聴ける音楽配信サービス。'
+cardDescription: 'AI生成音楽を楽しめる音楽配信'
 tags: ['work', 'AI', '音楽']
 thumbnail: /assets/img/product/carrot.jpg
 layout: layouts/work-detail.njk

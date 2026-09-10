@@ -1,6 +1,7 @@
 ---
 title: 'Fromspot'
 description: 'フリーランスのためのコワーキングスペース付きシェアハウス。'
+cardDescription: '仕事場を備えたフリーランス向けシェアハウス'
 tags: ['work', '賃貸', '不動産']
 thumbnail: /assets/img/product/fromspot.jpg
 layout: layouts/work-detail.njk

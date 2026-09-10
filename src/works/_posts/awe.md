@@ -1,6 +1,7 @@
 ---
 title: 'Awe'
 description: '世界中の人々をビデオチャットでつなぐコミュニケーションアプリ。'
+cardDescription: '世界中の人と話せるビデオチャット'
 tags: ['work', 'ビデオチャット']
 thumbnail: /assets/img/cs.png
 layout: layouts/work-detail.njk

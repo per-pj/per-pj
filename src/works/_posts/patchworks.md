@@ -1,6 +1,7 @@
 ---
 title: 'PatchWorks'
 description: '企業とフリーランスをマッチングする業務委託プラットフォーム。'
+cardDescription: '企業とフリーランスの業務委託マッチング'
 tags: ['work', '人材']
 thumbnail: /assets/img/product/patchworks.jpg
 layout: layouts/work-detail.njk
